@@ -1,51 +1,64 @@
-# Introduction to GitHub
+# NEDinS — 自動交易研究 Pipeline
 
-_Get started using GitHub in less than an hour._
+由 Claude 驅動嘅加密貨幣交易策略研究工作流：自動上網搵 indicator / theory，spec 化，落實成代碼，再用嚴謹統計方法評測。
 
-## Welcome
+## 文件
 
-People use GitHub to build some of the most advanced technologies in the world. Whether you’re visualizing data or building a new game, there’s a whole community and set of tools on GitHub that can help you do it even better. GitHub Skills’ “Introduction to GitHub” exercise guides you through everything you need to start contributing in less than an hour.
+| 文件 | 內容 |
+|---|---|
+| [`docs/workflow.md`](docs/workflow.md) | 端到端 pipeline、7 個 phase、verdict 規則 |
+| [`docs/handbook.md`](docs/handbook.md) | 每日 / 每週操作 SOP、常見錯誤、data hygiene |
+| [`docs/skill-requirements.md`](docs/skill-requirements.md) | 5 個 skill 嘅輸入 / 輸出 / 驗收條件 |
 
-- **Who is this for**: New developers, new GitHub users, and students.
-- **What you'll learn**: We'll introduce repositories, branches, commits, and pull requests.
-- **What you'll build**: We'll make a short Markdown file you can use as your [profile README](https://docs.github.com/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme).
-- **Prerequisites**: None. This exercise is a great introduction for your first day on GitHub.
-- **How long**: This exercise takes less than one hour to complete.
+## Skills
 
-In this exercise, you will:
+`.claude/skills/` 下有 5 個 skill，對應 7 個 phase：
 
-1. Create a branch
-2. Commit a file
-3. Open a pull request
-4. Merge your pull request
+| Skill | Phase | 用途 |
+|---|---|---|
+| `crypto-research` | 1 | Web scan 出 candidate indicator |
+| `indicator-spec` | 2 | Prose → YAML spec |
+| `backtest-runner` | 3–5 | Codegen + in-sample + robustness |
+| `statistical-validator` | 6 | OOS + Monte Carlo + DSR + p-value |
+| `strategy-report` | 7 | 整合輸出 + verdict（🟢/🟡/🔴） |
 
-### How to start this exercise
+## 目錄結構
 
-1. Right-click **Copy Exercise** and open the link in a new tab.
+```
+NEDinS/
+├── docs/                   # 規格 / SOP
+├── .claude/skills/         # Claude Code skill 骨架
+├── research/               # Phase 1 — discovery markdown
+├── specs/                  # Phase 2 — YAML spec
+├── strategies/             # Phase 3 — Python implementation
+├── tests/                  # Phase 3 — pytest
+├── backtests/              # Phase 4–5 — backtest output (gitignored)
+├── validations/            # Phase 6 — validation output (gitignored)
+├── reports/                # Phase 7 — final markdown report
+├── decisions.md            # 所有 candidate verdict log
+└── data/                   # OHLCV / on-chain cache (gitignored)
+```
 
-   <a id="copy-exercise">
-      <img src="https://img.shields.io/badge/📠_Copy_Exercise-AAA" height="25pt"/>
-   </a>
+## 開始使用
 
-2. In the new tab, most of the prompts will automatically fill in for you.
-   - For owner, choose your personal account or an organization to host the repository.
-   - We recommend creating a public repository, as private repositories will [use Actions minutes](https://docs.github.chttps://github.com/Cosmo552266/NEDinS/billing/managing-billing-for-github-actions/about-billing-for-github-actions).
-   - Scroll down and click the **Create repository** button at the bottom of the form.
+開新 session 後，直接同 Claude 講：
 
-3. After your new repository is created, wait about 20 seconds for the exercise to be prepared and buttons updated. You will continue working from your copy of the exercise.
-   - The **Copy Exercise** button will deactivate, changing to gray.
-   - The **Start Exercise** button will activate, changing to green.
-   - You will likely need to refresh the page.
+```
+跑 crypto-research，scan 過去 7 日嘅 arXiv + Glassnode，
+focus 喺 BTC perp 嘅 mean-reversion idea。
+```
 
-4. Click **Start Exercise**. Follow the step-by-step instructions and feedback will be provided as you progress.
+Claude 會 load `crypto-research` skill，按 `docs/workflow.md` Phase 1 嘅 SOP 執行。
 
-   <a id="start-exercise" href="https://github.com/Cosmo552266/NEDinS/issues/1">
-      <img src="https://img.shields.io/badge/🚀_Start_Exercise-008000" height="25pt"/>
-   </a>
+詳細用法見 [`docs/handbook.md`](docs/handbook.md)。
 
-> [!IMPORTANT]
-> The **Start Exercise** button will activate after copying the repository. You will probably need to refresh the page.
+## 守則
 
----
+- 🔒 OOS data 神聖不可侵犯 —— Phase 6 之前完全唔 load
+- 📊 所有 verdict 跟 `workflow.md` 嘅 rule，唔自由發揮
+- 📝 RED 嘅 candidate 一樣要寫 report，避免重複研究
+- ♻️ 每個 backtest run 必須 commit hash + seed，可重現
 
-&copy; 2025 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
+## License
+
+MIT — 見 [LICENSE](LICENSE)
