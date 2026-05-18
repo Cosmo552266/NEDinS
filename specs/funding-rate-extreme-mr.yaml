@@ -1,0 +1,88 @@
+name: funding-rate-extreme-mr
+version: 0.1.0
+
+source:
+  url: https://arxiv.org/abs/2506.08573
+  authors:
+    - "Designing funding rates for perpetual futures in cryptocurrency markets (arxiv 2506.08573, 2025)"
+    - "Funding-Aware Optimal Market Making for Perpetual DEXs (arxiv 2605.06405, 2026)"
+  retrieved: "2026-05-18"
+
+hypothesis: |
+  Perpetual funding rate reflects leveraged-position demand imbalance.
+  Extreme readings (>95th percentile historical) indicate over-crowded
+  directional bets that are typically reset by liquidation cascades.
+  Empirical Ornstein-Uhlenbeck calibration on Binance ETHUSDT funding
+  (Nov 2025 - May 2026) shows a half-life of ~8 hours, meaning extreme
+  funding mean-reverts within roughly one half-day. The strategy harvests
+  both the mean-reversion (price drift opposite to crowded side) and the
+  funding carry itself by taking the unpopular side of the perp.
+
+data:
+  symbols:
+    - "BTC/USDT:USDT"
+  timeframe: 1h
+  fields:
+    - open
+    - high
+    - low
+    - close
+    - volume
+    - funding_rate
+  history_required: 730d   # 2 years to estimate stable percentile
+
+parameters:
+  lookback_hours:
+    type: int
+    default: 720    # 30 days of hourly funding observations (≈ 90 funding events)
+    range: [336, 2160]   # 14–90 days
+    description: rolling window for percentile estimate
+  upper_percentile:
+    type: float
+    default: 0.95
+    range: [0.85, 0.99]
+    description: enter SHORT perp when funding_rate >= this percentile
+  lower_percentile:
+    type: float
+    default: 0.05
+    range: [0.01, 0.15]
+    description: enter LONG perp when funding_rate <= this percentile
+  holding_bars:
+    type: int
+    default: 16     # ≈ 2 funding cycles (2 * 8h on 1h bars)
+    range: [4, 48]
+    description: time exit; capped because OU half-life is ~8h
+
+formula: |
+  rolling_p95 = funding_rate.rolling(lookback_hours).quantile(upper_percentile).shift(1)
+  rolling_p05 = funding_rate.rolling(lookback_hours).quantile(lower_percentile).shift(1)
+
+  raw_signal = where(funding_rate.shift(1) >= rolling_p95, -1,
+               where(funding_rate.shift(1) <= rolling_p05, +1, 0))
+
+  # Position held for `holding_bars` after entry, or earlier on SL/TP
+
+entry_logic: |
+  - SHORT perp when funding_rate(t-1) >= rolling_p95(t-1) AND not in_position
+  - LONG  perp when funding_rate(t-1) <= rolling_p05(t-1) AND not in_position
+  - Entry price = open(t)
+
+exit_logic: |
+  - Time exit: after `holding_bars` from entry
+  - Hard stop: price moves against by stop_loss_pct
+  - No take-profit (rely on mean reversion + funding carry)
+
+position_sizing:
+  method: fixed_fraction
+  value: 0.10
+
+risk:
+  stop_loss_pct: 0.04
+  take_profit_pct: null
+  max_concurrent_positions: 1
+
+notes: |
+  - First-pass spec; OU-zscore variant (ou-funding-zscore) deferred to v0.2.
+  - Cost model must include 5 bps taker + funding paid/received per 8h.
+  - Phase 5 grid search will cover lookback_hours and upper_percentile;
+    holding_bars locked to default to avoid overfitting (theory-anchored at 2x OU half-life).

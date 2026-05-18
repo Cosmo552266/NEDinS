@@ -1,0 +1,129 @@
+# Spec schema (JSON Schema in YAML form) for specs/<slug>.yaml
+# Used by .claude/skills/indicator-spec/ to validate spec files before write.
+# Validate with:
+#   python -c "import yaml, jsonschema; jsonschema.validate(yaml.safe_load(open('specs/<slug>.yaml')), yaml.safe_load(open('specs/_schema.yaml')))"
+
+$schema: "https://json-schema.org/draft/2020-12/schema"
+title: Crypto Indicator/Strategy Spec
+type: object
+required: [name, version, source, hypothesis, data, parameters, formula, entry_logic, exit_logic, position_sizing, risk]
+additionalProperties: false
+
+properties:
+  name:
+    type: string
+    pattern: "^[a-z][a-z0-9-]{2,48}$"
+    description: kebab-case slug, also used as filename
+
+  version:
+    type: string
+    pattern: "^\\d+\\.\\d+\\.\\d+$"
+    description: semver
+
+  source:
+    type: object
+    required: [url, authors, retrieved]
+    additionalProperties: false
+    properties:
+      url:
+        type: string
+        format: uri
+      authors:
+        type: array
+        minItems: 1
+        items: {type: string}
+      retrieved:
+        type: string
+        format: date
+
+  hypothesis:
+    type: string
+    minLength: 50
+    description: one-paragraph economic/behavioral mechanism
+
+  data:
+    type: object
+    required: [symbols, timeframe, fields, history_required]
+    additionalProperties: false
+    properties:
+      symbols:
+        type: array
+        minItems: 1
+        items:
+          type: string
+          pattern: "^[A-Z0-9]+/[A-Z0-9]+(:[A-Z0-9]+)?$"
+      timeframe:
+        type: string
+        enum: ["1m", "5m", "15m", "30m", "1h", "2h", "4h", "8h", "12h", "1d", "1w"]
+      fields:
+        type: array
+        minItems: 1
+        items:
+          type: string
+          enum: [open, high, low, close, volume, funding_rate, open_interest, taker_buy_volume, taker_sell_volume]
+      history_required:
+        type: string
+        pattern: "^\\d+[dwmy]$"
+        description: e.g. 365d, 24m, 3y
+
+  parameters:
+    type: object
+    minProperties: 1
+    patternProperties:
+      "^[a-z][a-z0-9_]*$":
+        type: object
+        required: [type, default, range]
+        additionalProperties: false
+        properties:
+          type:
+            type: string
+            enum: [int, float, bool, string]
+          default: {}
+          range:
+            type: array
+            minItems: 2
+            maxItems: 2
+            description: "[min, max] (use [val,val] only for string/bool)"
+          description: {type: string}
+
+  formula:
+    type: string
+    minLength: 20
+    description: LaTeX or reproducible Python pseudocode
+
+  entry_logic:
+    type: string
+    minLength: 10
+
+  exit_logic:
+    type: string
+    minLength: 10
+
+  position_sizing:
+    oneOf:
+      - {type: string, enum: [fixed_fraction, kelly, vol_target, full_notional]}
+      - type: object
+        required: [method, value]
+        properties:
+          method:
+            type: string
+            enum: [fixed_fraction, kelly, vol_target, full_notional]
+          value: {type: number}
+
+  risk:
+    type: object
+    required: [stop_loss_pct, take_profit_pct, max_concurrent_positions]
+    additionalProperties: false
+    properties:
+      stop_loss_pct:
+        type: [number, "null"]
+        description: e.g. 0.03 for 3%; null = no stop
+      take_profit_pct:
+        type: [number, "null"]
+      max_concurrent_positions:
+        type: integer
+        minimum: 1
+
+  notes:
+    type: string
+    description: optional free-form annotations

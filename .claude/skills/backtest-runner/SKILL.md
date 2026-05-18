@@ -57,25 +57,44 @@ assert df.index.max() <= IN_SAMPLE_END, "in-sample violation"
    - `regime_breakdown.json`
    - `meta.yaml`（**必須包括 trial count N**，下游 DSR 要用）
 
-## Codegen template skeleton
+## Framework：vectorbt
+
+Default backtest engine：**vectorbt**（vectorized、numba JIT、適合 Phase 5 嘅 grid search + walk-forward）。
+
+Codegen 由 `templates/vectorbt_strategy.py.tmpl` 開始，replace 5 個 placeholder：
+
+| Placeholder | 內容 |
+|---|---|
+| `{{SLUG}}` | spec.name (kebab) |
+| `{{CLASS_NAME}}` | PascalCase 版 |
+| `{{HYPOTHESIS}}` | spec.hypothesis 一句版 |
+| `{{INDICATOR_BODY}}` | spec.formula → vectorized pandas/numpy |
+| `{{SIGNAL_BODY}}` | spec.entry_logic / exit_logic → boolean masks |
+| `{{DEFAULT_PARAMS}}` | spec.parameters dataclass fields |
+
+Template 已 bake 入：
+- `IN_SAMPLE_END = 2022-12-31` hard guard
+- 5 bps fee + 5 bps slippage default
+- Optional perp `funding_rate` cost
+- `metrics()` 出 workflow.md 要求嘅所有指標
+- `param_sensitivity()` + `walk_forward()` helper（Phase 5）
+
+### Indicator codegen rule
+
+所有 rolling/expanding stat **必須 `.shift(1)`**：
 
 ```python
-import pandas as pd
-import numpy as np
+# ✅ 啱
+df["close"].rolling(20).mean().shift(1)
 
-IN_SAMPLE_END = pd.Timestamp("2022-12-31")
+# ❌ 錯（用咗當前 bar 嘅 close 計 MA）
+df["close"].rolling(20).mean()
+```
 
-def compute_indicator(df: pd.DataFrame, params: dict) -> pd.Series:
-    # 所有 rolling 都用 shift(1)
-    ...
+### 依賴
 
-def generate_signals(df: pd.DataFrame, params: dict) -> pd.DataFrame:
-    assert df.index.max() <= IN_SAMPLE_END
-    indicator = compute_indicator(df, params)
-    signal = pd.Series(0, index=df.index)
-    # entry / exit logic
-    ...
-    return pd.DataFrame({"signal": signal, "size": ...})
+```bash
+pip install vectorbt ccxt pandas numpy pyarrow loguru pytest jsonschema pyyaml
 ```
 
 ## 必要工具
