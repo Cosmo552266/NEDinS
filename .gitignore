@@ -26,6 +26,11 @@
 *.sql
 *.sqlite
 
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
 # OS generated files #
 ######################
 .DS_Store
