@@ -1,0 +1,48 @@
+{
+  "config": {
+    "starting_equity": 26.0,
+    "risk_pct": 0.06,
+    "max_leverage": 10.0,
+    "sl_atr_max": 2.5,
+    "tp_atr_max": 10.0,
+    "ob_buffer_atr": 0.5,
+    "pullback_zone_atr": 1.0,
+    "tp_R_target": 4.0,
+    "ob_max_age": 80,
+    "require_liq_sweep": false,
+    "use_confluence_score": true,
+    "confluence_threshold": 4,
+    "sweep_lookback": 5,
+    "require_ob": true,
+    "require_poc_touch": false,
+    "trail_atr": 2.5,
+    "trail_activate_R": 2.0,
+    "max_bars_in_trade": 60,
+    "fee_bps_per_side": 4.0,
+    "slippage_bps": 2.0,
+    "warmup_bars": 400
+  },
+  "stats": {
+    "trades": 191,
+    "long_trades": 81,
+    "short_trades": 110,
+    "final_equity": 1.322837223706741,
+    "total_return_x": 0.05087835475795158,
+    "win_rate": 0.3403141361256545,
+    "avg_R": -0.20227010824895153,
+    "max_R": 3.8601202169778945,
+    "min_R": -2.2321310189075345,
+    "profit_factor": 0.7639069796416903,
+    "max_drawdown": -0.9529960886309171,
+    "avg_leverage": 8.316592281112293,
+    "avg_bars_held": 19.785340314136125,
+    "exit_reasons": {
+      "trail": 48,
+      "stop": 114,
+      "time": 15,
+      "take": 8,
+      "ott_flip": 6
+    },
+    "bars": 43200
+  }
+}
