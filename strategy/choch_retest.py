@@ -44,8 +44,17 @@ class Config:
     trail_atr: float = 2.0
     trail_activate_R: float = 1.5
     max_bars_in_trade: int = 100
-    fee_bps_per_side: float = 4.0
-    slippage_bps: float = 2.0
+    # Bybit USDT-perp default (no VIP): maker 0.02%, taker 0.055%.
+    # Entry is a limit order at the confirm bar → MAKER.
+    # Stop / TP / trail / time exits hit market → TAKER.
+    entry_fee_bps: float = 2.0      # Bybit maker
+    exit_fee_bps: float = 5.5       # Bybit taker
+    slippage_bps_entry: float = 0.5 # tight maker fill
+    slippage_bps_exit: float = 2.0  # stop/market slippage
+    # Legacy uniform fee (kept for back-compat); if both *_fee_bps fields
+    # are non-zero those are used instead.
+    fee_bps_per_side: float = 0.0
+    slippage_bps: float = 0.0
     warmup_bars: int = 250
     require_ott_agreement: bool = True   # OTT direction must match trade dir
     require_ema_stack: bool = False      # EMA stack alignment optional
@@ -80,8 +89,21 @@ class Result:
     trades: list[Trade] = field(default_factory=list)
 
 
-def _fee(notional: float, cfg: Config) -> float:
+def _fee_entry(notional: float, cfg: Config) -> float:
+    if cfg.entry_fee_bps > 0 or cfg.exit_fee_bps > 0:
+        return notional * (cfg.entry_fee_bps + cfg.slippage_bps_entry) / 10_000.0
     return notional * (cfg.fee_bps_per_side + cfg.slippage_bps) / 10_000.0
+
+
+def _fee_exit(notional: float, cfg: Config) -> float:
+    if cfg.entry_fee_bps > 0 or cfg.exit_fee_bps > 0:
+        return notional * (cfg.exit_fee_bps + cfg.slippage_bps_exit) / 10_000.0
+    return notional * (cfg.fee_bps_per_side + cfg.slippage_bps) / 10_000.0
+
+
+def _fee(notional: float, cfg: Config) -> float:
+    """Backward-compat: avg both sides."""
+    return 0.5 * (_fee_entry(notional, cfg) + _fee_exit(notional, cfg))
 
 
 def backtest(df: pd.DataFrame, cfg: Config | None = None) -> Result:
@@ -161,7 +183,7 @@ def backtest(df: pd.DataFrame, cfg: Config | None = None) -> Result:
                     raw_pnl = (exit_price - pos.entry_price) * pos.qty
                 else:
                     raw_pnl = (pos.entry_price - exit_price) * pos.qty
-                fee_out = _fee(exit_price * pos.qty, cfg)
+                fee_out = _fee_exit(exit_price * pos.qty, cfg)
                 pos.pnl = raw_pnl - fee_out
                 pos.exit_price = exit_price
                 pos.exit_time = ts[i]
@@ -226,7 +248,7 @@ def backtest(df: pd.DataFrame, cfg: Config | None = None) -> Result:
                             tp_dist = min(tp_dist, cfg.tp_atr_max * a)
                             take = price + tp_dist
                             pos = _open(price, stop, take, "long", stop_dist, equity, cfg, ts[i], setup["choch_bar"])
-                            equity -= _fee(pos.notional, cfg)
+                            equity -= _fee_entry(pos.notional, cfg)
                             armed = [a for a in armed if a is not setup]
                             break
                 else:
@@ -254,7 +276,7 @@ def backtest(df: pd.DataFrame, cfg: Config | None = None) -> Result:
                             tp_dist = min(tp_dist, cfg.tp_atr_max * a)
                             take = price - tp_dist
                             pos = _open(price, stop, take, "short", stop_dist, equity, cfg, ts[i], setup["choch_bar"])
-                            equity -= _fee(pos.notional, cfg)
+                            equity -= _fee_entry(pos.notional, cfg)
                             armed = [a for a in armed if a is not setup]
                             break
 
@@ -265,7 +287,7 @@ def backtest(df: pd.DataFrame, cfg: Config | None = None) -> Result:
         exit_price = float(close[-1])
         raw_pnl = (exit_price - pos.entry_price) * pos.qty if pos.side == "long" \
             else (pos.entry_price - exit_price) * pos.qty
-        pos.pnl = raw_pnl - _fee(exit_price * pos.qty, cfg)
+        pos.pnl = raw_pnl - _fee_exit(exit_price * pos.qty, cfg)
         pos.exit_price = exit_price
         pos.exit_time = ts[-1]
         pos.exit_reason = "eod"

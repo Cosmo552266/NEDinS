@@ -140,7 +140,7 @@ Your filter IS adding value.
 |  99  |   23   | 47.8% | +0.21  | **1.25** | **$28.96** | -31.2% |
 | 113  |   28   | 53.6% | +0.25  | **1.59** | **$36.75** | -29.4% |
 
-### Cross-timeframe summary
+### Cross-timeframe summary (12 bps round-trip — original)
 
 | TF   | Best config           | Mean PF | +ve seeds | Best seed       | Geo return |
 | ---- | --------------------- | ------: | --------: | --------------- | ---------: |
@@ -152,6 +152,44 @@ Your filter IS adding value.
 The 5m wider-stop combination is the natural break-even ridge: half the
 seeds are profitable. 15m default sits comfortably above it. 1m / 3m
 remain fee-bound below it.
+
+### Bybit fees — recomputed (real exchange schedule)
+
+Bybit USDT-perpetual default tier (no VIP):
+- **Maker 0.02 %** (2 bps)
+- **Taker 0.055 %** (5.5 bps)
+
+The strategy enters as a limit order on the confirmation bar (maker) but
+stops, take-profits, trailing stops, and time-stops execute at market
+(taker). The realistic execution profile is therefore **maker entry +
+taker exit ≈ 10 bps round-trip** (vs the 12 bps I originally used).
+
+Three execution profiles, default-stops, 5 seeds, 180-day:
+
+| Profile (RT bps)        | 1m PF | 3m PF | 5m PF | 15m PF | +ve seeds @ 15m |
+| ----------------------- | ----: | ----: | ----: | -----: | --------------: |
+| Pure taker (15 bps)     | 0.73  | 0.70  | 0.97  | 1.22   | 2/5             |
+| **Maker in / taker out (10 bps)** | **0.74**  | **0.70**  | **0.98**  | **1.22**   | **3/5** |
+| Pure maker (5 bps)      | 0.90  | 0.80  | 1.07  | **1.31** | 3/5             |
+
+Same hierarchy holds across every fee profile: **15m is sustainably
+profitable, 5m straddles break-even, 3m/1m stay fee-bound at 10×
+leverage.** Moving from taker-only to maker-entry changes the absolute
+PF by about +0.01–0.10 — meaningful, but not enough to rescue the
+short timeframes.
+
+Best individual seed runs (under maker-entry/taker-exit, the realistic
+profile):
+
+```
+1m   :  seed 113  →  $14.55  ( -44% )   PF 0.74
+3m   :  seed 113  →  $23.34  ( -10% )   PF 0.93
+5m   :  seed 113  →  $39.23  ( +51% )   PF 1.66  ★
+15m  :  seed 113  →  $33.10  ( +27% )   PF 2.25  ★
+```
+
+Use `entry_fee_bps`, `exit_fee_bps`, `slippage_bps_entry`,
+`slippage_bps_exit` on `Config` to replicate.
 
 ---
 
@@ -172,17 +210,21 @@ remain fee-bound below it.
    per trade no matter what leverage you use. The CHoCH-retest edge is
    real but small — it can't beat 1R/trade in fees on 1m.
 
-4. **Recommended deployment.**
-   - **Best edge: 15-minute** with default stops (3/5 seeds positive,
-     mean PF 1.25). Matches your chart timeframe.
-   - **Secondary: 5-minute with wider stops** (2/5 seeds positive, best
-     seed +47%). Acceptable if you want more setups per day.
-   - **Avoid 1m and 3m** — fee math at 10× leverage destroys the edge.
-     If you must trade those, switch to maker-only execution to drop
-     fees below 0.3 R per trade.
+4. **Recommended deployment (Bybit-priced).**
+   - **Best edge: 15-minute** with default stops (3/5 seeds positive
+     on the realistic 10 bps round-trip profile, mean PF 1.22). Matches
+     your chart timeframe.
+   - **Secondary: 5-minute** (1/5 seeds positive on 10 bps; 2/5 on pure
+     maker). Best seed clears +51 % with PF 1.66 — worth running if
+     execution can be limit-only for both legs (rare in practice).
+   - **Avoid 1m and 3m** on Bybit at 10× lev — even pure-maker fees
+     (5 bps round-trip) leave 1m at PF 0.90 and 3m at 0.80. Not enough
+     edge in the strategy to outrun Bybit's fee schedule on those TFs.
    - Use 10× leverage only when the OB-based stop is *naturally* ≥ 2 × ATR.
      If the OB is tighter than that, accept lower leverage (the code does
      this automatically via the lev cap).
+   - If you upgrade to a Bybit VIP tier that drops taker to ≤ 3 bps,
+     re-run the sweep — 3m and 5m may become viable.
 
 ---
 
