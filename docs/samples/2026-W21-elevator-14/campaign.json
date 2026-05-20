@@ -1,0 +1,286 @@
+{
+  "id": "2026-W21-2026-05-20",
+  "created_at": "2026-05-20T07:11:19.279269",
+  "target_date": "2026-05-20",
+  "theme": {
+    "title": "懸疑短篇：十四樓的訪客",
+    "pitch": "搬入新樓的單親媽媽發現，電梯每晚都會無故停在不存在的 14 樓。",
+    "locale_titles": {},
+    "source": "holiday",
+    "source_detail": "中元節前後",
+    "keywords": [
+      "電梯",
+      "都市傳說",
+      "中元",
+      "14樓"
+    ],
+    "holiday": "中元節",
+    "backup_pitches": [
+      "後巷便利店凌晨三點的常客",
+      "地鐵末班車的第十三節車廂",
+      "舊唐樓天台的紅衣女孩"
+    ]
+  },
+  "story": {
+    "theme": {
+      "title": "懸疑短篇：十四樓的訪客",
+      "pitch": "搬入新樓的單親媽媽發現，電梯每晚都會無故停在不存在的 14 樓。",
+      "locale_titles": {},
+      "source": "holiday",
+      "source_detail": "中元節前後",
+      "keywords": [
+        "電梯",
+        "都市傳說",
+        "中元",
+        "14樓"
+      ],
+      "holiday": "中元節",
+      "backup_pitches": [
+        "後巷便利店凌晨三點的常客",
+        "地鐵末班車的第十三節車廂",
+        "舊唐樓天台的紅衣女孩"
+      ]
+    },
+    "body_zh": "# 十四樓的訪客\n\n她搬入太子嗰幢舊唐樓嘅第三晚，電梯第一次停咗。\n\n唔係故障——係十四樓著咗燈。\n\n「呢度冇十四樓。」管理員阿伯講嘢嗰陣，眼神冇對住佢。\n\n佢按返地下，門慢慢閂埋，鏡面入面映住佢身後另一個人嘅輪廓。\n\n（接落去係 dry-run mock，真正運行時 Gemini 會寫成完整 1500-2500 字短篇。）",
+    "body_en": "# The Visitor on the 14th Floor\n\nThe third night after she moved into the old walk-up in Prince Edward, the elevator stopped on its own.\n\nNot a glitch. The 14th-floor button was lit.\n\n\"There is no 14th floor,\" the old caretaker said, never quite meeting her eyes.\n\n(Dry-run mock — Gemini would write a full 1500-2200 word localized story here.)",
+    "title_zh": "十四樓的訪客",
+    "title_en": "The Visitor on the 14th Floor",
+    "key_visuals": [
+      {
+        "label": "霓虹閃爍的電梯按鈕",
+        "description": "老舊住宅電梯內，14 樓按鈕無故亮起紅光，光線打在乘客僵硬的側臉。",
+        "pod_friendly": true
+      },
+      {
+        "label": "走廊盡頭的拖鞋",
+        "description": "昏黃走廊盡頭擺著一雙女童拖鞋，相機緩緩推近。",
+        "pod_friendly": false
+      },
+      {
+        "label": "玻璃倒影中的第二張臉",
+        "description": "電梯不鏽鋼門反射出乘客背後另一個輪廓。",
+        "pod_friendly": true
+      },
+      {
+        "label": "破裂的監控鏡頭",
+        "description": "管理處監視器螢幕雪花閃爍，時間戳跳回 14 樓。",
+        "pod_friendly": false
+      }
+    ],
+    "word_count_zh": 163,
+    "word_count_en": 61
+  },
+  "storyboard": {
+    "scenes": [
+      {
+        "index": 1,
+        "narration_zh": "場景 1：走廊燈一閃，他發現自己其實從未離開。",
+        "narration_en": "Scene 1: the hallway light flickers; he realises he never left.",
+        "visual_prompt": "dark cinematic, film grain, muted teal-and-orange palette, 35mm lens, dim corridor scene 1, low-key lighting",
+        "duration_sec": 8.0,
+        "pod_friendly": true,
+        "image_path": "/home/user/NEDinS/data/campaigns/2026-W21-2026-05-20/images/scene_01.png",
+        "audio_path_zh": "/home/user/NEDinS/data/campaigns/2026-W21-2026-05-20/audio/scene_01_zh.mp3",
+        "audio_path_en": "/home/user/NEDinS/data/campaigns/2026-W21-2026-05-20/audio/scene_01_en.mp3"
+      },
+      {
+        "index": 2,
+        "narration_zh": "場景 2：走廊燈一閃，他發現自己其實從未離開。",
+        "narration_en": "Scene 2: the hallway light flickers; he realises he never left.",
+        "visual_prompt": "dark cinematic, film grain, muted teal-and-orange palette, 35mm lens, dim corridor scene 2, low-key lighting",
+        "duration_sec": 8.0,
+        "pod_friendly": false,
+        "image_path": "/home/user/NEDinS/data/campaigns/2026-W21-2026-05-20/images/scene_02.png",
+        "audio_path_zh": "/home/user/NEDinS/data/campaigns/2026-W21-2026-05-20/audio/scene_02_zh.mp3",
+        "audio_path_en": "/home/user/NEDinS/data/campaigns/2026-W21-2026-05-20/audio/scene_02_en.mp3"
+      },
+      {
+        "index": 3,
+        "narration_zh": "場景 3：走廊燈一閃，他發現自己其實從未離開。",
+        "narration_en": "Scene 3: the hallway light flickers; he realises he never left.",
+        "visual_prompt": "dark cinematic, film grain, muted teal-and-orange palette, 35mm lens, dim corridor scene 3, low-key lighting",
+        "duration_sec": 8.0,
+        "pod_friendly": false,
+        "image_path": "/home/user/NEDinS/data/campaigns/2026-W21-2026-05-20/images/scene_03.png",
+        "audio_path_zh": "/home/user/NEDinS/data/campaigns/2026-W21-2026-05-20/audio/scene_03_zh.mp3",
+        "audio_path_en": "/home/user/NEDinS/data/campaigns/2026-W21-2026-05-20/audio/scene_03_en.mp3"
+      },
+      {
+        "index": 4,
+        "narration_zh": "場景 4：走廊燈一閃，他發現自己其實從未離開。",
+        "narration_en": "Scene 4: the hallway light flickers; he realises he never left.",
+        "visual_prompt": "dark cinematic, film grain, muted teal-and-orange palette, 35mm lens, dim corridor scene 4, low-key lighting",
+        "duration_sec": 8.0,
+        "pod_friendly": true,
+        "image_path": "/home/user/NEDinS/data/campaigns/2026-W21-2026-05-20/images/scene_04.png",
+        "audio_path_zh": "/home/user/NEDinS/data/campaigns/2026-W21-2026-05-20/audio/scene_04_zh.mp3",
+        "audio_path_en": "/home/user/NEDinS/data/campaigns/2026-W21-2026-05-20/audio/scene_04_en.mp3"
+      },
+      {
+        "index": 5,
+        "narration_zh": "場景 5：走廊燈一閃，他發現自己其實從未離開。",
+        "narration_en": "Scene 5: the hallway light flickers; he realises he never left.",
+        "visual_prompt": "dark cinematic, film grain, muted teal-and-orange palette, 35mm lens, dim corridor scene 5, low-key lighting",
+        "duration_sec": 8.0,
+        "pod_friendly": false,
+        "image_path": "/home/user/NEDinS/data/campaigns/2026-W21-2026-05-20/images/scene_05.png",
+        "audio_path_zh": "/home/user/NEDinS/data/campaigns/2026-W21-2026-05-20/audio/scene_05_zh.mp3",
+        "audio_path_en": "/home/user/NEDinS/data/campaigns/2026-W21-2026-05-20/audio/scene_05_en.mp3"
+      },
+      {
+        "index": 6,
+        "narration_zh": "場景 6：走廊燈一閃，他發現自己其實從未離開。",
+        "narration_en": "Scene 6: the hallway light flickers; he realises he never left.",
+        "visual_prompt": "dark cinematic, film grain, muted teal-and-orange palette, 35mm lens, dim corridor scene 6, low-key lighting",
+        "duration_sec": 8.0,
+        "pod_friendly": false,
+        "image_path": "/home/user/NEDinS/data/campaigns/2026-W21-2026-05-20/images/scene_06.png",
+        "audio_path_zh": "/home/user/NEDinS/data/campaigns/2026-W21-2026-05-20/audio/scene_06_zh.mp3",
+        "audio_path_en": "/home/user/NEDinS/data/campaigns/2026-W21-2026-05-20/audio/scene_06_en.mp3"
+      },
+      {
+        "index": 7,
+        "narration_zh": "場景 7：走廊燈一閃，他發現自己其實從未離開。",
+        "narration_en": "Scene 7: the hallway light flickers; he realises he never left.",
+        "visual_prompt": "dark cinematic, film grain, muted teal-and-orange palette, 35mm lens, dim corridor scene 7, low-key lighting",
+        "duration_sec": 8.0,
+        "pod_friendly": false,
+        "image_path": "/home/user/NEDinS/data/campaigns/2026-W21-2026-05-20/images/scene_07.png",
+        "audio_path_zh": "/home/user/NEDinS/data/campaigns/2026-W21-2026-05-20/audio/scene_07_zh.mp3",
+        "audio_path_en": "/home/user/NEDinS/data/campaigns/2026-W21-2026-05-20/audio/scene_07_en.mp3"
+      },
+      {
+        "index": 8,
+        "narration_zh": "場景 8：走廊燈一閃，他發現自己其實從未離開。",
+        "narration_en": "Scene 8: the hallway light flickers; he realises he never left.",
+        "visual_prompt": "dark cinematic, film grain, muted teal-and-orange palette, 35mm lens, dim corridor scene 8, low-key lighting",
+        "duration_sec": 8.0,
+        "pod_friendly": false,
+        "image_path": "/home/user/NEDinS/data/campaigns/2026-W21-2026-05-20/images/scene_08.png",
+        "audio_path_zh": "/home/user/NEDinS/data/campaigns/2026-W21-2026-05-20/audio/scene_08_zh.mp3",
+        "audio_path_en": "/home/user/NEDinS/data/campaigns/2026-W21-2026-05-20/audio/scene_08_en.mp3"
+      }
+    ],
+    "cover_prompt": "dark cinematic poster of a haunted elevator, red 14th-floor button glowing, 16:9 cover art"
+  },
+  "cover_path_zh": "/home/user/NEDinS/data/campaigns/2026-W21-2026-05-20/images/cover_zh.png",
+  "cover_path_en": "/home/user/NEDinS/data/campaigns/2026-W21-2026-05-20/images/cover_en.png",
+  "video_path_zh": "/home/user/NEDinS/data/campaigns/2026-W21-2026-05-20/video/final_zh.mp4",
+  "video_path_en": "/home/user/NEDinS/data/campaigns/2026-W21-2026-05-20/video/final_en.mp4",
+  "marketing": {
+    "instagram_zh": "今晚十點，一個人都唔好按 14 樓。#新短片",
+    "instagram_en": "Tonight 10pm — never press 14 alone.",
+    "x_zh": "如果電梯第 14 樓嘅鍵自己著咗，你會點？",
+    "x_en": "What if the 14th-floor button lit up by itself?",
+    "tiktok_hook_zh": "佢話呢部電梯，由 1998 年開始就停咗 14 樓⋯",
+    "tiktok_hook_en": "They say this elevator hasn't stopped at 14 since 1998.",
+    "facebook_zh": "全新成人懸疑短篇《電梯》上線。",
+    "facebook_en": "New adult suspense short: The Elevator.",
+    "hashtags": [
+      "#懸疑",
+      "#都市傳說",
+      "#鬼故事",
+      "#shortfilm",
+      "#suspense",
+      "#urbanlegend",
+      "#thrillertok",
+      "#booktok"
+    ]
+  },
+  "pod_products": [
+    {
+      "blueprint_name": "T-shirt",
+      "printify_product_id": "dry-prod-6",
+      "listing_title_zh": "十四樓的訪客｜T-shirt",
+      "listing_title_en": "The Visitor on the 14th Floor T-shirt",
+      "listing_description": "The Visitor on the 14th Floor\n\n搬入新樓的單親媽媽發現，電梯每晚都會無故停在不存在的 14 樓。\n\nInspired by the short story «十四樓的訪客».",
+      "image_path": "/home/user/NEDinS/data/campaigns/2026-W21-2026-05-20/images/pod/scene_01_pod.png"
+    },
+    {
+      "blueprint_name": "Poster",
+      "printify_product_id": "dry-prod-282",
+      "listing_title_zh": "十四樓的訪客｜Poster",
+      "listing_title_en": "The Visitor on the 14th Floor Poster",
+      "listing_description": "The Visitor on the 14th Floor\n\n搬入新樓的單親媽媽發現，電梯每晚都會無故停在不存在的 14 樓。\n\nInspired by the short story «十四樓的訪客».",
+      "image_path": "/home/user/NEDinS/data/campaigns/2026-W21-2026-05-20/images/pod/scene_01_pod.png"
+    },
+    {
+      "blueprint_name": "Mug",
+      "printify_product_id": "dry-prod-9",
+      "listing_title_zh": "十四樓的訪客｜Mug",
+      "listing_title_en": "The Visitor on the 14th Floor Mug",
+      "listing_description": "The Visitor on the 14th Floor\n\n搬入新樓的單親媽媽發現，電梯每晚都會無故停在不存在的 14 樓。\n\nInspired by the short story «十四樓的訪客».",
+      "image_path": "/home/user/NEDinS/data/campaigns/2026-W21-2026-05-20/images/pod/scene_01_pod.png"
+    },
+    {
+      "blueprint_name": "T-shirt",
+      "printify_product_id": "dry-prod-6",
+      "listing_title_zh": "十四樓的訪客｜T-shirt",
+      "listing_title_en": "The Visitor on the 14th Floor T-shirt",
+      "listing_description": "The Visitor on the 14th Floor\n\n搬入新樓的單親媽媽發現，電梯每晚都會無故停在不存在的 14 樓。\n\nInspired by the short story «十四樓的訪客».",
+      "image_path": "/home/user/NEDinS/data/campaigns/2026-W21-2026-05-20/images/pod/scene_04_pod.png"
+    },
+    {
+      "blueprint_name": "Poster",
+      "printify_product_id": "dry-prod-282",
+      "listing_title_zh": "十四樓的訪客｜Poster",
+      "listing_title_en": "The Visitor on the 14th Floor Poster",
+      "listing_description": "The Visitor on the 14th Floor\n\n搬入新樓的單親媽媽發現，電梯每晚都會無故停在不存在的 14 樓。\n\nInspired by the short story «十四樓的訪客».",
+      "image_path": "/home/user/NEDinS/data/campaigns/2026-W21-2026-05-20/images/pod/scene_04_pod.png"
+    },
+    {
+      "blueprint_name": "Mug",
+      "printify_product_id": "dry-prod-9",
+      "listing_title_zh": "十四樓的訪客｜Mug",
+      "listing_title_en": "The Visitor on the 14th Floor Mug",
+      "listing_description": "The Visitor on the 14th Floor\n\n搬入新樓的單親媽媽發現，電梯每晚都會無故停在不存在的 14 樓。\n\nInspired by the short story «十四樓的訪客».",
+      "image_path": "/home/user/NEDinS/data/campaigns/2026-W21-2026-05-20/images/pod/scene_04_pod.png"
+    }
+  ],
+  "youtube_uploads": [
+    {
+      "locale": "zh-Hant",
+      "video_id": "dry-yt-final_zh",
+      "url": "https://youtube.com/watch?v=dry-final_zh",
+      "title": "十四樓的訪客",
+      "description": "全新成人懸疑短篇《電梯》上線。",
+      "tags": [
+        "懸疑",
+        "都市傳說",
+        "鬼故事",
+        "shortfilm",
+        "suspense",
+        "urbanlegend",
+        "thrillertok",
+        "booktok",
+        "電梯",
+        "都市傳說",
+        "中元",
+        "14樓"
+      ],
+      "privacy": "unlisted"
+    },
+    {
+      "locale": "en",
+      "video_id": "dry-yt-final_en",
+      "url": "https://youtube.com/watch?v=dry-final_en",
+      "title": "The Visitor on the 14th Floor",
+      "description": "New adult suspense short: The Elevator.",
+      "tags": [
+        "懸疑",
+        "都市傳說",
+        "鬼故事",
+        "shortfilm",
+        "suspense",
+        "urbanlegend",
+        "thrillertok",
+        "booktok",
+        "電梯",
+        "都市傳說",
+        "中元",
+        "14樓"
+      ],
+      "privacy": "unlisted"
+    }
+  ]
+}

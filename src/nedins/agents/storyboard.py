@@ -7,6 +7,7 @@ from nedins.clients.gemini import GeminiClient
 from nedins.config import load_settings
 from nedins.models import Scene, Story
 from nedins.models.schemas import Storyboard as StoryboardModel
+from nedins.prompts.templates import STORYBOARD_PROMPT
 from nedins.storage.artifacts import campaign_root
 
 
@@ -23,24 +24,10 @@ class Storyboard:
         if out.exists():
             return StoryboardModel.model_validate_json(out.read_text(encoding="utf-8"))
 
-        prompt = (
-            f"故事 (繁中)：\n{story.body_zh}\n\n"
-            f"故事 (EN)：\n{story.body_en}\n\n"
-            f"請拆成 {self.cfg['scenes_min']}–{self.cfg['scenes_max']} 個場景，輸出 JSON：\n"
-            "{\n"
-            '  "cover_prompt": "封面英文 prompt (16:9)",\n'
-            '  "scenes": [\n'
-            "    {\n"
-            '      "index": 1,\n'
-            '      "narration_zh": "繁中旁白 1-2 句",\n'
-            '      "narration_en": "EN narration 1-2 sentences",\n'
-            '      "visual_prompt": "Imagen 用英文 prompt，加入風格修飾",\n'
-            '      "duration_sec": 8.0,\n'
-            '      "pod_friendly": false\n'
-            "    }, ...\n"
-            "  ]\n"
-            "}\n"
-            f"視覺風格 prefix 必須係：「{self.style}」"
+        prompt = STORYBOARD_PROMPT.format(
+            story_zh=story.body_zh, story_en=story.body_en,
+            scenes_min=self.cfg["scenes_min"], scenes_max=self.cfg["scenes_max"],
+            style=self.style,
         )
         resp = self.gemini.generate_text(prompt, json_mode=True,
                                          model=self.cfg["gemini_model"])

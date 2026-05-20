@@ -6,6 +6,7 @@ import json
 from nedins.clients.gemini import GeminiClient
 from nedins.config import load_settings
 from nedins.models import MarketingCopy, Story
+from nedins.prompts.templates import MARKETING_PROMPT
 from nedins.storage.artifacts import campaign_root
 
 
@@ -21,13 +22,11 @@ class MarketingCopyAgent:
         if out.exists():
             return MarketingCopy.model_validate_json(out.read_text(encoding="utf-8"))
 
-        prompt = (
-            f"故事標題 (中)：{story.title_zh}\n標題 (EN)：{story.title_en}\n"
-            f"主題：{story.theme.title}\n關鍵字：{story.theme.keywords}\n\n"
-            f"請為以下平台寫宣傳文案 (繁中 + 英文)：{self.cfg['platforms']}。"
-            f"每個 caption 結尾附 {self.cfg['hashtag_count']} 個 hashtag (整體共用一份)。"
-            "輸出 JSON 鍵：instagram_zh, instagram_en, x_zh, x_en, tiktok_hook_zh, "
-            "tiktok_hook_en, facebook_zh, facebook_en, hashtags (list of str)。"
+        prompt = MARKETING_PROMPT.format(
+            title_zh=story.title_zh, title_en=story.title_en,
+            theme=story.theme.title, keywords=story.theme.keywords,
+            pitch=story.theme.pitch,
+            platforms=self.cfg["platforms"], hashtag_count=self.cfg["hashtag_count"],
         )
         resp = self.gemini.generate_text(prompt, json_mode=True)
         try:

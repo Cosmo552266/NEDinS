@@ -7,6 +7,9 @@ import re
 from nedins.clients.gemini import GeminiClient
 from nedins.config import load_settings
 from nedins.models import KeyVisual, Story, Theme
+from nedins.prompts.templates import (
+    KEY_VISUALS_PROMPT, STORY_WRITER_EN_LOCALIZE, STORY_WRITER_SYSTEM, STORY_WRITER_ZH,
+)
 from nedins.storage.artifacts import campaign_root
 
 
@@ -35,33 +38,21 @@ class StoryWriter:
             )
 
         # ---- ZH first ----
-        prompt_zh = (
-            f"主題：{theme.title}\n推介語：{theme.pitch}\n關鍵字：{theme.keywords}\n\n"
-            f"請寫一篇 {self.cfg['target_word_count_zh']} 字嘅繁體中文成人懸疑短篇小說，"
-            f"風格：{self.cfg['tone']}。\n"
-            "結構：強 hook 開場 → 鋪陳 → 中段轉折 → 開放式結尾。\n"
-            "第一行用 `# 標題` 寫出標題。"
+        prompt_zh = STORY_WRITER_ZH.format(
+            title=theme.title, pitch=theme.pitch,
+            keywords=theme.keywords, holiday=theme.holiday or "（無）",
+            word_count=self.cfg["target_word_count_zh"],
         )
         zh = self.gemini.generate_text(
-            prompt_zh, model=self.cfg["gemini_model"],
-            system="你係一位專寫成人懸疑短篇嘅小說家，文字含蓄克制，重氣氛多於血腥。",
+            prompt_zh, model=self.cfg["gemini_model"], system=STORY_WRITER_SYSTEM,
         ).text
 
         # ---- EN localization rewrite ----
-        prompt_en = (
-            "Translate-and-localize the following Traditional Chinese suspense short story "
-            "into English for a Western adult audience. Preserve tension, but adapt cultural "
-            "references. Keep `# Title` on the first line.\n\n"
-            f"---\n{zh}\n---"
-        )
+        prompt_en = STORY_WRITER_EN_LOCALIZE.format(zh_story=zh)
         en = self.gemini.generate_text(prompt_en, model=self.cfg["gemini_model"]).text
 
         # ---- Key visuals ----
-        kv_prompt = (
-            f"以下故事：\n{zh}\n\n"
-            f"請抽出 {self.cfg['key_visual_count']} 個「視覺記憶點」，每個包含 label / description / "
-            "pod_friendly (boolean，呢個畫面適唔適合印成 T-shirt 或 poster)。輸出 JSON list。"
-        )
+        kv_prompt = KEY_VISUALS_PROMPT.format(story=zh, count=self.cfg["key_visual_count"])
         kv_text = self.gemini.generate_text(kv_prompt, json_mode=True,
                                             model=self.cfg["gemini_model"]).text
         try:

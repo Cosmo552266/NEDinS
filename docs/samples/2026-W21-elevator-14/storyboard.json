@@ -1,0 +1,93 @@
+{
+  "scenes": [
+    {
+      "index": 1,
+      "narration_zh": "場景 1：走廊燈一閃，他發現自己其實從未離開。",
+      "narration_en": "Scene 1: the hallway light flickers; he realises he never left.",
+      "visual_prompt": "dark cinematic, film grain, muted teal-and-orange palette, 35mm lens, dim corridor scene 1, low-key lighting",
+      "duration_sec": 8.0,
+      "pod_friendly": true,
+      "image_path": null,
+      "audio_path_zh": null,
+      "audio_path_en": null
+    },
+    {
+      "index": 2,
+      "narration_zh": "場景 2：走廊燈一閃，他發現自己其實從未離開。",
+      "narration_en": "Scene 2: the hallway light flickers; he realises he never left.",
+      "visual_prompt": "dark cinematic, film grain, muted teal-and-orange palette, 35mm lens, dim corridor scene 2, low-key lighting",
+      "duration_sec": 8.0,
+      "pod_friendly": false,
+      "image_path": null,
+      "audio_path_zh": null,
+      "audio_path_en": null
+    },
+    {
+      "index": 3,
+      "narration_zh": "場景 3：走廊燈一閃，他發現自己其實從未離開。",
+      "narration_en": "Scene 3: the hallway light flickers; he realises he never left.",
+      "visual_prompt": "dark cinematic, film grain, muted teal-and-orange palette, 35mm lens, dim corridor scene 3, low-key lighting",
+      "duration_sec": 8.0,
+      "pod_friendly": false,
+      "image_path": null,
+      "audio_path_zh": null,
+      "audio_path_en": null
+    },
+    {
+      "index": 4,
+      "narration_zh": "場景 4：走廊燈一閃，他發現自己其實從未離開。",
+      "narration_en": "Scene 4: the hallway light flickers; he realises he never left.",
+      "visual_prompt": "dark cinematic, film grain, muted teal-and-orange palette, 35mm lens, dim corridor scene 4, low-key lighting",
+      "duration_sec": 8.0,
+      "pod_friendly": true,
+      "image_path": null,
+      "audio_path_zh": null,
+      "audio_path_en": null
+    },
+    {
+      "index": 5,
+      "narration_zh": "場景 5：走廊燈一閃，他發現自己其實從未離開。",
+      "narration_en": "Scene 5: the hallway light flickers; he realises he never left.",
+      "visual_prompt": "dark cinematic, film grain, muted teal-and-orange palette, 35mm lens, dim corridor scene 5, low-key lighting",
+      "duration_sec": 8.0,
+      "pod_friendly": false,
+      "image_path": null,
+      "audio_path_zh": null,
+      "audio_path_en": null
+    },
+    {
+      "index": 6,
+      "narration_zh": "場景 6：走廊燈一閃，他發現自己其實從未離開。",
+      "narration_en": "Scene 6: the hallway light flickers; he realises he never left.",
+      "visual_prompt": "dark cinematic, film grain, muted teal-and-orange palette, 35mm lens, dim corridor scene 6, low-key lighting",
+      "duration_sec": 8.0,
+      "pod_friendly": false,
+      "image_path": null,
+      "audio_path_zh": null,
+      "audio_path_en": null
+    },
+    {
+      "index": 7,
+      "narration_zh": "場景 7：走廊燈一閃，他發現自己其實從未離開。",
+      "narration_en": "Scene 7: the hallway light flickers; he realises he never left.",
+      "visual_prompt": "dark cinematic, film grain, muted teal-and-orange palette, 35mm lens, dim corridor scene 7, low-key lighting",
+      "duration_sec": 8.0,
+      "pod_friendly": false,
+      "image_path": null,
+      "audio_path_zh": null,
+      "audio_path_en": null
+    },
+    {
+      "index": 8,
+      "narration_zh": "場景 8：走廊燈一閃，他發現自己其實從未離開。",
+      "narration_en": "Scene 8: the hallway light flickers; he realises he never left.",
+      "visual_prompt": "dark cinematic, film grain, muted teal-and-orange palette, 35mm lens, dim corridor scene 8, low-key lighting",
+      "duration_sec": 8.0,
+      "pod_friendly": false,
+      "image_path": null,
+      "audio_path_zh": null,
+      "audio_path_en": null
+    }
+  ],
+  "cover_prompt": "dark cinematic poster of a haunted elevator, red 14th-floor button glowing, 16:9 cover art"
+}

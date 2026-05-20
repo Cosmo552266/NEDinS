@@ -23,7 +23,8 @@ class VideoComposer:
             return out_path
 
         if is_dry_run():
-            out_path.write_bytes(b"")  # placeholder
+            # Non-empty placeholder so downstream "size > 0" checks pass.
+            out_path.write_bytes(b"DRY-RUN-MP4-PLACEHOLDER")
             return out_path
 
         # M2: real implementation using moviepy.
