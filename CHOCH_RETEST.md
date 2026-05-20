@@ -100,6 +100,59 @@ Your filter IS adding value.
 |  99  |  118   | 48.3% | -0.07  | **1.01** | **$14.15** | -61.7% |
 | 113  |  105   | 47.6% | +0.01  | **1.03** | **$15.78** | -68.1% |
 
+### 3-minute, default stops
+
+| Seed | Trades | WR    | Avg R  | PF   | Final $ | Max DD |
+| ---: | -----: | ----: | -----: | ---: | ------: | -----: |
+|   7  |   41   | 43.9% | -0.09  | 0.60 | $13.37  | -61.8% |
+|  19  |   36   | 44.4% | +0.01  | 0.98 | $21.72  | -32.8% |
+|  42  |   39   | 30.8% | -0.37  | 0.35 | $7.90   | -73.8% |
+|  99  |   31   | 45.2% | -0.23  | 0.65 | $16.18  | -39.9% |
+| 113  |   47   | 51.1% | +0.04  | 1.06 | $21.71  | -37.0% |
+
+### 3-minute, wider stops
+
+| Seed | Trades | WR    | Avg R  | PF   | Final $ | Max DD |
+| ---: | -----: | ----: | -----: | ---: | ------: | -----: |
+|   7  |   40   | 40.0% | -0.12  | 0.63 | $13.27  | -62.2% |
+|  19  |   36   | 55.6% | +0.27  | **1.41** | **$35.14** | -17.5% |
+|  42  |   38   | 28.9% | -0.45  | 0.30 | $7.16   | -76.1% |
+|  99  |   31   | 35.5% | -0.20  | 0.66 | $16.23  | -38.7% |
+| 113  |   47   | 48.9% | +0.05  | **1.08** | $22.92  | -39.7% |
+
+### 5-minute, default stops
+
+| Seed | Trades | WR    | Avg R  | PF   | Final $ | Max DD |
+| ---: | -----: | ----: | -----: | ---: | ------: | -----: |
+|   7  |   25   | 32.0% | -0.30  | 0.51 | $13.73  | -53.2% |
+|  19  |   26   | 42.3% | +0.02  | 0.94 | $21.87  | -36.8% |
+|  42  |   19   | 52.6% | +0.06  | 0.92 | $23.40  | -33.5% |
+|  99  |   23   | 39.1% | -0.01  | 0.99 | $23.62  | -36.4% |
+| 113  |   28   | 53.6% | +0.29  | **1.66** | **$38.28** | -31.4% |
+
+### 5-minute, wider stops
+
+| Seed | Trades | WR    | Avg R  | PF   | Final $ | Max DD |
+| ---: | -----: | ----: | -----: | ---: | ------: | -----: |
+|   7  |   25   | 32.0% | -0.27  | 0.55 | $14.24  | -51.6% |
+|  19  |   25   | 40.0% | +0.05  | 0.98 | $23.34  | -28.8% |
+|  42  |   19   | 42.1% | -0.13  | 0.59 | $19.23  | -41.7% |
+|  99  |   23   | 47.8% | +0.21  | **1.25** | **$28.96** | -31.2% |
+| 113  |   28   | 53.6% | +0.25  | **1.59** | **$36.75** | -29.4% |
+
+### Cross-timeframe summary
+
+| TF   | Best config           | Mean PF | +ve seeds | Best seed       | Geo return |
+| ---- | --------------------- | ------: | --------: | --------------- | ---------: |
+| 1m   | wider stops           | 0.84    | 0/5       | +5% (s113)      | 0.50x      |
+| 3m   | wider stops           | 0.81    | 1/5       | +35% (s19)      | 0.64x      |
+| 5m   | wider stops           | 0.99    | **2/5**   | **+47% (s113)** | 0.89x      |
+| 15m  | default               | **1.25**| **3/5**   | +26% (s113)     | ~1.00x     |
+
+The 5m wider-stop combination is the natural break-even ridge: half the
+seeds are profitable. 15m default sits comfortably above it. 1m / 3m
+remain fee-bound below it.
+
 ---
 
 ## 4. Verdict on your system
@@ -120,8 +173,13 @@ Your filter IS adding value.
    real but small — it can't beat 1R/trade in fees on 1m.
 
 4. **Recommended deployment.**
-   - Trade this on **15-minute** (matches your chart and the math works).
-   - Or stay on 1m **with maker-only execution** to drop fees below 0.3R per trade.
+   - **Best edge: 15-minute** with default stops (3/5 seeds positive,
+     mean PF 1.25). Matches your chart timeframe.
+   - **Secondary: 5-minute with wider stops** (2/5 seeds positive, best
+     seed +47%). Acceptable if you want more setups per day.
+   - **Avoid 1m and 3m** — fee math at 10× leverage destroys the edge.
+     If you must trade those, switch to maker-only execution to drop
+     fees below 0.3 R per trade.
    - Use 10× leverage only when the OB-based stop is *naturally* ≥ 2 × ATR.
      If the OB is tighter than that, accept lower leverage (the code does
      this automatically via the lev cap).
