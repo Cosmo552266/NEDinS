@@ -9,8 +9,6 @@
 
 # Packages #
 ############
-# it's better to unpack these files and commit the raw source
-# git has its own built in compression methods
 *.7z
 *.dmg
 *.gz
@@ -35,3 +33,33 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Python #
+##########
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+build/
+dist/
+
+# Env / secrets #
+#################
+.env
+.env.local
+
+# Pipeline artifacts (generated content) #
+##########################################
+data/campaigns/
+data/trends/*.json
+data/analytics/*.duckdb
+data/analytics/*.parquet
+
+# IDE #
+#######
+.vscode/
+.idea/

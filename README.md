@@ -1,51 +1,103 @@
-# Introduction to GitHub
+# NEDinS — AI Story-to-Product Pipeline
 
-_Get started using GitHub in less than an hour._
+閉環式 AI 內容生產 + 變現系統。由 Google Trends 出發，AI 寫成人懸疑/節日傳說短篇 → 生圖 → 生影片 → 自動上 YouTube 微電影 → 同步推 Printify POD 商品 → 收集銷售/觀看數據回流落 trend 揀題模型，做到主題可持續迭代。
 
-## Welcome
+> Status: **Milestone 0 — Scaffold**。架構同 stub 已就位，每個 agent 仍係 placeholder，要逐個 module 接 API key 同實作。
 
-People use GitHub to build some of the most advanced technologies in the world. Whether you’re visualizing data or building a new game, there’s a whole community and set of tools on GitHub that can help you do it even better. GitHub Skills’ “Introduction to GitHub” exercise guides you through everything you need to start contributing in less than an hour.
+## 目標
 
-- **Who is this for**: New developers, new GitHub users, and students.
-- **What you'll learn**: We'll introduce repositories, branches, commits, and pull requests.
-- **What you'll build**: We'll make a short Markdown file you can use as your [profile README](https://docs.github.com/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme).
-- **Prerequisites**: None. This exercise is a great introduction for your first day on GitHub.
-- **How long**: This exercise takes less than one hour to complete.
+- **目標客戶**：成人讀者/觀眾
+- **主題**：懸疑 / 助長思考 / 節日傳說 (萬聖、中元、聖誕 ghost story、農曆新年怪談)
+- **題材來源**：Google Trends (HK/TW/US) + 節日日曆 + 過往 ROI 回流
+- **輸出語言**：繁體中文 (港台) + 英文 (全球) 雙語
+- **發佈渠道**：YouTube (微電影) + Printify POD (T-shirt/poster/mug 等) + 社交宣傳素材 (IG/FB/X/TikTok)
 
-In this exercise, you will:
+## 技術棧
 
-1. Create a branch
-2. Commit a file
-3. Open a pull request
-4. Merge your pull request
+| Layer | 選型 | 用途 |
+|---|---|---|
+| Orchestrator | Python 3.11+ | Pipeline / agent 控制 |
+| LLM / 圖 / 影片 / TTS | **Gemini** (`google-genai`) | 寫故事、Imagen 3 生圖、Veo 3 生影片、Chirp TTS |
+| 趨勢 | `pytrends` + holidays | Google Trends + 節日 |
+| POD | Printify REST API | 自動上架 (Etsy/Shopify 由 Printify 連) |
+| 影片發佈 | YouTube Data API v3 | 自動上載微電影 |
+| 影片合成 | `moviepy` + `Pillow` | 圖/字幕/語音合成 |
+| 儲存 | Local FS (Phase 1) → S3/GCS (Phase 2) | Artifact 管理 |
+| 數據回流 | DuckDB / SQLite | Theme prior + analytics |
 
-### How to start this exercise
+## 閉環架構 (overview)
 
-1. Right-click **Copy Exercise** and open the link in a new tab.
+```
+┌──────────────┐    ┌──────────────┐    ┌──────────────┐
+│ Trend Scout  │───▶│ Story Writer │───▶│ Storyboard   │
+│ (Trends+節日)│    │  (Gemini)    │    │  (拆場景)    │
+└──────────────┘    └──────────────┘    └──────┬───────┘
+       ▲                                       │
+       │ theme priors                          ▼
+       │                              ┌──────────────────┐
+┌──────┴───────┐                      │ Asset Generator  │
+│  Analytics   │                      │ Imagen + Veo +TTS│
+│ (ROI 回流)   │                      └────────┬─────────┘
+└──────┬───────┘                               │
+       │                                       ▼
+       │                              ┌──────────────────┐
+       │                              │  Video Compose   │
+       │                              │   (moviepy)      │
+       │                              └────────┬─────────┘
+       │                                       │
+       │              ┌────────────────────────┼─────────────────────┐
+       │              ▼                        ▼                     ▼
+       │      ┌──────────────┐         ┌──────────────┐      ┌──────────────┐
+       └──────│  YouTube     │         │   Printify   │      │  Marketing   │
+              │  Publisher   │         │   Publisher  │      │ Copy (IG/FB) │
+              └──────────────┘         └──────────────┘      └──────────────┘
+```
 
-   <a id="copy-exercise">
-      <img src="https://img.shields.io/badge/📠_Copy_Exercise-AAA" height="25pt"/>
-   </a>
+## 目錄結構
 
-2. In the new tab, most of the prompts will automatically fill in for you.
-   - For owner, choose your personal account or an organization to host the repository.
-   - We recommend creating a public repository, as private repositories will [use Actions minutes](https://docs.github.chttps://github.com/Cosmo552266/NEDinS/billing/managing-billing-for-github-actions/about-billing-for-github-actions).
-   - Scroll down and click the **Create repository** button at the bottom of the form.
+```
+src/nedins/
+├── orchestrator.py        主 pipeline runner
+├── agents/                每個 agent 一個 module
+│   ├── trend_scout.py
+│   ├── story_writer.py
+│   ├── storyboard.py
+│   ├── image_generator.py
+│   ├── video_generator.py
+│   ├── voiceover.py
+│   ├── video_composer.py
+│   ├── marketing_copy.py
+│   ├── pod_publisher.py
+│   ├── youtube_publisher.py
+│   └── analytics.py
+├── clients/               外部 API 薄 wrapper
+│   ├── gemini.py
+│   ├── google_trends.py
+│   ├── printify.py
+│   └── youtube.py
+├── models/schemas.py      Pydantic data models
+├── storage/artifacts.py   Artifact 路徑管理
+└── prompts/               Prompt templates (中/英)
+```
 
-3. After your new repository is created, wait about 20 seconds for the exercise to be prepared and buttons updated. You will continue working from your copy of the exercise.
-   - The **Copy Exercise** button will deactivate, changing to gray.
-   - The **Start Exercise** button will activate, changing to green.
-   - You will likely need to refresh the page.
+## Roadmap
 
-4. Click **Start Exercise**. Follow the step-by-step instructions and feedback will be provided as you progress.
+睇 [`docs/ROADMAP.md`](docs/ROADMAP.md) 有分階段細節。簡版：
 
-   <a id="start-exercise" href="https://github.com/Cosmo552266/NEDinS/issues/1">
-      <img src="https://img.shields.io/badge/🚀_Start_Exercise-008000" height="25pt"/>
-   </a>
+- **M0 — Scaffold** ✅ 架構、schema、stub
+- **M1 — Story MVP**：Trend Scout + Story Writer 行得通，產出雙語 markdown
+- **M2 — Visual MVP**：Imagen 生封面 + 場景圖；moviepy 合成 slideshow 影片 + Gemini TTS
+- **M3 — Publish MVP**：YouTube 上載 + Printify mock product
+- **M4 — Closed Loop**：Analytics agent 回流，影響 trend scout weighting
+- **M5 — 微電影**：升級 slideshow → Veo 3 生 cinematic shots
 
-> [!IMPORTANT]
-> The **Start Exercise** button will activate after copying the repository. You will probably need to refresh the page.
+## Quick start
 
----
+```bash
+# Python 3.11+
+pip install -e ".[dev]"
+cp .env.example .env   # 填 Gemini / Printify / YouTube credentials
+python -m nedins.orchestrator --dry-run
+```
 
-&copy; 2025 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
+詳細架構見 [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md)。
