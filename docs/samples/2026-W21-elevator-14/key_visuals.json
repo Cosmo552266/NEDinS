@@ -1,0 +1,22 @@
+[
+  {
+    "label": "霓虹閃爍的電梯按鈕",
+    "description": "老舊住宅電梯內，14 樓按鈕無故亮起紅光，光線打在乘客僵硬的側臉。",
+    "pod_friendly": true
+  },
+  {
+    "label": "走廊盡頭的拖鞋",
+    "description": "昏黃走廊盡頭擺著一雙女童拖鞋，相機緩緩推近。",
+    "pod_friendly": false
+  },
+  {
+    "label": "玻璃倒影中的第二張臉",
+    "description": "電梯不鏽鋼門反射出乘客背後另一個輪廓。",
+    "pod_friendly": true
+  },
+  {
+    "label": "破裂的監控鏡頭",
+    "description": "管理處監視器螢幕雪花閃爍，時間戳跳回 14 樓。",
+    "pod_friendly": false
+  }
+]
