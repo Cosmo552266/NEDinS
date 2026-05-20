@@ -1,0 +1,42 @@
+{
+  "config": {
+    "starting_equity": 26.0,
+    "risk_pct": 0.06,
+    "max_leverage": 10.0,
+    "sl_buffer_atr": 0.5,
+    "sl_atr_cap": 3.0,
+    "tp_atr_max": 12.0,
+    "tp_R_min": 2.0,
+    "retest_max_age": 40,
+    "confirm_bars": 1,
+    "trail_atr": 2.0,
+    "trail_activate_R": 1.5,
+    "max_bars_in_trade": 100,
+    "fee_bps_per_side": 4.0,
+    "slippage_bps": 2.0,
+    "warmup_bars": 250,
+    "require_ott_agreement": true,
+    "require_ema_stack": false
+  },
+  "stats": {
+    "trades": 7,
+    "long_trades": 5,
+    "short_trades": 2,
+    "final_equity": 26.303267654619837,
+    "total_return_x": 1.0116641405623015,
+    "win_rate": 0.42857142857142855,
+    "avg_R": 0.13576320670214553,
+    "max_R": 1.9148239637691031,
+    "min_R": -1.1020309568328182,
+    "profit_factor": 1.1362669432647057,
+    "max_drawdown": -0.1169412813309684,
+    "avg_leverage": 5.87004778660436,
+    "avg_bars_held": 26.571428571428573,
+    "exit_reasons": {
+      "stop": 4,
+      "take": 2,
+      "trail": 1
+    },
+    "bars": 17280
+  }
+}
