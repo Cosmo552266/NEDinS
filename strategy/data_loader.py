@@ -32,20 +32,25 @@ def synthetic_btc(n_bars: int = 17_280, seed: int = 7, start_price: float = 60_0
                   bar_minutes: int = 15) -> pd.DataFrame:
     """Generate realistic-looking BTC/USDT OHLCV with vol clustering and regime switches.
 
-    n_bars=17,280 @ 15m ≈ 180 days. Calibrated to BTC annual vol ~65%.
+    Defaults n_bars=17,280 @ 15m ≈ 180 days. For 1m scalping use
+    n_bars=259_200, bar_minutes=1. Calibrated to BTC annual vol ~65%.
     """
     rng = np.random.default_rng(seed)
     bars_per_year = (365 * 24 * 60) // bar_minutes
     target_annual_vol = 0.65
     base_sigma = target_annual_vol / np.sqrt(bars_per_year)
 
+    # Regime drifts/durations were calibrated on 15m bars. Scale to current TF
+    # so 1m and 15m runs produce comparable price paths.
+    drift_scale = bar_minutes / 15.0
+    dur_scale = 15.0 / bar_minutes      # 1m → 15× more bars per regime
+
     # Regime states: 0=bull-trend, 1=bear-trend, 2=range, 3=high-vol-chop
     regimes = np.array([
-        # drift_per_bar, vol_multiplier, mean_duration_bars
-        (+0.000035, 0.9, 1500),
-        (-0.000040, 1.1, 1000),
-        (+0.000000, 0.6, 800),
-        (+0.000005, 2.2, 400),
+        (+0.000035 * drift_scale, 0.9, 1500 * dur_scale),
+        (-0.000040 * drift_scale, 1.1, 1000 * dur_scale),
+        (+0.000000 * drift_scale, 0.6,  800 * dur_scale),
+        (+0.000005 * drift_scale, 2.2,  400 * dur_scale),
     ], dtype=[("drift", "f8"), ("volmul", "f8"), ("dur", "f8")])
 
     # GARCH-like vol process
@@ -57,9 +62,9 @@ def synthetic_btc(n_bars: int = 17_280, seed: int = 7, start_price: float = 60_0
     state_remaining = int(regimes[state]["dur"])
     states = np.empty(n_bars, dtype=int)
 
-    # AR(1) on log returns: phi ≈ 0.08 matches empirical 15m BTC autocorrelation;
-    # gives trend-followers a real (small) edge to capture.
-    phi = 0.08
+    # AR(1) on log returns. phi ≈ 0.08 for 15m, ≈ 0.12 for 1m (active hours).
+    # Higher TF → less serial correlation as noise averages out.
+    phi = 0.12 if bar_minutes <= 5 else 0.08
     returns = np.empty(n_bars)
     prev_ret = 0.0
     for t in range(n_bars):

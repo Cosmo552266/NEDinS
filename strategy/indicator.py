@@ -134,12 +134,16 @@ def compute(df: pd.DataFrame) -> pd.DataFrame:
     out["rsi"] = r
     # Donchian channels for breakout entries
     don_len = 20
-    out["don_high"] = out["high"].rolling(don_len).max().shift(1)  # prior bar to avoid look-ahead
+    out["don_high"] = out["high"].rolling(don_len).max().shift(1)
     out["don_low"] = out["low"].rolling(don_len).min().shift(1)
-    # Additional features for mean-reversion entry mode
     out["pctb"] = bollinger_pctb(out["close"], 20, 2.0)
     out["ema200"] = ema(out["close"], 200)
     out["ema50"] = ema(out["close"], 50)
+    out["ema20"] = ema(out["close"], 20)
+    # Compression range (10-bar) for scalp breakout trigger
+    out["range_high_10"] = out["high"].rolling(10).max().shift(1)
+    out["range_low_10"] = out["low"].rolling(10).min().shift(1)
+    out["range_width_pct"] = (out["range_high_10"] - out["range_low_10"]) / out["close"]
 
     composite = (
         WEIGHTS["trend"] * trend_score
@@ -149,4 +153,36 @@ def compute(df: pd.DataFrame) -> pd.DataFrame:
         + WEIGHTS["volume"] * volume_score
     )
     out["oci"] = (composite * 100.0).clip(-100, 100)
+    return out
+
+
+def add_htf_filter(df: pd.DataFrame, working_tf_minutes: int = 1,
+                   htf_minutes: int = 15, ema_len: int = 200) -> pd.DataFrame:
+    """Add a higher-timeframe trend column `htf_trend` ∈ {-1, 0, +1}.
+
+    The added entry condition for the scalper:
+      LONG  only if htf_trend = +1
+      SHORT only if htf_trend = -1
+      No trade when htf_trend = 0
+
+    Built from HTF EMA slope. EMA computed on resampled close to HTF then
+    forward-filled back to the working timeframe (no look-ahead: each
+    HTF candle is closed before its value propagates).
+    """
+    factor = htf_minutes // working_tf_minutes
+    if factor < 1:
+        raise ValueError("htf_minutes must be >= working_tf_minutes")
+    htf_close = df["close"].iloc[::factor].copy()        # one sample per HTF bar
+    htf_ema = ema(htf_close, ema_len)
+    htf_slope = htf_ema.diff(3)                          # 3-bar slope on HTF
+    # Trend: +1 if price > EMA AND slope up; -1 if price < EMA AND slope down
+    htf_trend = pd.Series(0, index=htf_close.index, dtype=int)
+    htf_trend[(htf_close > htf_ema) & (htf_slope > 0)] = 1
+    htf_trend[(htf_close < htf_ema) & (htf_slope < 0)] = -1
+    # Forward-fill to every working-TF bar; shift by 1 HTF bar to avoid
+    # look-ahead (you only know an HTF bar's state after it closes).
+    full = htf_trend.reindex(df.index, method="ffill").shift(factor).fillna(0).astype(int)
+    out = df.copy()
+    out["htf_trend"] = full
+    out["htf_ema"] = htf_ema.reindex(df.index, method="ffill")
     return out

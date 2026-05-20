@@ -39,12 +39,21 @@ class Config:
     flip_exit_threshold: float = 25.0
     taker_fee_bps: float = 4.0          # 0.04% per side
     slippage_bps: float = 2.0
-    entry_mode: str = "breakout"        # "oci_only", "breakout", "mean_reversion"
+    entry_mode: str = "breakout"        # "oci_only", "breakout", "mean_reversion", "pullback"
     mr_rsi_long: float = 30.0
     mr_rsi_short: float = 70.0
     mr_pctb_long: float = 0.10
     mr_pctb_short: float = 0.90
     mr_trend_filter: bool = True
+    use_htf_filter: bool = False
+    # Pullback (scalping) mode parameters
+    pb_rsi_dip: float = 40.0
+    pb_rsi_pop: float = 70.0
+    pb_lookback: int = 10
+    pb_resume_ema: int = 20
+    # Compression breakout (scalping) mode parameters
+    cb_max_range_pct: float = 0.004     # 10-bar high-low <= 0.4% of price = compression
+    cb_min_oci: float = 25.0            # OCI confirmation
 
 
 @dataclass
@@ -188,17 +197,67 @@ def backtest(df: pd.DataFrame, cfg: Config | None = None) -> Result:
                 oci_short_ok = oci < -cfg.short_threshold and adx_val > cfg.adx_min
                 long_ok = oci_long_ok and high >= don_h
                 short_ok = oci_short_ok and low <= don_l
+            elif cfg.entry_mode == "compression":
+                # Scalp setup: tight 10-bar range + HTF trend + break out with OCI confirm
+                rng_high = float(row.get("range_high_10", np.inf))
+                rng_low = float(row.get("range_low_10", -np.inf))
+                rng_w = float(row.get("range_width_pct", np.inf))
+                compressed = rng_w <= cfg.cb_max_range_pct
+                long_ok = (
+                    compressed
+                    and high >= rng_high
+                    and oci > cfg.cb_min_oci
+                    and adx_val > cfg.adx_min
+                )
+                short_ok = (
+                    compressed
+                    and low <= rng_low
+                    and oci < -cfg.cb_min_oci
+                    and adx_val > cfg.adx_min
+                )
+            elif cfg.entry_mode == "pullback":
+                # Scalping pullback: strict A+ setup only
+                # 1) Working-TF in established trend (EMA50 vs EMA200)
+                # 2) Deep RSI dip within lookback (under pb_rsi_dip)
+                # 3) Recovered above 50 (long) / below 50 (short)
+                # 4) Price closed back above EMA50 (long) / below (short)
+                # 5) OCI agrees strongly
+                # 6) ADX > min
+                ema50_val = float(row.get("ema50", price))
+                ema200_val = float(row.get("ema200", price))
+                lo = max(0, i - cfg.pb_lookback)
+                recent_rsi = df["rsi"].iloc[lo:i+1] if "rsi" in df.columns else None
+                if recent_rsi is None or len(recent_rsi) == 0:
+                    long_ok = short_ok = False
+                else:
+                    structural_up = ema50_val > ema200_val and price > ema50_val
+                    structural_dn = ema50_val < ema200_val and price < ema50_val
+                    had_dip = (recent_rsi <= cfg.pb_rsi_dip).any()
+                    had_pop = (recent_rsi >= cfg.pb_rsi_pop).any()
+                    long_ok = (
+                        structural_up
+                        and had_dip
+                        and 50.0 < rsi_val < 70.0
+                        and adx_val > cfg.adx_min
+                        and oci > cfg.long_threshold
+                    )
+                    short_ok = (
+                        structural_dn
+                        and had_pop
+                        and 30.0 < rsi_val < 50.0
+                        and adx_val > cfg.adx_min
+                        and oci < -cfg.short_threshold
+                    )
             else:  # mean_reversion
                 pctb = float(row.get("pctb", 0.5))
                 ema200_val = float(row.get("ema200", price))
                 trend_up = price > ema200_val
                 trend_dn = price < ema200_val
-                # Buy oversold dip in established uptrend; require OCI not screaming down
                 long_ok = (
                     rsi_val <= cfg.mr_rsi_long
                     and pctb <= cfg.mr_pctb_long
                     and (not cfg.mr_trend_filter or trend_up)
-                    and oci > -cfg.long_threshold  # OCI not collapsing
+                    and oci > -cfg.long_threshold
                 )
                 short_ok = (
                     rsi_val >= cfg.mr_rsi_short
@@ -206,20 +265,26 @@ def backtest(df: pd.DataFrame, cfg: Config | None = None) -> Result:
                     and (not cfg.mr_trend_filter or trend_dn)
                     and oci < cfg.short_threshold
                 )
+            if cfg.use_htf_filter and "htf_trend" in row:
+                htf = int(row["htf_trend"])
+                long_ok = long_ok and htf == 1
+                short_ok = short_ok and htf == -1
+
             if long_ok or short_ok:
                 side = "long" if long_ok else "short"
                 stop_dist = cfg.sl_atr * atr_val
                 if stop_dist <= 0 or equity <= 1.0:
                     eq_curve[i] = equity
                     continue
-                risk_dollars = cfg.risk_pct * equity
-                qty = risk_dollars / stop_dist
+                intended_risk = cfg.risk_pct * equity
+                qty = intended_risk / stop_dist
                 notional = qty * price
                 lev = notional / equity
                 if lev > cfg.max_leverage:
                     lev = cfg.max_leverage
                     notional = lev * equity
                     qty = notional / price
+                actual_risk = qty * stop_dist           # true 1R after lev cap
                 fee_in = _fee(notional, cfg)
                 equity -= fee_in
                 if side == "long":
@@ -228,7 +293,7 @@ def backtest(df: pd.DataFrame, cfg: Config | None = None) -> Result:
                     entry, stop, take = price, price + stop_dist, price - cfg.tp_atr * atr_val
                 pos = Trade(side=side, entry_time=row["ts"], entry_price=entry,
                             stop=stop, take=take, qty=qty, notional=notional, leverage=lev,
-                            risk_dollars=risk_dollars, initial_stop=stop)
+                            risk_dollars=actual_risk, initial_stop=stop)
 
         eq_curve[i] = equity
 
