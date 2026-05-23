@@ -1,0 +1,4 @@
+name,bars,trades,win_rate,avg_win_pct,avg_loss_pct,profit_factor,expectancy_pct,total_return_pct,max_drawdown_pct,sharpe,avg_bars_held
+vwap_pullback,3000,10,0.00%,0.000%,-0.292%,0.00,-0.292%,-2.88%,-2.88%,-33.63,8.2
+ema_breakout,3000,88,23.86%,0.536%,-0.354%,0.47,-0.142%,-11.73%,-12.39%,-37.67,16.0
+rsi_mean_reversion,3000,3,0.00%,0.000%,-0.071%,0.00,-0.071%,-0.21%,-0.47%,-5.11,9.3

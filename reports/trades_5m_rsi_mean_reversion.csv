@@ -1,0 +1,2 @@
+entry_time,exit_time,side,entry_price,exit_price,bars_held,gross_pnl_pct,net_pnl_pct
+2026-05-13 09:45:00+00:00,2026-05-13 09:50:00+00:00,LONG,64882.24,65002.53,1,0.1854,0.0454
