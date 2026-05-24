@@ -10,11 +10,16 @@ import numpy as np
 import pandas as pd
 
 
-def session_vwap(df: pd.DataFrame, session: str = "1D") -> pd.Series:
-    """Volume-weighted average price, reset every ``session`` (default daily)."""
+def session_vwap(df: pd.DataFrame, session: str = "1D",
+                 session_key: pd.Series | None = None) -> pd.Series:
+    """Volume-weighted average price, reset every ``session`` (default daily).
+
+    When ``session_key`` is supplied, group by it instead of flooring the index
+    (used by equity sessions that reset at 09:30 ET, not at UTC midnight).
+    """
     typical = (df["high"] + df["low"] + df["close"]) / 3.0
     tpv = typical * df["volume"]
-    grouper = df.index.floor(session)
+    grouper = session_key if session_key is not None else df.index.floor(session)
     cum_tpv = tpv.groupby(grouper).cumsum()
     cum_vol = df["volume"].groupby(grouper).cumsum()
     return (cum_tpv / cum_vol.replace(0, np.nan)).rename("vwap")
@@ -52,9 +57,9 @@ def volume_zscore(volume: pd.Series, period: int = 30) -> pd.Series:
     return ((volume - mean) / std.replace(0, np.nan)).fillna(0.0).rename(f"vol_z_{period}")
 
 
-def add_indicators(df: pd.DataFrame) -> pd.DataFrame:
+def add_indicators(df: pd.DataFrame, session_key: pd.Series | None = None) -> pd.DataFrame:
     out = df.copy()
-    out["vwap"] = session_vwap(out)
+    out["vwap"] = session_vwap(out, session_key=session_key)
     out["ema_9"] = ema(out["close"], 9)
     out["ema_21"] = ema(out["close"], 21)
     out["ema_50"] = ema(out["close"], 50)

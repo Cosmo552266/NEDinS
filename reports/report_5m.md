@@ -1,29 +1,29 @@
 # BTC/USDT 5m backtest report
 
 - Data source: **synthetic**
-- Bars analysed: **3000**
+- Bars analysed: **1000**
 
 ## Headline metrics
 
 | name               |   bars |   trades | win_rate   | avg_win_pct   | avg_loss_pct   |   profit_factor | expectancy_pct   | total_return_pct   | max_drawdown_pct   |   sharpe |   avg_bars_held |
 |:-------------------|-------:|---------:|:-----------|:--------------|:---------------|----------------:|:-----------------|:-------------------|:-------------------|---------:|----------------:|
-| vwap_pullback      |   3000 |       22 | 13.64%     | 4.294%        | -0.437%        |            1.55 | 0.208%           | 4.84%              | -3.93%             |     4.87 |            23.7 |
-| ema_breakout       |   3000 |       88 | 27.27%     | 1.212%        | -0.654%        |            0.69 | -0.146%          | -12.22%            | -14.19%            |    -7.8  |            15.9 |
-| rsi_mean_reversion |   3000 |        1 | 100.00%    | 0.045%        | 0.000%         |          inf    | 0.045%           | 0.05%              | -0.07%             |     1.99 |             1   |
+| vwap_pullback      |   1000 |        7 | 0.00%      | 0.000%        | -0.570%        |            0    | -0.570%          | -3.95%             | -3.95%             |   -19.63 |             8.6 |
+| ema_breakout       |   1000 |       33 | 18.18%     | 0.695%        | -0.614%        |            0.25 | -0.376%          | -11.70%            | -14.22%            |   -24.74 |            12   |
+| rsi_mean_reversion |   1000 |        0 | 0.00%      | 0.000%        | 0.000%         |            0    | 0.000%           | 0.00%              | 0.00%              |     0    |             0   |
 
 ![equity curves](equity_5m.png)
 
 ## vwap_pullback
 
-- Trades: **22**  |  Win rate: **13.64%**  |  Profit factor: **1.55**  |  Max DD: **-3.93%**
-- Total return: **4.84%**  |  Expectancy/trade: **0.208%**  |  Sharpe (annualised): **4.87**
+- Trades: **7**  |  Win rate: **0.00%**  |  Profit factor: **0.00**  |  Max DD: **-3.95%**
+- Total return: **-3.95%**  |  Expectancy/trade: **-0.570%**  |  Sharpe (annualised): **-19.63**
 
 ## ema_breakout
 
-- Trades: **88**  |  Win rate: **27.27%**  |  Profit factor: **0.69**  |  Max DD: **-14.19%**
-- Total return: **-12.22%**  |  Expectancy/trade: **-0.146%**  |  Sharpe (annualised): **-7.80**
+- Trades: **33**  |  Win rate: **18.18%**  |  Profit factor: **0.25**  |  Max DD: **-14.22%**
+- Total return: **-11.70%**  |  Expectancy/trade: **-0.376%**  |  Sharpe (annualised): **-24.74**
 
 ## rsi_mean_reversion
 
-- Trades: **1**  |  Win rate: **100.00%**  |  Profit factor: **inf**  |  Max DD: **-0.07%**
-- Total return: **0.05%**  |  Expectancy/trade: **0.045%**  |  Sharpe (annualised): **1.99**
+- Trades: **0**  |  Win rate: **0.00%**  |  Profit factor: **0.00**  |  Max DD: **0.00%**
+- Total return: **0.00%**  |  Expectancy/trade: **0.000%**  |  Sharpe (annualised): **0.00**

@@ -112,25 +112,28 @@ def trades_to_frame(result: BacktestResult) -> pd.DataFrame:
 
 
 def save_report(results: List[BacktestResult], metrics: List[Metrics],
-                interval: str, source: str, out_dir: str = "reports") -> dict:
+                interval: str, source: str, out_dir: str = "reports",
+                asset_label: str = "BTC/USDT", tag: str | None = None) -> dict:
     os.makedirs(out_dir, exist_ok=True)
+    suffix = f"_{tag}_{interval}" if tag else f"_{interval}"
     summary = metrics_table(metrics)
-    summary_path = os.path.join(out_dir, f"summary_{interval}.csv")
+    summary_path = os.path.join(out_dir, f"summary{suffix}.csv")
     summary.to_csv(summary_path)
 
     trade_paths = {}
     for r in results:
         tf = trades_to_frame(r)
-        p = os.path.join(out_dir, f"trades_{interval}_{r.name}.csv")
+        p = os.path.join(out_dir, f"trades{suffix}_{r.name}.csv")
         tf.to_csv(p, index=False)
         trade_paths[r.name] = p
 
     equity_df = pd.concat({r.name: r.equity for r in results}, axis=1)
-    equity_path = os.path.join(out_dir, f"equity_{interval}.csv")
+    equity_path = os.path.join(out_dir, f"equity{suffix}.csv")
     equity_df.to_csv(equity_path)
 
-    plot_path = _plot_equity(equity_df, interval, source, out_dir)
-    md_path = _write_markdown(summary, results, metrics, interval, source, out_dir, plot_path)
+    plot_path = _plot_equity(equity_df, interval, source, out_dir, asset_label, suffix)
+    md_path = _write_markdown(summary, results, metrics, interval, source, out_dir,
+                              plot_path, asset_label, suffix)
 
     return {
         "summary_csv": summary_path,
@@ -141,7 +144,8 @@ def save_report(results: List[BacktestResult], metrics: List[Metrics],
     }
 
 
-def _plot_equity(equity_df: pd.DataFrame, interval: str, source: str, out_dir: str) -> str:
+def _plot_equity(equity_df: pd.DataFrame, interval: str, source: str, out_dir: str,
+                 asset_label: str = "BTC/USDT", suffix: str | None = None) -> str:
     import matplotlib
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
@@ -150,13 +154,14 @@ def _plot_equity(equity_df: pd.DataFrame, interval: str, source: str, out_dir: s
     for col in equity_df.columns:
         ax.plot(equity_df.index, equity_df[col], label=col, linewidth=1.3)
     ax.axhline(1.0, color="grey", linestyle="--", linewidth=0.8)
-    ax.set_title(f"BTC/USDT {interval} — strategy equity curves  (data: {source})")
+    ax.set_title(f"{asset_label} {interval} — strategy equity curves  (data: {source})")
     ax.set_ylabel("Equity (start = 1.0)")
     ax.set_xlabel("Time")
     ax.legend(loc="best")
     ax.grid(alpha=0.3)
     fig.tight_layout()
-    path = os.path.join(out_dir, f"equity_{interval}.png")
+    suffix = suffix if suffix is not None else f"_{interval}"
+    path = os.path.join(out_dir, f"equity{suffix}.png")
     fig.savefig(path, dpi=130)
     plt.close(fig)
     return path
@@ -164,9 +169,10 @@ def _plot_equity(equity_df: pd.DataFrame, interval: str, source: str, out_dir: s
 
 def _write_markdown(summary: pd.DataFrame, results: List[BacktestResult],
                     metrics: List[Metrics], interval: str, source: str,
-                    out_dir: str, plot_path: str) -> str:
+                    out_dir: str, plot_path: str,
+                    asset_label: str = "BTC/USDT", suffix: str | None = None) -> str:
     lines: List[str] = []
-    lines.append(f"# BTC/USDT {interval} backtest report")
+    lines.append(f"# {asset_label} {interval} backtest report")
     lines.append("")
     lines.append(f"- Data source: **{source}**")
     lines.append(f"- Bars analysed: **{results[0].equity.shape[0] if results else 0}**")
@@ -187,7 +193,8 @@ def _write_markdown(summary: pd.DataFrame, results: List[BacktestResult],
                      f"Expectancy/trade: **{m.expectancy_pct*100:.3f}%**  |  "
                      f"Sharpe (annualised): **{m.sharpe:.2f}**")
         lines.append("")
-    path = os.path.join(out_dir, f"report_{interval}.md")
+    suffix = suffix if suffix is not None else f"_{interval}"
+    path = os.path.join(out_dir, f"report{suffix}.md")
     with open(path, "w") as fh:
         fh.write("\n".join(lines))
     return path
