@@ -35,3 +35,15 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Python #
+##########
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# User data (paper trades, portfolio, equity) #
+###############################################
+bybit_toolkit/data/*
+!bybit_toolkit/data/.gitkeep

@@ -1,0 +1,6 @@
+date,symbol,side,strategy,notional_usd,entry_price,exit_price,qty,funding_received_usd,fees_usd,net_pnl_usd,holding_hours,notes
+2026-01-15,BTCUSDT,delta_neutral,funding_arb,200.00,102345.0,,0.001954,0.00,0.16,-0.16,0,opened spot+perp short
+2026-01-16,BTCUSDT,delta_neutral,funding_arb,200.00,102345.0,102510.0,0.001954,0.072,0.16,-0.088,24,one day in - funding paid
+2026-01-22,BTCUSDT,delta_neutral,funding_arb,200.00,102345.0,103120.0,0.001954,0.504,0.32,0.184,168,closed after 1 week
+2026-01-22,USDT,lend,earn_flexi,300.00,1.0,1.0,300.0,0.342,0.0,0.342,168,Bybit flexi 5.95% APR
+2026-01-25,BTC,buy,btc_hold,50.00,103450.0,,0.000483,0.0,0.05,-0.05,0,DCA buy

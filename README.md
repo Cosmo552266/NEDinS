@@ -1,51 +1,81 @@
-# Introduction to GitHub
+# Bybit Funding Arb Toolkit
 
-_Get started using GitHub in less than an hour._
+Bybit-only delta-neutral funding rate arbitrage 嘅學習 / 紀錄工具箱。**Paper trading + 公開市場數據**，唔涉及真錢交易。
 
-## Welcome
+> ⚠️ 本 repo 唔係投資建議。Crypto 交易有極高風險，包括可以蝕清本金。
 
-People use GitHub to build some of the most advanced technologies in the world. Whether you’re visualizing data or building a new game, there’s a whole community and set of tools on GitHub that can help you do it even better. GitHub Skills’ “Introduction to GitHub” exercise guides you through everything you need to start contributing in less than an hour.
+## 4 個工具
 
-- **Who is this for**: New developers, new GitHub users, and students.
-- **What you'll learn**: We'll introduce repositories, branches, commits, and pull requests.
-- **What you'll build**: We'll make a short Markdown file you can use as your [profile README](https://docs.github.com/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme).
-- **Prerequisites**: None. This exercise is a great introduction for your first day on GitHub.
-- **How long**: This exercise takes less than one hour to complete.
+```
+bybit_toolkit/
+├── scanner.py       # 1. Real-time funding rate scanner
+├── paper_trader.py  # 2. 模擬 delta-neutral 開倉 / 收 funding / 平倉
+├── portfolio.py     # 3. 多策略 portfolio + Sharpe / drawdown
+├── bybit_api.py     # 共用 Bybit public API client
+└── fixtures.py      # 離線 sample data (--demo mode)
 
-In this exercise, you will:
+templates/
+├── trade_log_template.csv   # 4. CSV 交易紀錄模板
+└── SHEET_GUIDE.md           # Google Sheets formula 指南
 
-1. Create a branch
-2. Commit a file
-3. Open a pull request
-4. Merge your pull request
+docs/
+└── GUIDE.md         # 詳細用家指南（粵語）
+```
 
-### How to start this exercise
+## Quick Start
 
-1. Right-click **Copy Exercise** and open the link in a new tab.
+```bash
+pip install -r requirements.txt
 
-   <a id="copy-exercise">
-      <img src="https://img.shields.io/badge/📠_Copy_Exercise-AAA" height="25pt"/>
-   </a>
+# Scan 即時 funding rates
+python -m bybit_toolkit.scanner --top 15
 
-2. In the new tab, most of the prompts will automatically fill in for you.
-   - For owner, choose your personal account or an organization to host the repository.
-   - We recommend creating a public repository, as private repositories will [use Actions minutes](https://docs.github.chttps://github.com/Cosmo552266/NEDinS/billing/managing-billing-for-github-actions/about-billing-for-github-actions).
-   - Scroll down and click the **Create repository** button at the bottom of the form.
+# 開一個 paper 倉
+python -m bybit_toolkit.paper_trader open BTCUSDT --notional 200
 
-3. After your new repository is created, wait about 20 seconds for the exercise to be prepared and buttons updated. You will continue working from your copy of the exercise.
-   - The **Copy Exercise** button will deactivate, changing to gray.
-   - The **Start Exercise** button will activate, changing to green.
-   - You will likely need to refresh the page.
+# 過 8 小時後 credit funding
+python -m bybit_toolkit.paper_trader tick
 
-4. Click **Start Exercise**. Follow the step-by-step instructions and feedback will be provided as you progress.
+# 睇狀態
+python -m bybit_toolkit.paper_trader status
 
-   <a id="start-exercise" href="https://github.com/Cosmo552266/NEDinS/issues/1">
-      <img src="https://img.shields.io/badge/🚀_Start_Exercise-008000" height="25pt"/>
-   </a>
+# 初始化 portfolio
+python -m bybit_toolkit.portfolio init
+python -m bybit_toolkit.portfolio show
+```
 
-> [!IMPORTANT]
-> The **Start Exercise** button will activate after copying the repository. You will probably need to refresh the page.
+冇 internet？所有 command 加 `--demo` 用 fixture data：
 
----
+```bash
+python -m bybit_toolkit.scanner --demo --top 10 --estimate 500
+python -m bybit_toolkit.paper_trader open BTCUSDT --notional 200 --demo
+```
 
-&copy; 2025 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
+## 學習路徑
+
+詳見 [`docs/GUIDE.md`](docs/GUIDE.md)。簡要：
+
+1. **Week 1-2**：跑 scanner 熟悉市場
+2. **Month 1**：用 paper trader 開幾個倉，simulate funding
+3. **Month 2-3**：portfolio tracker init，每日 log equity，月尾睇 metrics
+4. **Month 3-6**：Bybit native demo trading + 手填 sheet
+5. **Month 6+**：細注實戰（< $100），continue 記錄
+6. **Year 1+**：評估真有冇 edge，先考慮加碼
+
+## 點解 delta-neutral funding arb？
+
+- ✅ Edge 來源**結構性**（perp 同 spot 嘅利率差），唔靠預測升跌
+- ✅ Retail 攞得到（唔需要 HFT 速度）
+- ✅ 風險可量化（爆倉風險 = leverage 嘅 function）
+- ✅ 歷史平均 10-20% APR 喺合理 leverage 下
+
+## 點解唔啱？
+
+- ❌ 想短期暴富（funding arb 唔會令 $100 一個月變 $200）
+- ❌ 唔做 record（無紀律會搵藉口跳出 neutral，變賭博）
+- ❌ 用全副身家入（platform risk、爆倉風險都需要 buffer）
+- ❌ 認為「自動化 = 賺錢」（自動化 = 執行你已知有 edge 嘅嘢，冇 edge 就係自動蝕錢）
+
+## License
+
+MIT
