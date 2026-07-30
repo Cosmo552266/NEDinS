@@ -1,0 +1,1123 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1189.0mm" height="841.0mm" viewBox="0 0 1189.0 841.0" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">
+<defs>
+  <pattern id="hatchWall" width="1.3" height="1.3" patternTransform="rotate(45)"
+           patternUnits="userSpaceOnUse">
+    <line x1="0" y1="0" x2="0" y2="1.3" stroke="#2b2b2b" stroke-width="0.7"/>
+  </pattern>
+  <pattern id="hatchEsc" width="2.8" height="2.8" patternTransform="rotate(45)"
+           patternUnits="userSpaceOnUse">
+    <rect width="2.8" height="2.8" fill="#e9f7ee"/>
+    <line x1="0" y1="0" x2="0" y2="2.8" stroke="#83c9a0" stroke-width="0.3"/>
+  </pattern>
+  <pattern id="hatchLic" width="3.6" height="3.6" patternTransform="rotate(-45)"
+           patternUnits="userSpaceOnUse">
+    <line x1="0" y1="0" x2="0" y2="3.6" stroke="#c088c8" stroke-width="0.3"/>
+  </pattern>
+  <marker id="arw" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5"
+          markerHeight="5" orient="auto-start-reverse">
+    <path d="M 0 1 L 10 5 L 0 9 z" fill="#00843d"/>
+  </marker>
+  <marker id="arwR" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5"
+          markerHeight="5" orient="auto-start-reverse">
+    <path d="M 0 1 L 10 5 L 0 9 z" fill="#c8102e"/>
+  </marker>
+</defs>
+<rect x="0.000" y="0.000" width="1189.000" height="841.000" fill="#ffffff"/>
+<rect x="12.000" y="12.000" width="1165.000" height="817.000" fill="none" stroke="#111" stroke-width="0.6"/>
+<rect x="14.000" y="14.000" width="1161.000" height="813.000" fill="none" stroke="#111" stroke-width="0.2"/>
+<line x1="750.000" y1="14.000" x2="750.000" y2="827.000" stroke="#111" stroke-width="0.35"/>
+<text x="22.000" y="33.000" font-size="8.0" fill="#111" text-anchor="start" font-weight="bold" letter-spacing="0.6">BAR FIT-OUT — GROUND FLOOR PLAN</text>
+<text x="22.000" y="42.500" font-size="3.5" fill="#444" text-anchor="start" font-weight="normal" letter-spacing="0.0">General arrangement · means of escape · fire service installations · designated liquor-consumption area</text>
+<line x1="22.000" y1="47.500" x2="732.000" y2="47.500" stroke="#111" stroke-width="0.3"/>
+<text x="22.000" y="55.000" font-size="3.0" fill="#333" text-anchor="start" font-weight="normal" letter-spacing="0.0">Internal clear area 12.0 m × 8.0 m = 96.0 m²    ·    Scale 1:20 at A0    ·    Ground / street level    ·    All dimensions in millimetres unless noted otherwise</text>
+<g id="context">
+<rect x="85.000" y="522.000" width="634.000" height="11.000" fill="#f3f3f0" stroke="none"/>
+<line x1="85.000" y1="533.000" x2="719.000" y2="533.000" stroke="#aaa" stroke-width="0.3" stroke-dasharray="3,2"/>
+<text x="306.000" y="529.000" font-size="3.1" fill="#555" text-anchor="middle" font-weight="normal" letter-spacing="0.4">PUBLIC STREET — PLACE OF SAFETY (open air, ground level)</text>
+<rect x="85.000" y="91.000" width="634.000" height="11.000" fill="#f3f3f0" stroke="none"/>
+<line x1="85.000" y1="91.000" x2="719.000" y2="91.000" stroke="#aaa" stroke-width="0.3" stroke-dasharray="3,2"/>
+<text x="366.000" y="97.800" font-size="3.1" fill="#555" text-anchor="middle" font-weight="normal" letter-spacing="0.4">COMMON REAR CORRIDOR → PROTECTED STAIRCASE / REAR LANE — PLACE OF SAFETY</text>
+<rect x="85.000" y="102.000" width="7.000" height="420.000" fill="#f3f3f0" stroke="none"/>
+<text x="88.500" y="312.000" font-size="2.7" fill="#888" text-anchor="middle" font-weight="normal" letter-spacing="0.0" transform="rotate(-90 88.500 312.000)">ADJOINING TENANCY</text>
+<rect x="712.000" y="102.000" width="7.000" height="420.000" fill="#f3f3f0" stroke="none"/>
+<text x="715.500" y="312.000" font-size="2.7" fill="#888" text-anchor="middle" font-weight="normal" letter-spacing="0.0" transform="rotate(-90 715.500 312.000)">ADJOINING TENANCY</text>
+</g>
+<g id="fills">
+<rect x="102.000" y="112.000" width="600.000" height="400.000" fill="#fcfcfa" stroke="none"/>
+<path d="M 102.0 512.0 L 702.0 512.0 L 702.0 312.0 L 467.0 312.0 L 467.0 242.0 L 397.0 242.0 L 397.0 309.5 L 172.0 309.5 L 172.0 242.0 L 102.0 242.0 Z" fill="#faf1fb" stroke="none"/>
+<path d="M 102.0 512.0 L 702.0 512.0 L 702.0 312.0 L 467.0 312.0 L 467.0 242.0 L 397.0 242.0 L 397.0 309.5 L 172.0 309.5 L 172.0 242.0 L 102.0 242.0 Z" fill="url(#hatchLic)" stroke="none" opacity="0.55"/>
+<rect x="137.000" y="369.500" width="450.000" height="60.000" fill="url(#hatchEsc)" stroke="none" opacity="0.82"/>
+<rect x="102.000" y="242.000" width="70.000" height="187.500" fill="url(#hatchEsc)" stroke="none" opacity="0.82"/>
+<rect x="102.000" y="112.000" width="65.000" height="130.000" fill="url(#hatchEsc)" stroke="none" opacity="0.82"/>
+<rect x="527.000" y="312.000" width="60.000" height="117.500" fill="url(#hatchEsc)" stroke="none" opacity="0.82"/>
+<rect x="517.000" y="429.500" width="90.000" height="82.500" fill="url(#hatchEsc)" stroke="none" opacity="0.82"/>
+<rect x="467.000" y="242.000" width="235.000" height="70.000" fill="url(#hatchEsc)" stroke="none" opacity="0.82"/>
+<rect x="102.000" y="112.000" width="65.000" height="125.000" fill="url(#hatchEsc)" stroke="none" opacity="0.82"/>
+<rect x="172.000" y="112.000" width="100.000" height="125.000" fill="#eef3f7" stroke="none"/>
+<rect x="277.000" y="112.000" width="110.000" height="125.000" fill="#f4f1e8" stroke="none"/>
+<rect x="392.000" y="112.000" width="70.000" height="125.000" fill="#eef3f7" stroke="none"/>
+<rect x="467.000" y="112.000" width="100.000" height="125.000" fill="#e9f0f7" stroke="none"/>
+<rect x="572.000" y="112.000" width="60.000" height="125.000" fill="#e9f0f7" stroke="none"/>
+<rect x="637.000" y="112.000" width="65.000" height="125.000" fill="#e9f0f7" stroke="none"/>
+<rect x="172.000" y="242.000" width="195.000" height="67.500" fill="#f7f2e5" stroke="none"/>
+</g>
+<g id="escArrows">
+<line x1="262.000" y1="399.500" x2="382.000" y2="399.500" stroke="#00843d" stroke-width="0.6" opacity="0.85" marker-end="url(#arw)"/>
+<line x1="427.000" y1="399.500" x2="514.500" y2="399.500" stroke="#00843d" stroke-width="0.6" opacity="0.85" marker-end="url(#arw)"/>
+<line x1="557.000" y1="414.500" x2="557.000" y2="484.500" stroke="#00843d" stroke-width="0.6" opacity="0.85" marker-end="url(#arw)"/>
+<line x1="242.000" y1="399.500" x2="154.500" y2="399.500" stroke="#00843d" stroke-width="0.6" opacity="0.85" marker-end="url(#arw)"/>
+<line x1="122.000" y1="362.000" x2="122.000" y2="277.000" stroke="#00843d" stroke-width="0.6" opacity="0.85" marker-end="url(#arw)"/>
+<line x1="122.000" y1="227.000" x2="122.000" y2="147.000" stroke="#00843d" stroke-width="0.6" opacity="0.85" marker-end="url(#arw)"/>
+<line x1="667.000" y1="284.500" x2="604.500" y2="284.500" stroke="#00843d" stroke-width="0.6" opacity="0.85" marker-end="url(#arw)"/>
+<line x1="557.000" y1="322.000" x2="557.000" y2="364.500" stroke="#00843d" stroke-width="0.6" opacity="0.85" marker-end="url(#arw)"/>
+</g>
+<g id="walls">
+<rect x="92.000" y="512.000" width="620.000" height="10.000" fill="url(#hatchWall)" stroke="#111" stroke-width="0.35"/>
+<rect x="92.000" y="102.000" width="620.000" height="10.000" fill="url(#hatchWall)" stroke="#111" stroke-width="0.35"/>
+<rect x="92.000" y="112.000" width="10.000" height="400.000" fill="url(#hatchWall)" stroke="#111" stroke-width="0.35"/>
+<rect x="702.000" y="112.000" width="10.000" height="400.000" fill="url(#hatchWall)" stroke="#111" stroke-width="0.35"/>
+<rect x="102.000" y="237.000" width="600.000" height="5.000" fill="url(#hatchWall)" stroke="#111" stroke-width="0.35"/>
+<rect x="167.000" y="112.000" width="5.000" height="125.000" fill="url(#hatchWall)" stroke="#111" stroke-width="0.35"/>
+<rect x="272.000" y="112.000" width="5.000" height="125.000" fill="url(#hatchWall)" stroke="#111" stroke-width="0.35"/>
+<rect x="387.000" y="112.000" width="5.000" height="125.000" fill="url(#hatchWall)" stroke="#111" stroke-width="0.35"/>
+<rect x="462.000" y="112.000" width="5.000" height="125.000" fill="url(#hatchWall)" stroke="#111" stroke-width="0.35"/>
+<rect x="567.000" y="112.000" width="5.000" height="125.000" fill="url(#hatchWall)" stroke="#111" stroke-width="0.35"/>
+<rect x="632.000" y="112.000" width="5.000" height="125.000" fill="url(#hatchWall)" stroke="#111" stroke-width="0.35"/>
+</g>
+<g id="openings">
+<rect x="516.940" y="511.940" width="90.120" height="10.120" fill="#fff" stroke="none"/>
+<rect x="104.440" y="101.940" width="60.120" height="10.120" fill="#fff" stroke="none"/>
+<rect x="101.940" y="236.940" width="65.120" height="5.120" fill="#fff" stroke="none"/>
+<rect x="196.940" y="236.940" width="40.120" height="5.120" fill="#fff" stroke="none"/>
+<rect x="316.940" y="236.940" width="40.120" height="5.120" fill="#fff" stroke="none"/>
+<rect x="421.940" y="236.940" width="40.120" height="5.120" fill="#fff" stroke="none"/>
+<rect x="481.940" y="236.940" width="50.120" height="5.120" fill="#fff" stroke="none"/>
+<rect x="581.940" y="236.940" width="40.120" height="5.120" fill="#fff" stroke="none"/>
+<rect x="646.940" y="236.940" width="40.120" height="5.120" fill="#fff" stroke="none"/>
+<rect x="166.940" y="126.940" width="5.120" height="40.120" fill="#fff" stroke="none"/>
+<rect x="271.940" y="156.940" width="5.120" height="40.120" fill="#fff" stroke="none"/>
+<rect x="386.940" y="156.940" width="5.120" height="40.120" fill="#fff" stroke="none"/>
+</g>
+<g id="glazing">
+<rect x="111.940" y="514.440" width="395.120" height="5.120" fill="#fff" stroke="none"/>
+<line x1="112.000" y1="514.750" x2="507.000" y2="514.750" stroke="#3a6ea5" stroke-width="0.4"/>
+<line x1="112.000" y1="519.250" x2="507.000" y2="519.250" stroke="#3a6ea5" stroke-width="0.4"/>
+<line x1="112.000" y1="514.500" x2="112.000" y2="519.500" stroke="#111" stroke-width="0.35"/>
+<line x1="507.000" y1="514.500" x2="507.000" y2="519.500" stroke="#111" stroke-width="0.35"/>
+<rect x="616.940" y="514.440" width="75.120" height="5.120" fill="#fff" stroke="none"/>
+<line x1="617.000" y1="514.750" x2="692.000" y2="514.750" stroke="#3a6ea5" stroke-width="0.4"/>
+<line x1="617.000" y1="519.250" x2="692.000" y2="519.250" stroke="#3a6ea5" stroke-width="0.4"/>
+<line x1="617.000" y1="514.500" x2="617.000" y2="519.500" stroke="#111" stroke-width="0.35"/>
+<line x1="692.000" y1="514.500" x2="692.000" y2="519.500" stroke="#111" stroke-width="0.35"/>
+<text x="304.500" y="540.000" font-size="2.6" fill="#3a6ea5" text-anchor="middle" font-weight="normal" letter-spacing="0.0">SHOPFRONT GLAZING (FIXED)</text>
+</g>
+<g id="doors">
+<path d="M 562.000 517.000 A 45.000 45.000 0 0 0 517.000 562.000" fill="none" stroke="#111" stroke-width="0.16" stroke-dasharray="1.2,1.0"/>
+<line x1="517.000" y1="517.000" x2="517.000" y2="562.000" stroke="#111" stroke-width="0.55" stroke-linecap="round"/>
+<path d="M 562.000 517.000 A 45.000 45.000 0 0 1 607.000 562.000" fill="none" stroke="#111" stroke-width="0.16" stroke-dasharray="1.2,1.0"/>
+<line x1="607.000" y1="517.000" x2="607.000" y2="562.000" stroke="#111" stroke-width="0.55" stroke-linecap="round"/>
+<path d="M 107.000 107.000 A 57.500 57.500 0 0 0 164.500 49.500" fill="none" stroke="#111" stroke-width="0.16" stroke-dasharray="1.2,1.0"/>
+<line x1="164.500" y1="107.000" x2="164.500" y2="49.500" stroke="#111" stroke-width="0.55" stroke-linecap="round"/>
+<path d="M 237.000 237.000 A 40.000 40.000 0 0 1 197.000 197.000" fill="none" stroke="#111" stroke-width="0.16" stroke-dasharray="1.2,1.0"/>
+<line x1="197.000" y1="237.000" x2="197.000" y2="197.000" stroke="#111" stroke-width="0.55" stroke-linecap="round"/>
+<path d="M 317.000 237.000 A 40.000 40.000 0 0 0 357.000 197.000" fill="none" stroke="#111" stroke-width="0.16" stroke-dasharray="1.2,1.0"/>
+<line x1="357.000" y1="237.000" x2="357.000" y2="197.000" stroke="#111" stroke-width="0.55" stroke-linecap="round"/>
+<path d="M 462.000 237.000 A 40.000 40.000 0 0 1 422.000 197.000" fill="none" stroke="#111" stroke-width="0.16" stroke-dasharray="1.2,1.0"/>
+<line x1="422.000" y1="237.000" x2="422.000" y2="197.000" stroke="#111" stroke-width="0.55" stroke-linecap="round"/>
+<path d="M 622.000 242.000 A 40.000 40.000 0 0 0 582.000 282.000" fill="none" stroke="#111" stroke-width="0.16" stroke-dasharray="1.2,1.0"/>
+<line x1="582.000" y1="242.000" x2="582.000" y2="282.000" stroke="#111" stroke-width="0.55" stroke-linecap="round"/>
+<path d="M 687.000 242.000 A 40.000 40.000 0 0 0 647.000 282.000" fill="none" stroke="#111" stroke-width="0.16" stroke-dasharray="1.2,1.0"/>
+<line x1="647.000" y1="242.000" x2="647.000" y2="282.000" stroke="#111" stroke-width="0.55" stroke-linecap="round"/>
+<path d="M 172.000 127.000 A 40.000 40.000 0 0 0 212.000 167.000" fill="none" stroke="#111" stroke-width="0.16" stroke-dasharray="1.2,1.0"/>
+<line x1="172.000" y1="167.000" x2="212.000" y2="167.000" stroke="#111" stroke-width="0.55" stroke-linecap="round"/>
+<path d="M 277.000 157.000 A 40.000 40.000 0 0 0 317.000 197.000" fill="none" stroke="#111" stroke-width="0.16" stroke-dasharray="1.2,1.0"/>
+<line x1="277.000" y1="197.000" x2="317.000" y2="197.000" stroke="#111" stroke-width="0.55" stroke-linecap="round"/>
+<path d="M 392.000 157.000 A 40.000 40.000 0 0 0 432.000 197.000" fill="none" stroke="#111" stroke-width="0.16" stroke-dasharray="1.2,1.0"/>
+<line x1="392.000" y1="197.000" x2="432.000" y2="197.000" stroke="#111" stroke-width="0.55" stroke-linecap="round"/>
+<rect x="482.000" y="238.500" width="50.000" height="2.500" fill="#fff" stroke="#111" stroke-width="0.35"/>
+<line x1="532.000" y1="239.750" x2="564.500" y2="239.750" stroke="#111" stroke-width="0.25" stroke-dasharray="1.2,0.8"/>
+<text x="507.000" y="252.500" font-size="2.1" fill="#555" text-anchor="middle" font-weight="normal" letter-spacing="0.0">SLIDING DOOR</text>
+<line x1="172.000" y1="309.500" x2="172.000" y2="259.500" stroke="#111" stroke-width="0.45"/>
+<path d="M 172.000 262.000 A 47.500 47.500 0 0 0 219.500 309.500" fill="none" stroke="#111" stroke-width="0.16" stroke-dasharray="1.2,1.0"/>
+<line x1="172.000" y1="309.500" x2="219.500" y2="309.500" stroke="#111" stroke-width="0.45" stroke-linecap="round"/>
+</g>
+<g id="furniture">
+<rect x="172.000" y="309.500" width="225.000" height="30.000" fill="#e5dccc" stroke="#111" stroke-width="0.5"/>
+<rect x="367.000" y="242.000" width="30.000" height="67.500" fill="#e5dccc" stroke="#111" stroke-width="0.5"/>
+<line x1="172.000" y1="336.000" x2="397.000" y2="336.000" stroke="#8a7f6c" stroke-width="0.2"/>
+<line x1="370.500" y1="309.500" x2="370.500" y2="242.000" stroke="#8a7f6c" stroke-width="0.2"/>
+<rect x="172.000" y="242.000" width="25.000" height="17.500" fill="#dcd1bd" stroke="#111" stroke-width="0.35"/>
+<line x1="172.000" y1="253.667" x2="197.000" y2="253.667" stroke="#a1957f" stroke-width="0.15"/>
+<line x1="172.000" y1="247.833" x2="197.000" y2="247.833" stroke="#a1957f" stroke-width="0.15"/>
+<rect x="237.000" y="242.000" width="80.000" height="17.500" fill="#dcd1bd" stroke="#111" stroke-width="0.35"/>
+<line x1="237.000" y1="253.667" x2="317.000" y2="253.667" stroke="#a1957f" stroke-width="0.15"/>
+<line x1="237.000" y1="247.833" x2="317.000" y2="247.833" stroke="#a1957f" stroke-width="0.15"/>
+<rect x="357.000" y="242.000" width="10.000" height="17.500" fill="#dcd1bd" stroke="#111" stroke-width="0.35"/>
+<line x1="357.000" y1="253.667" x2="367.000" y2="253.667" stroke="#a1957f" stroke-width="0.15"/>
+<line x1="357.000" y1="247.833" x2="367.000" y2="247.833" stroke="#a1957f" stroke-width="0.15"/>
+<circle cx="189.500" cy="359.500" r="10.000" fill="#f0efe8" stroke="#444" stroke-width="0.3"/>
+<circle cx="222.000" cy="359.500" r="10.000" fill="#f0efe8" stroke="#444" stroke-width="0.3"/>
+<circle cx="254.500" cy="359.500" r="10.000" fill="#f0efe8" stroke="#444" stroke-width="0.3"/>
+<circle cx="287.000" cy="359.500" r="10.000" fill="#f0efe8" stroke="#444" stroke-width="0.3"/>
+<circle cx="319.500" cy="359.500" r="10.000" fill="#f0efe8" stroke="#444" stroke-width="0.3"/>
+<circle cx="352.000" cy="359.500" r="10.000" fill="#f0efe8" stroke="#444" stroke-width="0.3"/>
+<circle cx="384.500" cy="359.500" r="10.000" fill="#f0efe8" stroke="#444" stroke-width="0.3"/>
+<circle cx="414.500" cy="294.500" r="10.000" fill="#f0efe8" stroke="#444" stroke-width="0.3"/>
+<circle cx="414.500" cy="267.000" r="10.000" fill="#f0efe8" stroke="#444" stroke-width="0.3"/>
+<rect x="177.000" y="484.500" width="270.000" height="27.500" fill="#eee6d8" stroke="#444" stroke-width="0.35"/>
+<line x1="177.000" y1="512.000" x2="177.000" y2="484.500" stroke="#b3a794" stroke-width="0.2"/>
+<line x1="244.500" y1="512.000" x2="244.500" y2="484.500" stroke="#b3a794" stroke-width="0.2"/>
+<line x1="312.000" y1="512.000" x2="312.000" y2="484.500" stroke="#b3a794" stroke-width="0.2"/>
+<line x1="379.500" y1="512.000" x2="379.500" y2="484.500" stroke="#b3a794" stroke-width="0.2"/>
+<line x1="447.000" y1="512.000" x2="447.000" y2="484.500" stroke="#b3a794" stroke-width="0.2"/>
+<rect x="183.250" y="452.000" width="55.000" height="30.000" fill="#ffffff" stroke="#444" stroke-width="0.3"/>
+<rect x="184.500" y="429.500" width="22.500" height="22.500" fill="#f0efe8" stroke="#444" stroke-width="0.3"/>
+<rect x="214.500" y="429.500" width="22.500" height="22.500" fill="#f0efe8" stroke="#444" stroke-width="0.3"/>
+<rect x="250.750" y="452.000" width="55.000" height="30.000" fill="#ffffff" stroke="#444" stroke-width="0.3"/>
+<rect x="252.000" y="429.500" width="22.500" height="22.500" fill="#f0efe8" stroke="#444" stroke-width="0.3"/>
+<rect x="282.000" y="429.500" width="22.500" height="22.500" fill="#f0efe8" stroke="#444" stroke-width="0.3"/>
+<rect x="318.250" y="452.000" width="55.000" height="30.000" fill="#ffffff" stroke="#444" stroke-width="0.3"/>
+<rect x="319.500" y="429.500" width="22.500" height="22.500" fill="#f0efe8" stroke="#444" stroke-width="0.3"/>
+<rect x="349.500" y="429.500" width="22.500" height="22.500" fill="#f0efe8" stroke="#444" stroke-width="0.3"/>
+<rect x="385.750" y="452.000" width="55.000" height="30.000" fill="#ffffff" stroke="#444" stroke-width="0.3"/>
+<rect x="387.000" y="429.500" width="22.500" height="22.500" fill="#f0efe8" stroke="#444" stroke-width="0.3"/>
+<rect x="417.000" y="429.500" width="22.500" height="22.500" fill="#f0efe8" stroke="#444" stroke-width="0.3"/>
+<rect x="449.500" y="497.000" width="65.000" height="15.000" fill="#eee6d8" stroke="#444" stroke-width="0.3"/>
+<circle cx="432.000" cy="342.000" r="15.000" fill="#ffffff" stroke="#444" stroke-width="0.3"/>
+<circle cx="492.000" cy="342.000" r="15.000" fill="#ffffff" stroke="#444" stroke-width="0.3"/>
+<rect x="609.500" y="474.500" width="90.000" height="37.500" fill="#eee6d8" stroke="#444" stroke-width="0.35"/>
+<line x1="639.500" y1="512.000" x2="639.500" y2="474.500" stroke="#b3a794" stroke-width="0.2"/>
+<line x1="669.500" y1="512.000" x2="669.500" y2="474.500" stroke="#b3a794" stroke-width="0.2"/>
+<rect x="632.000" y="434.500" width="45.000" height="32.500" fill="#ffffff" stroke="#444" stroke-width="0.3"/>
+<rect x="617.000" y="394.500" width="35.000" height="35.000" fill="#f0efe8" stroke="#444" stroke-width="0.3"/>
+<rect x="657.000" y="394.500" width="35.000" height="35.000" fill="#f0efe8" stroke="#444" stroke-width="0.3"/>
+<rect x="664.500" y="312.000" width="37.500" height="80.000" fill="#eee6d8" stroke="#444" stroke-width="0.35"/>
+<line x1="664.500" y1="365.333" x2="702.000" y2="365.333" stroke="#b3a794" stroke-width="0.2"/>
+<line x1="664.500" y1="338.667" x2="702.000" y2="338.667" stroke="#b3a794" stroke-width="0.2"/>
+<rect x="622.000" y="332.000" width="37.500" height="37.500" fill="#ffffff" stroke="#444" stroke-width="0.3"/>
+<rect x="177.000" y="172.000" width="90.000" height="25.000" fill="#e5eaf0" stroke="#444" stroke-width="0.3"/>
+<text x="222.000" y="188.000" font-size="2.0" fill="#555" text-anchor="middle" font-weight="normal" letter-spacing="0.0">GLASSWASHER + DOUBLE SINK</text>
+<rect x="232.000" y="137.000" width="35.000" height="20.000" fill="#e5eaf0" stroke="#444" stroke-width="0.3"/>
+<text x="249.500" y="149.000" font-size="2.0" fill="#555" text-anchor="middle" font-weight="normal" letter-spacing="0.0">WHB</text>
+<rect x="322.000" y="127.000" width="60.000" height="70.000" fill="none" stroke="#444" stroke-width="0.3" stroke-dasharray="1.6,1.0"/>
+<text x="352.000" y="154.500" font-size="2.0" fill="#666" text-anchor="middle" font-weight="normal" letter-spacing="0.0">KEG /</text>
+<text x="352.000" y="166.000" font-size="2.0" fill="#666" text-anchor="middle" font-weight="normal" letter-spacing="0.0">BOTTLE</text>
+<text x="352.000" y="177.500" font-size="2.0" fill="#666" text-anchor="middle" font-weight="normal" letter-spacing="0.0">RACKING</text>
+<rect x="279.500" y="127.000" width="35.000" height="25.000" fill="none" stroke="#444" stroke-width="0.3" stroke-dasharray="1.6,1.0"/>
+<text x="297.000" y="135.500" font-size="1.95" fill="#666" text-anchor="middle" font-weight="normal" letter-spacing="0.0">SPIRIT</text>
+<text x="297.000" y="146.000" font-size="1.95" fill="#666" text-anchor="middle" font-weight="normal" letter-spacing="0.0">STORE</text>
+<rect x="417.000" y="129.500" width="40.000" height="25.000" fill="#e5eaf0" stroke="#444" stroke-width="0.3"/>
+<text x="437.000" y="143.500" font-size="2.0" fill="#555" text-anchor="middle" font-weight="normal" letter-spacing="0.0">LOCKERS</text>
+<circle cx="509.500" cy="186.000" r="37.500" fill="none" stroke="#1b4f9c" stroke-width="0.32" stroke-dasharray="2.2,1.8"/>
+<text x="509.500" y="188.500" font-size="2.2" fill="#1b4f9c" text-anchor="middle" font-weight="normal" letter-spacing="0.0">Ø1500</text>
+<rect x="475.500" y="116.500" width="19.000" height="31.000" fill="#ffffff" stroke="#444" stroke-width="0.3"/>
+<circle cx="485.000" cy="128.900" r="7.600" fill="#ffffff" stroke="#444" stroke-width="0.3"/>
+<line x1="472.000" y1="147.500" x2="472.000" y2="116.500" stroke="#1b4f9c" stroke-width="0.5"/>
+<line x1="476.000" y1="115.000" x2="506.000" y2="115.000" stroke="#1b4f9c" stroke-width="0.5"/>
+<rect x="538.000" y="113.500" width="28.000" height="21.000" fill="#ffffff" stroke="#444" stroke-width="0.3"/>
+<rect x="580.500" y="118.500" width="19.000" height="31.000" fill="#ffffff" stroke="#444" stroke-width="0.3"/>
+<circle cx="590.000" cy="130.900" r="7.600" fill="#ffffff" stroke="#444" stroke-width="0.3"/>
+<rect x="606.500" y="116.500" width="24.000" height="20.000" fill="#ffffff" stroke="#444" stroke-width="0.3"/>
+<rect x="643.500" y="118.500" width="19.000" height="31.000" fill="#ffffff" stroke="#444" stroke-width="0.3"/>
+<circle cx="653.000" cy="130.900" r="7.600" fill="#ffffff" stroke="#444" stroke-width="0.3"/>
+<rect x="674.500" y="117.000" width="21.500" height="17.500" fill="#ffffff" stroke="#444" stroke-width="0.3"/>
+<text x="685.250" y="141.000" font-size="1.95" fill="#555" text-anchor="middle" font-weight="normal" letter-spacing="0.0">URINAL</text>
+<rect x="652.500" y="172.000" width="24.000" height="20.000" fill="#ffffff" stroke="#444" stroke-width="0.3"/>
+</g>
+<g id="labels">
+<text x="269.500" y="273.000" font-size="3.0" fill="#111" text-anchor="middle" font-weight="bold" letter-spacing="0.4" stroke="#ffffff" stroke-width="1.26" paint-order="stroke" stroke-linejoin="round">BAR SERVERY — STAFF ONLY</text>
+<text x="269.500" y="277.300" font-size="2.3" fill="#555" text-anchor="middle" font-weight="normal" letter-spacing="0.0" stroke="#ffffff" stroke-width="0.97" paint-order="stroke" stroke-linejoin="round">1000 clear working zone (900 min. required)</text>
+<text x="284.500" y="317.000" font-size="2.9" fill="#111" text-anchor="middle" font-weight="bold" letter-spacing="0.4" stroke="#ffffff" stroke-width="1.22" paint-order="stroke" stroke-linejoin="round">FRONT BAR COUNTER</text>
+<text x="284.500" y="321.200" font-size="2.1" fill="#555" text-anchor="middle" font-weight="normal" letter-spacing="0.0" stroke="#ffffff" stroke-width="0.88" paint-order="stroke" stroke-linejoin="round">4500 run + 1350 return  ·  under-counter coolers, ice well and glasswasher  ·  9 bar stools</text>
+<text x="312.000" y="417.000" font-size="3.4" fill="#111" text-anchor="middle" font-weight="bold" letter-spacing="0.4" stroke="#ffffff" stroke-width="1.43" paint-order="stroke" stroke-linejoin="round">TABLE SEATING ZONE</text>
+<text x="312.000" y="421.700" font-size="2.5" fill="#555" text-anchor="middle" font-weight="normal" letter-spacing="0.0" stroke="#ffffff" stroke-width="1.05" paint-order="stroke" stroke-linejoin="round">4 banquette bays  ·  16 seats</text>
+<text x="479.500" y="462.000" font-size="2.9" fill="#111" text-anchor="middle" font-weight="bold" letter-spacing="0.4" stroke="#ffffff" stroke-width="1.22" paint-order="stroke" stroke-linejoin="round">STANDING</text>
+<text x="479.500" y="466.200" font-size="2.2" fill="#555" text-anchor="middle" font-weight="normal" letter-spacing="0.0" stroke="#ffffff" stroke-width="0.92" paint-order="stroke" stroke-linejoin="round">+ drink rail</text>
+<text x="464.500" y="317.000" font-size="2.9" fill="#111" text-anchor="middle" font-weight="bold" letter-spacing="0.4" stroke="#ffffff" stroke-width="1.22" paint-order="stroke" stroke-linejoin="round">STANDING AREA</text>
+<text x="464.500" y="321.200" font-size="2.2" fill="#555" text-anchor="middle" font-weight="normal" letter-spacing="0.0" stroke="#ffffff" stroke-width="0.92" paint-order="stroke" stroke-linejoin="round">2 poseur tables</text>
+<text x="654.500" y="407.000" font-size="3.2" fill="#111" text-anchor="middle" font-weight="bold" letter-spacing="0.4" stroke="#ffffff" stroke-width="1.34" paint-order="stroke" stroke-linejoin="round">LOUNGE SEATING</text>
+<text x="654.500" y="411.500" font-size="2.5" fill="#555" text-anchor="middle" font-weight="normal" letter-spacing="0.0" stroke="#ffffff" stroke-width="1.05" paint-order="stroke" stroke-linejoin="round">8 seats</text>
+<text x="562.000" y="459.500" font-size="2.8" fill="#0d5c33" text-anchor="middle" font-weight="bold" letter-spacing="0.4" stroke="#ffffff" stroke-width="1.18" paint-order="stroke" stroke-linejoin="round">MAIN ENTRANCE</text>
+<text x="154.500" y="322.000" font-size="2.5" fill="#0d5c33" text-anchor="middle" font-weight="bold" letter-spacing="0.4" transform="rotate(-90 154.500 322.000)" stroke="#ffffff" stroke-width="1.05" paint-order="stroke" stroke-linejoin="round">ESCAPE ROUTE — 1400 CLEAR</text>
+<text x="579.500" y="299.500" font-size="2.6" fill="#0d5c33" text-anchor="middle" font-weight="bold" letter-spacing="0.4" stroke="#ffffff" stroke-width="1.09" paint-order="stroke" stroke-linejoin="round">TOILET LOBBY — 1400 CLEAR</text>
+<text x="202.000" y="299.500" font-size="2.3" fill="#333" text-anchor="middle" font-weight="bold" letter-spacing="0.4" stroke="#ffffff" stroke-width="0.97" paint-order="stroke" stroke-linejoin="round">BAR GATE</text>
+<text x="154.500" y="187.000" font-size="2.6" fill="#0d5c33" text-anchor="middle" font-weight="bold" letter-spacing="0.4" transform="rotate(-90 154.500 187.000)" stroke="#ffffff" stroke-width="1.09" paint-order="stroke" stroke-linejoin="round">PROTECTED ESCAPE CORRIDOR</text>
+<text x="212.000" y="221.000" font-size="2.8" fill="#111" text-anchor="middle" font-weight="bold" letter-spacing="0.4" stroke="#ffffff" stroke-width="1.18" paint-order="stroke" stroke-linejoin="round">GLASSWASH /</text>
+<text x="212.000" y="224.700" font-size="2.8" fill="#111" text-anchor="middle" font-weight="bold" letter-spacing="0.4" stroke="#ffffff" stroke-width="1.18" paint-order="stroke" stroke-linejoin="round">SERVERY</text>
+<text x="302.000" y="221.000" font-size="2.8" fill="#111" text-anchor="middle" font-weight="bold" letter-spacing="0.4" stroke="#ffffff" stroke-width="1.18" paint-order="stroke" stroke-linejoin="round">CELLAR /</text>
+<text x="302.000" y="224.700" font-size="2.8" fill="#111" text-anchor="middle" font-weight="bold" letter-spacing="0.4" stroke="#ffffff" stroke-width="1.18" paint-order="stroke" stroke-linejoin="round">LIQUOR STORE</text>
+<text x="442.000" y="221.000" font-size="2.8" fill="#111" text-anchor="middle" font-weight="bold" letter-spacing="0.4" stroke="#ffffff" stroke-width="1.18" paint-order="stroke" stroke-linejoin="round">STAFF /</text>
+<text x="442.000" y="224.700" font-size="2.8" fill="#111" text-anchor="middle" font-weight="bold" letter-spacing="0.4" stroke="#ffffff" stroke-width="1.18" paint-order="stroke" stroke-linejoin="round">BOH LOBBY</text>
+<text x="517.000" y="221.000" font-size="2.8" fill="#111" text-anchor="middle" font-weight="bold" letter-spacing="0.4" stroke="#ffffff" stroke-width="1.18" paint-order="stroke" stroke-linejoin="round">ACCESSIBLE</text>
+<text x="517.000" y="224.700" font-size="2.8" fill="#111" text-anchor="middle" font-weight="bold" letter-spacing="0.4" stroke="#ffffff" stroke-width="1.18" paint-order="stroke" stroke-linejoin="round">UNISEX WC</text>
+<text x="602.000" y="221.000" font-size="2.8" fill="#111" text-anchor="middle" font-weight="bold" letter-spacing="0.4" stroke="#ffffff" stroke-width="1.18" paint-order="stroke" stroke-linejoin="round">WC (F)</text>
+<text x="669.500" y="221.000" font-size="2.8" fill="#111" text-anchor="middle" font-weight="bold" letter-spacing="0.4" stroke="#ffffff" stroke-width="1.18" paint-order="stroke" stroke-linejoin="round">WC (M)</text>
+</g>
+<g id="fsi">
+<circle cx="177.000" cy="444.500" r="1.250" fill="#fff" stroke="#1b4f9c" stroke-width="0.28"/>
+<line x1="176.100" y1="443.600" x2="177.900" y2="445.400" stroke="#1b4f9c" stroke-width="0.28"/>
+<line x1="176.100" y1="445.400" x2="177.900" y2="443.600" stroke="#1b4f9c" stroke-width="0.28"/>
+<circle cx="177.000" cy="309.500" r="1.250" fill="#fff" stroke="#1b4f9c" stroke-width="0.28"/>
+<line x1="176.100" y1="308.600" x2="177.900" y2="310.400" stroke="#1b4f9c" stroke-width="0.28"/>
+<line x1="176.100" y1="310.400" x2="177.900" y2="308.600" stroke="#1b4f9c" stroke-width="0.28"/>
+<circle cx="177.000" cy="174.500" r="1.250" fill="#fff" stroke="#1b4f9c" stroke-width="0.28"/>
+<line x1="176.100" y1="173.600" x2="177.900" y2="175.400" stroke="#1b4f9c" stroke-width="0.28"/>
+<line x1="176.100" y1="175.400" x2="177.900" y2="173.600" stroke="#1b4f9c" stroke-width="0.28"/>
+<circle cx="327.000" cy="444.500" r="1.250" fill="#fff" stroke="#1b4f9c" stroke-width="0.28"/>
+<line x1="326.100" y1="443.600" x2="327.900" y2="445.400" stroke="#1b4f9c" stroke-width="0.28"/>
+<line x1="326.100" y1="445.400" x2="327.900" y2="443.600" stroke="#1b4f9c" stroke-width="0.28"/>
+<circle cx="327.000" cy="309.500" r="1.250" fill="#fff" stroke="#1b4f9c" stroke-width="0.28"/>
+<line x1="326.100" y1="308.600" x2="327.900" y2="310.400" stroke="#1b4f9c" stroke-width="0.28"/>
+<line x1="326.100" y1="310.400" x2="327.900" y2="308.600" stroke="#1b4f9c" stroke-width="0.28"/>
+<circle cx="327.000" cy="174.500" r="1.250" fill="#fff" stroke="#1b4f9c" stroke-width="0.28"/>
+<line x1="326.100" y1="173.600" x2="327.900" y2="175.400" stroke="#1b4f9c" stroke-width="0.28"/>
+<line x1="326.100" y1="175.400" x2="327.900" y2="173.600" stroke="#1b4f9c" stroke-width="0.28"/>
+<circle cx="477.000" cy="444.500" r="1.250" fill="#fff" stroke="#1b4f9c" stroke-width="0.28"/>
+<line x1="476.100" y1="443.600" x2="477.900" y2="445.400" stroke="#1b4f9c" stroke-width="0.28"/>
+<line x1="476.100" y1="445.400" x2="477.900" y2="443.600" stroke="#1b4f9c" stroke-width="0.28"/>
+<circle cx="477.000" cy="309.500" r="1.250" fill="#fff" stroke="#1b4f9c" stroke-width="0.28"/>
+<line x1="476.100" y1="308.600" x2="477.900" y2="310.400" stroke="#1b4f9c" stroke-width="0.28"/>
+<line x1="476.100" y1="310.400" x2="477.900" y2="308.600" stroke="#1b4f9c" stroke-width="0.28"/>
+<circle cx="477.000" cy="174.500" r="1.250" fill="#fff" stroke="#1b4f9c" stroke-width="0.28"/>
+<line x1="476.100" y1="173.600" x2="477.900" y2="175.400" stroke="#1b4f9c" stroke-width="0.28"/>
+<line x1="476.100" y1="175.400" x2="477.900" y2="173.600" stroke="#1b4f9c" stroke-width="0.28"/>
+<circle cx="627.000" cy="444.500" r="1.250" fill="#fff" stroke="#1b4f9c" stroke-width="0.28"/>
+<line x1="626.100" y1="443.600" x2="627.900" y2="445.400" stroke="#1b4f9c" stroke-width="0.28"/>
+<line x1="626.100" y1="445.400" x2="627.900" y2="443.600" stroke="#1b4f9c" stroke-width="0.28"/>
+<circle cx="627.000" cy="309.500" r="1.250" fill="#fff" stroke="#1b4f9c" stroke-width="0.28"/>
+<line x1="626.100" y1="308.600" x2="627.900" y2="310.400" stroke="#1b4f9c" stroke-width="0.28"/>
+<line x1="626.100" y1="310.400" x2="627.900" y2="308.600" stroke="#1b4f9c" stroke-width="0.28"/>
+<circle cx="627.000" cy="174.500" r="1.250" fill="#fff" stroke="#1b4f9c" stroke-width="0.28"/>
+<line x1="626.100" y1="173.600" x2="627.900" y2="175.400" stroke="#1b4f9c" stroke-width="0.28"/>
+<line x1="626.100" y1="175.400" x2="627.900" y2="173.600" stroke="#1b4f9c" stroke-width="0.28"/>
+<circle cx="232.000" cy="462.000" r="1.800" fill="#fff" stroke="#c8102e" stroke-width="0.35"/>
+<text x="232.000" y="462.780" font-size="2.2" fill="#c8102e" text-anchor="middle" font-weight="bold" letter-spacing="0.0">S</text>
+<circle cx="449.500" cy="489.500" r="1.800" fill="#fff" stroke="#c8102e" stroke-width="0.35"/>
+<text x="449.500" y="490.280" font-size="2.2" fill="#c8102e" text-anchor="middle" font-weight="bold" letter-spacing="0.0">S</text>
+<circle cx="647.000" cy="452.000" r="1.800" fill="#fff" stroke="#c8102e" stroke-width="0.35"/>
+<text x="647.000" y="452.780" font-size="2.2" fill="#c8102e" text-anchor="middle" font-weight="bold" letter-spacing="0.0">S</text>
+<circle cx="267.000" cy="387.000" r="1.800" fill="#fff" stroke="#c8102e" stroke-width="0.35"/>
+<text x="267.000" y="387.780" font-size="2.2" fill="#c8102e" text-anchor="middle" font-weight="bold" letter-spacing="0.0">S</text>
+<circle cx="447.000" cy="282.000" r="1.800" fill="#fff" stroke="#c8102e" stroke-width="0.35"/>
+<text x="447.000" y="282.780" font-size="2.2" fill="#c8102e" text-anchor="middle" font-weight="bold" letter-spacing="0.0">S</text>
+<circle cx="642.000" cy="347.000" r="1.800" fill="#fff" stroke="#c8102e" stroke-width="0.35"/>
+<text x="642.000" y="347.780" font-size="2.2" fill="#c8102e" text-anchor="middle" font-weight="bold" letter-spacing="0.0">S</text>
+<circle cx="114.500" cy="172.000" r="1.800" fill="#fff" stroke="#c8102e" stroke-width="0.35"/>
+<text x="114.500" y="172.780" font-size="2.2" fill="#c8102e" text-anchor="middle" font-weight="bold" letter-spacing="0.0">S</text>
+<circle cx="222.000" cy="122.000" r="1.800" fill="#fff" stroke="#c8102e" stroke-width="0.35"/>
+<text x="222.000" y="122.780" font-size="2.2" fill="#c8102e" text-anchor="middle" font-weight="bold" letter-spacing="0.0">H</text>
+<circle cx="337.000" cy="207.000" r="1.800" fill="#fff" stroke="#c8102e" stroke-width="0.35"/>
+<text x="337.000" y="207.780" font-size="2.2" fill="#c8102e" text-anchor="middle" font-weight="bold" letter-spacing="0.0">S</text>
+<circle cx="442.000" cy="182.000" r="1.800" fill="#fff" stroke="#c8102e" stroke-width="0.35"/>
+<text x="442.000" y="182.780" font-size="2.2" fill="#c8102e" text-anchor="middle" font-weight="bold" letter-spacing="0.0">S</text>
+<circle cx="272.000" cy="284.500" r="1.800" fill="#fff" stroke="#c8102e" stroke-width="0.35"/>
+<text x="272.000" y="285.280" font-size="2.2" fill="#c8102e" text-anchor="middle" font-weight="bold" letter-spacing="0.0">H</text>
+<circle cx="542.000" cy="197.000" r="1.800" fill="#fff" stroke="#c8102e" stroke-width="0.35"/>
+<text x="542.000" y="197.780" font-size="2.2" fill="#c8102e" text-anchor="middle" font-weight="bold" letter-spacing="0.0">S</text>
+<circle cx="112.000" cy="472.000" r="1.600" fill="#fff" stroke="#00843d" stroke-width="0.35"/>
+<line x1="110.400" y1="472.000" x2="113.600" y2="472.000" stroke="#00843d" stroke-width="0.35"/>
+<line x1="112.000" y1="470.400" x2="112.000" y2="473.600" stroke="#00843d" stroke-width="0.35"/>
+<circle cx="112.000" cy="317.000" r="1.600" fill="#fff" stroke="#00843d" stroke-width="0.35"/>
+<line x1="110.400" y1="317.000" x2="113.600" y2="317.000" stroke="#00843d" stroke-width="0.35"/>
+<line x1="112.000" y1="315.400" x2="112.000" y2="318.600" stroke="#00843d" stroke-width="0.35"/>
+<circle cx="112.000" cy="252.000" r="1.600" fill="#fff" stroke="#00843d" stroke-width="0.35"/>
+<line x1="110.400" y1="252.000" x2="113.600" y2="252.000" stroke="#00843d" stroke-width="0.35"/>
+<line x1="112.000" y1="250.400" x2="112.000" y2="253.600" stroke="#00843d" stroke-width="0.35"/>
+<circle cx="154.500" cy="157.000" r="1.600" fill="#fff" stroke="#00843d" stroke-width="0.35"/>
+<line x1="152.900" y1="157.000" x2="156.100" y2="157.000" stroke="#00843d" stroke-width="0.35"/>
+<line x1="154.500" y1="155.400" x2="154.500" y2="158.600" stroke="#00843d" stroke-width="0.35"/>
+<circle cx="227.000" cy="417.000" r="1.600" fill="#fff" stroke="#00843d" stroke-width="0.35"/>
+<line x1="225.400" y1="417.000" x2="228.600" y2="417.000" stroke="#00843d" stroke-width="0.35"/>
+<line x1="227.000" y1="415.400" x2="227.000" y2="418.600" stroke="#00843d" stroke-width="0.35"/>
+<circle cx="352.000" cy="417.000" r="1.600" fill="#fff" stroke="#00843d" stroke-width="0.35"/>
+<line x1="350.400" y1="417.000" x2="353.600" y2="417.000" stroke="#00843d" stroke-width="0.35"/>
+<line x1="352.000" y1="415.400" x2="352.000" y2="418.600" stroke="#00843d" stroke-width="0.35"/>
+<circle cx="482.000" cy="417.000" r="1.600" fill="#fff" stroke="#00843d" stroke-width="0.35"/>
+<line x1="480.400" y1="417.000" x2="483.600" y2="417.000" stroke="#00843d" stroke-width="0.35"/>
+<line x1="482.000" y1="415.400" x2="482.000" y2="418.600" stroke="#00843d" stroke-width="0.35"/>
+<circle cx="534.500" cy="447.000" r="1.600" fill="#fff" stroke="#00843d" stroke-width="0.35"/>
+<line x1="532.900" y1="447.000" x2="536.100" y2="447.000" stroke="#00843d" stroke-width="0.35"/>
+<line x1="534.500" y1="445.400" x2="534.500" y2="448.600" stroke="#00843d" stroke-width="0.35"/>
+<circle cx="574.500" cy="347.000" r="1.600" fill="#fff" stroke="#00843d" stroke-width="0.35"/>
+<line x1="572.900" y1="347.000" x2="576.100" y2="347.000" stroke="#00843d" stroke-width="0.35"/>
+<line x1="574.500" y1="345.400" x2="574.500" y2="348.600" stroke="#00843d" stroke-width="0.35"/>
+<circle cx="507.000" cy="284.500" r="1.600" fill="#fff" stroke="#00843d" stroke-width="0.35"/>
+<line x1="505.400" y1="284.500" x2="508.600" y2="284.500" stroke="#00843d" stroke-width="0.35"/>
+<line x1="507.000" y1="282.900" x2="507.000" y2="286.100" stroke="#00843d" stroke-width="0.35"/>
+<circle cx="689.500" cy="299.500" r="1.600" fill="#fff" stroke="#00843d" stroke-width="0.35"/>
+<line x1="687.900" y1="299.500" x2="691.100" y2="299.500" stroke="#00843d" stroke-width="0.35"/>
+<line x1="689.500" y1="297.900" x2="689.500" y2="301.100" stroke="#00843d" stroke-width="0.35"/>
+<circle cx="184.500" cy="204.500" r="1.600" fill="#fff" stroke="#00843d" stroke-width="0.35"/>
+<line x1="182.900" y1="204.500" x2="186.100" y2="204.500" stroke="#00843d" stroke-width="0.35"/>
+<line x1="184.500" y1="202.900" x2="184.500" y2="206.100" stroke="#00843d" stroke-width="0.35"/>
+<circle cx="292.000" cy="204.500" r="1.600" fill="#fff" stroke="#00843d" stroke-width="0.35"/>
+<line x1="290.400" y1="204.500" x2="293.600" y2="204.500" stroke="#00843d" stroke-width="0.35"/>
+<line x1="292.000" y1="202.900" x2="292.000" y2="206.100" stroke="#00843d" stroke-width="0.35"/>
+<circle cx="407.000" cy="204.500" r="1.600" fill="#fff" stroke="#00843d" stroke-width="0.35"/>
+<line x1="405.400" y1="204.500" x2="408.600" y2="204.500" stroke="#00843d" stroke-width="0.35"/>
+<line x1="407.000" y1="202.900" x2="407.000" y2="206.100" stroke="#00843d" stroke-width="0.35"/>
+<circle cx="492.000" cy="147.000" r="1.600" fill="#fff" stroke="#00843d" stroke-width="0.35"/>
+<line x1="490.400" y1="147.000" x2="493.600" y2="147.000" stroke="#00843d" stroke-width="0.35"/>
+<line x1="492.000" y1="145.400" x2="492.000" y2="148.600" stroke="#00843d" stroke-width="0.35"/>
+<circle cx="602.000" cy="167.000" r="1.600" fill="#fff" stroke="#00843d" stroke-width="0.35"/>
+<line x1="600.400" y1="167.000" x2="603.600" y2="167.000" stroke="#00843d" stroke-width="0.35"/>
+<line x1="602.000" y1="165.400" x2="602.000" y2="168.600" stroke="#00843d" stroke-width="0.35"/>
+<circle cx="674.500" cy="157.000" r="1.600" fill="#fff" stroke="#00843d" stroke-width="0.35"/>
+<line x1="672.900" y1="157.000" x2="676.100" y2="157.000" stroke="#00843d" stroke-width="0.35"/>
+<line x1="674.500" y1="155.400" x2="674.500" y2="158.600" stroke="#00843d" stroke-width="0.35"/>
+<rect x="559.500" y="486.750" width="5.000" height="2.500" fill="#00843d" stroke="#04502a" stroke-width="0.15"/>
+<text x="562.400" y="488.500" font-size="1.5" fill="#fff" text-anchor="middle" font-weight="bold" letter-spacing="0.0">EXIT</text>
+<circle cx="560.300" cy="487.700" r="0.275" fill="#fff" stroke="none"/>
+<path d="M 560.00 488.05 l 0.50 0.50 l 0.35 -0.15" fill="none" stroke="#fff" stroke-width="0.28"/>
+<rect x="559.500" y="541.750" width="5.000" height="2.500" fill="#00843d" stroke="#04502a" stroke-width="0.15"/>
+<text x="562.400" y="543.500" font-size="1.5" fill="#fff" text-anchor="middle" font-weight="bold" letter-spacing="0.0">EXIT</text>
+<circle cx="560.300" cy="542.700" r="0.275" fill="#fff" stroke="none"/>
+<path d="M 560.00 543.05 l 0.50 0.50 l 0.35 -0.15" fill="none" stroke="#fff" stroke-width="0.28"/>
+<rect x="132.000" y="120.750" width="5.000" height="2.500" fill="#00843d" stroke="#04502a" stroke-width="0.15"/>
+<text x="134.900" y="122.500" font-size="1.5" fill="#fff" text-anchor="middle" font-weight="bold" letter-spacing="0.0">EXIT</text>
+<circle cx="132.800" cy="121.700" r="0.275" fill="#fff" stroke="none"/>
+<path d="M 132.50 122.05 l 0.50 0.50 l 0.35 -0.15" fill="none" stroke="#fff" stroke-width="0.28"/>
+<rect x="149.500" y="253.250" width="5.000" height="2.500" fill="#00843d" stroke="#04502a" stroke-width="0.15"/>
+<text x="152.400" y="255.000" font-size="1.5" fill="#fff" text-anchor="middle" font-weight="bold" letter-spacing="0.0">EXIT</text>
+<circle cx="150.300" cy="254.200" r="0.275" fill="#fff" stroke="none"/>
+<path d="M 150.00 254.55 l 0.50 0.50 l 0.35 -0.15" fill="none" stroke="#fff" stroke-width="0.28"/>
+<line x1="152.000" y1="252.875" x2="152.000" y2="250.475" stroke="#00843d" stroke-width="0.5"/>
+<line x1="152.000" y1="250.475" x2="152.650" y2="251.601" stroke="#00843d" stroke-width="0.5"/>
+<line x1="152.000" y1="250.475" x2="151.350" y2="251.601" stroke="#00843d" stroke-width="0.5"/>
+<rect x="199.500" y="378.250" width="5.000" height="2.500" fill="#00843d" stroke="#04502a" stroke-width="0.15"/>
+<text x="202.400" y="380.000" font-size="1.5" fill="#fff" text-anchor="middle" font-weight="bold" letter-spacing="0.0">EXIT</text>
+<circle cx="200.300" cy="379.200" r="0.275" fill="#fff" stroke="none"/>
+<path d="M 200.00 379.55 l 0.50 0.50 l 0.35 -0.15" fill="none" stroke="#fff" stroke-width="0.28"/>
+<line x1="199.250" y1="379.500" x2="196.850" y2="379.500" stroke="#00843d" stroke-width="0.5"/>
+<line x1="196.850" y1="379.500" x2="197.976" y2="378.850" stroke="#00843d" stroke-width="0.5"/>
+<line x1="196.850" y1="379.500" x2="197.976" y2="380.150" stroke="#00843d" stroke-width="0.5"/>
+<rect x="449.500" y="378.250" width="5.000" height="2.500" fill="#00843d" stroke="#04502a" stroke-width="0.15"/>
+<text x="452.400" y="380.000" font-size="1.5" fill="#fff" text-anchor="middle" font-weight="bold" letter-spacing="0.0">EXIT</text>
+<circle cx="450.300" cy="379.200" r="0.275" fill="#fff" stroke="none"/>
+<path d="M 450.00 379.55 l 0.50 0.50 l 0.35 -0.15" fill="none" stroke="#fff" stroke-width="0.28"/>
+<line x1="454.750" y1="379.500" x2="457.150" y2="379.500" stroke="#00843d" stroke-width="0.5"/>
+<line x1="457.150" y1="379.500" x2="456.024" y2="380.150" stroke="#00843d" stroke-width="0.5"/>
+<line x1="457.150" y1="379.500" x2="456.024" y2="378.850" stroke="#00843d" stroke-width="0.5"/>
+<rect x="554.500" y="290.750" width="5.000" height="2.500" fill="#00843d" stroke="#04502a" stroke-width="0.15"/>
+<text x="557.400" y="292.500" font-size="1.5" fill="#fff" text-anchor="middle" font-weight="bold" letter-spacing="0.0">EXIT</text>
+<circle cx="555.300" cy="291.700" r="0.275" fill="#fff" stroke="none"/>
+<path d="M 555.00 292.05 l 0.50 0.50 l 0.35 -0.15" fill="none" stroke="#fff" stroke-width="0.28"/>
+<line x1="557.000" y1="293.625" x2="557.000" y2="296.025" stroke="#00843d" stroke-width="0.5"/>
+<line x1="557.000" y1="296.025" x2="556.350" y2="294.899" stroke="#00843d" stroke-width="0.5"/>
+<line x1="557.000" y1="296.025" x2="557.650" y2="294.899" stroke="#00843d" stroke-width="0.5"/>
+<rect x="680.500" y="283.250" width="5.000" height="2.500" fill="#00843d" stroke="#04502a" stroke-width="0.15"/>
+<text x="683.400" y="285.000" font-size="1.5" fill="#fff" text-anchor="middle" font-weight="bold" letter-spacing="0.0">EXIT</text>
+<circle cx="681.300" cy="284.200" r="0.275" fill="#fff" stroke="none"/>
+<path d="M 681.00 284.55 l 0.50 0.50 l 0.35 -0.15" fill="none" stroke="#fff" stroke-width="0.28"/>
+<line x1="680.250" y1="284.500" x2="677.850" y2="284.500" stroke="#00843d" stroke-width="0.5"/>
+<line x1="677.850" y1="284.500" x2="678.976" y2="283.850" stroke="#00843d" stroke-width="0.5"/>
+<line x1="677.850" y1="284.500" x2="678.976" y2="285.150" stroke="#00843d" stroke-width="0.5"/>
+<rect x="524.600" y="484.300" width="4.800" height="3.400" fill="#fff" stroke="#c8102e" stroke-width="0.4"/>
+<text x="527.000" y="486.756" font-size="2.1" fill="#c8102e" text-anchor="middle" font-weight="bold" letter-spacing="0.0">MCP</text>
+<rect x="112.100" y="135.300" width="4.800" height="3.400" fill="#fff" stroke="#c8102e" stroke-width="0.4"/>
+<text x="114.500" y="137.756" font-size="2.1" fill="#c8102e" text-anchor="middle" font-weight="bold" letter-spacing="0.0">MCP</text>
+<path d="M 525.200 455.400 A 1.800 1.800 0 0 1 528.800 455.400 Z" fill="#fff" stroke="#c8102e" stroke-width="0.4"/>
+<line x1="524.660" y1="455.400" x2="529.340" y2="455.400" stroke="#c8102e" stroke-width="0.4"/>
+<path d="M 152.700 137.900 A 1.800 1.800 0 0 1 156.300 137.900 Z" fill="#fff" stroke="#c8102e" stroke-width="0.4"/>
+<line x1="152.160" y1="137.900" x2="156.840" y2="137.900" stroke="#c8102e" stroke-width="0.4"/>
+<circle cx="527.000" cy="468.500" r="2.000" fill="#fff" stroke="#c8102e" stroke-width="0.4"/>
+<text x="527.000" y="469.400" font-size="2.0" fill="#c8102e" text-anchor="middle" font-weight="bold" letter-spacing="0.0">H₂O</text>
+<circle cx="114.500" cy="202.000" r="2.000" fill="#fff" stroke="#c8102e" stroke-width="0.4"/>
+<text x="114.500" y="202.900" font-size="2.0" fill="#c8102e" text-anchor="middle" font-weight="bold" letter-spacing="0.0">H₂O</text>
+<circle cx="189.500" cy="287.000" r="2.000" fill="#fff" stroke="#c8102e" stroke-width="0.4"/>
+<text x="189.500" y="287.900" font-size="2.0" fill="#c8102e" text-anchor="middle" font-weight="bold" letter-spacing="0.0">CO₂</text>
+<circle cx="247.000" cy="204.500" r="2.000" fill="#fff" stroke="#c8102e" stroke-width="0.4"/>
+<text x="247.000" y="205.400" font-size="2.0" fill="#c8102e" text-anchor="middle" font-weight="bold" letter-spacing="0.0">CO₂</text>
+<rect x="259.800" y="222.900" width="4.400" height="3.200" fill="#fff" stroke="#c8102e" stroke-width="0.4"/>
+<text x="262.000" y="225.256" font-size="2.1" fill="#c8102e" text-anchor="middle" font-weight="bold" letter-spacing="0.0">F.B.</text>
+<rect x="629.800" y="93.900" width="4.400" height="3.200" fill="#fff" stroke="#c8102e" stroke-width="0.4"/>
+<text x="632.000" y="96.256" font-size="2.1" fill="#c8102e" text-anchor="middle" font-weight="bold" letter-spacing="0.0">HR</text>
+<text x="649.500" y="95.500" font-size="2.3" fill="#c8102e" text-anchor="start" font-weight="normal" letter-spacing="0.0">EXISTING HOSE REEL (BY OTHERS)</text>
+</g>
+<g id="remote">
+<line x1="562.000" y1="522.000" x2="134.500" y2="102.000" stroke="#1b4f9c" stroke-width="0.35" stroke-dasharray="4,3" opacity="0.42"/>
+<circle cx="562.000" cy="522.000" r="4.500" fill="#fff" stroke="#1b4f9c" stroke-width="0.4"/>
+<circle cx="134.500" cy="102.000" r="4.500" fill="#fff" stroke="#1b4f9c" stroke-width="0.4"/>
+<text x="470.087" y="431.700" font-size="2.6" fill="#1b4f9c" text-anchor="middle" font-weight="bold" letter-spacing="0.0" transform="rotate(44.49297093908524 470.087 431.700)" stroke="#ffffff" stroke-width="1.09" paint-order="stroke" stroke-linejoin="round">EXITS 12.0 m APART  &gt;  ½ DIAGONAL 7.5 m</text>
+</g>
+<g id="escNotes">
+<line x1="594.500" y1="522.000" x2="621.000" y2="541.000" stroke="#00843d" stroke-width="0.28"/>
+<circle cx="594.500" cy="522.000" r="0.800" fill="#00843d" stroke="none"/>
+<rect x="621.000" y="526.200" width="68.896" height="16.800" fill="#ffffff" stroke="#00843d" stroke-width="0.3" fill-opacity="0.95"/>
+<text x="623.000" y="528.600" font-size="2.6" fill="#123" text-anchor="start" font-weight="bold" letter-spacing="0.0">EXIT 1 — FINAL EXIT TO STREET</text>
+<text x="623.000" y="532.300" font-size="2.6" fill="#123" text-anchor="start" font-weight="normal" letter-spacing="0.0">1800 opening · 2 No. 900 leaves · 1700 clear.</text>
+<text x="623.000" y="536.000" font-size="2.6" fill="#123" text-anchor="start" font-weight="normal" letter-spacing="0.0">Opens outward in the direction of escape.</text>
+<text x="623.000" y="539.700" font-size="2.6" fill="#123" text-anchor="start" font-weight="normal" letter-spacing="0.0">Panic bolt — openable from inside without a key.</text>
+<line x1="134.500" y1="102.000" x2="174.500" y2="72.000" stroke="#00843d" stroke-width="0.28"/>
+<circle cx="134.500" cy="102.000" r="0.800" fill="#00843d" stroke="none"/>
+<rect x="174.500" y="60.900" width="99.992" height="13.100" fill="#ffffff" stroke="#00843d" stroke-width="0.3" fill-opacity="0.95"/>
+<text x="176.500" y="63.300" font-size="2.6" fill="#123" text-anchor="start" font-weight="bold" letter-spacing="0.0">EXIT 2 — FINAL EXIT TO REAR COMMON CORRIDOR</text>
+<text x="176.500" y="67.000" font-size="2.6" fill="#123" text-anchor="start" font-weight="normal" letter-spacing="0.0">1200 opening · 1130 clear leaf · FRD −/60/30 self-closing.</text>
+<text x="176.500" y="70.700" font-size="2.6" fill="#123" text-anchor="start" font-weight="normal" letter-spacing="0.0">Opens outward in the direction of escape. Lever handle inside — no key.</text>
+</g>
+<g id="sectionMark">
+<line x1="557.000" y1="101.500" x2="557.000" y2="111.000" stroke="#111" stroke-width="0.55" stroke-dasharray="7,2,1.6,2"/>
+<line x1="557.000" y1="106.500" x2="538.000" y2="106.500" stroke="#111" stroke-width="0.55"/>
+<path d="M 538.00 106.50 l 3.0 -1.7 l 0 3.4 z" fill="#111" stroke="none"/>
+<circle cx="557.000" cy="91.000" r="9.250" fill="#fff" stroke="#111" stroke-width="0.55"/>
+<text x="557.000" y="95.750" font-size="3.0" fill="#111" text-anchor="middle" font-weight="bold" letter-spacing="0.0">A</text>
+<line x1="557.000" y1="522.500" x2="557.000" y2="513.000" stroke="#111" stroke-width="0.55" stroke-dasharray="7,2,1.6,2"/>
+<line x1="557.000" y1="517.500" x2="538.000" y2="517.500" stroke="#111" stroke-width="0.55"/>
+<path d="M 538.00 517.50 l 3.0 -1.7 l 0 3.4 z" fill="#111" stroke="none"/>
+<circle cx="557.000" cy="533.000" r="9.250" fill="#fff" stroke="#111" stroke-width="0.55"/>
+<text x="557.000" y="537.750" font-size="3.0" fill="#111" text-anchor="middle" font-weight="bold" letter-spacing="0.0">A</text>
+</g>
+<g id="travel">
+<polyline points="399.500,249.500 399.500,399.500 557.000,399.500 557.000,517.000" fill="none" stroke="#c8102e" stroke-width="0.55" stroke-dasharray="3.4,2.0" marker-end="url(#arwR)"/>
+<circle cx="399.500" cy="249.500" r="1.100" fill="#c8102e" stroke="#fff" stroke-width="0.35"/>
+<text x="479.500" y="384.000" font-size="2.6" fill="#c8102e" text-anchor="middle" font-weight="bold" letter-spacing="0.0" stroke="#ffffff" stroke-width="1.09" paint-order="stroke" stroke-linejoin="round">TD-1   8.6 m</text>
+<polyline points="109.500,504.500 109.500,399.500 137.000,399.500 137.000,107.000" fill="none" stroke="#c8102e" stroke-width="0.55" stroke-dasharray="3.4,2.0" marker-end="url(#arwR)"/>
+<circle cx="109.500" cy="504.500" r="1.100" fill="#c8102e" stroke="#fff" stroke-width="0.35"/>
+<text x="123.500" y="454.500" font-size="2.6" fill="#c8102e" text-anchor="middle" font-weight="bold" letter-spacing="0.0" transform="rotate(-90 123.500 454.500)" stroke="#ffffff" stroke-width="1.09" paint-order="stroke" stroke-linejoin="round">TD-2   7.9 m</text>
+<polyline points="697.000,264.500 557.000,264.500 557.000,367.000" fill="none" stroke="#c8102e" stroke-width="0.55" stroke-dasharray="3.4,2.0" marker-end="url(#arwR)"/>
+<circle cx="697.000" cy="264.500" r="1.100" fill="#c8102e" stroke="#fff" stroke-width="0.35"/>
+<text x="637.000" y="256.000" font-size="2.6" fill="#c8102e" text-anchor="middle" font-weight="bold" letter-spacing="0.0" stroke="#ffffff" stroke-width="1.09" paint-order="stroke" stroke-linejoin="round">TD-3   7.5 m</text>
+</g>
+<g id="dims">
+<line x1="102.000" y1="549.000" x2="517.000" y2="549.000" stroke="#1b4f9c" stroke-width="0.18"/>
+<line x1="102.000" y1="547.500" x2="102.000" y2="550.500" stroke="#1b4f9c" stroke-width="0.35"/>
+<line x1="517.000" y1="547.500" x2="517.000" y2="550.500" stroke="#1b4f9c" stroke-width="0.35"/>
+<text x="309.500" y="547.800" font-size="2.3" fill="#1b4f9c" text-anchor="middle" font-weight="normal" letter-spacing="0.0">8300</text>
+<line x1="517.000" y1="549.000" x2="607.000" y2="549.000" stroke="#1b4f9c" stroke-width="0.18"/>
+<line x1="517.000" y1="547.500" x2="517.000" y2="550.500" stroke="#1b4f9c" stroke-width="0.35"/>
+<line x1="607.000" y1="547.500" x2="607.000" y2="550.500" stroke="#1b4f9c" stroke-width="0.35"/>
+<text x="562.000" y="547.800" font-size="2.3" fill="#1b4f9c" text-anchor="middle" font-weight="normal" letter-spacing="0.0">1800</text>
+<line x1="607.000" y1="549.000" x2="702.000" y2="549.000" stroke="#1b4f9c" stroke-width="0.18"/>
+<line x1="607.000" y1="547.500" x2="607.000" y2="550.500" stroke="#1b4f9c" stroke-width="0.35"/>
+<line x1="702.000" y1="547.500" x2="702.000" y2="550.500" stroke="#1b4f9c" stroke-width="0.35"/>
+<text x="654.500" y="547.800" font-size="2.3" fill="#1b4f9c" text-anchor="middle" font-weight="normal" letter-spacing="0.0">1900</text>
+<line x1="102.000" y1="558.000" x2="702.000" y2="558.000" stroke="#1b4f9c" stroke-width="0.18"/>
+<line x1="102.000" y1="556.500" x2="102.000" y2="559.500" stroke="#1b4f9c" stroke-width="0.35"/>
+<line x1="702.000" y1="556.500" x2="702.000" y2="559.500" stroke="#1b4f9c" stroke-width="0.35"/>
+<text x="402.000" y="556.800" font-size="2.4" fill="#1b4f9c" text-anchor="middle" font-weight="normal" letter-spacing="0.0">12000  INTERNAL CLEAR</text>
+<line x1="92.000" y1="567.000" x2="712.000" y2="567.000" stroke="#1b4f9c" stroke-width="0.18"/>
+<line x1="92.000" y1="565.500" x2="92.000" y2="568.500" stroke="#1b4f9c" stroke-width="0.35"/>
+<line x1="712.000" y1="565.500" x2="712.000" y2="568.500" stroke="#1b4f9c" stroke-width="0.35"/>
+<text x="402.000" y="565.800" font-size="2.4" fill="#1b4f9c" text-anchor="middle" font-weight="normal" letter-spacing="0.0">12400  OVERALL</text>
+<line x1="102.000" y1="78.000" x2="167.000" y2="78.000" stroke="#1b4f9c" stroke-width="0.18"/>
+<line x1="102.000" y1="76.500" x2="102.000" y2="79.500" stroke="#1b4f9c" stroke-width="0.35"/>
+<line x1="167.000" y1="76.500" x2="167.000" y2="79.500" stroke="#1b4f9c" stroke-width="0.35"/>
+<text x="134.500" y="76.800" font-size="2.2" fill="#1b4f9c" text-anchor="middle" font-weight="normal" letter-spacing="0.0">1300</text>
+<line x1="172.000" y1="78.000" x2="272.000" y2="78.000" stroke="#1b4f9c" stroke-width="0.18"/>
+<line x1="172.000" y1="76.500" x2="172.000" y2="79.500" stroke="#1b4f9c" stroke-width="0.35"/>
+<line x1="272.000" y1="76.500" x2="272.000" y2="79.500" stroke="#1b4f9c" stroke-width="0.35"/>
+<text x="222.000" y="76.800" font-size="2.2" fill="#1b4f9c" text-anchor="middle" font-weight="normal" letter-spacing="0.0">2000</text>
+<line x1="277.000" y1="78.000" x2="387.000" y2="78.000" stroke="#1b4f9c" stroke-width="0.18"/>
+<line x1="277.000" y1="76.500" x2="277.000" y2="79.500" stroke="#1b4f9c" stroke-width="0.35"/>
+<line x1="387.000" y1="76.500" x2="387.000" y2="79.500" stroke="#1b4f9c" stroke-width="0.35"/>
+<text x="332.000" y="76.800" font-size="2.2" fill="#1b4f9c" text-anchor="middle" font-weight="normal" letter-spacing="0.0">2200</text>
+<line x1="392.000" y1="78.000" x2="462.000" y2="78.000" stroke="#1b4f9c" stroke-width="0.18"/>
+<line x1="392.000" y1="76.500" x2="392.000" y2="79.500" stroke="#1b4f9c" stroke-width="0.35"/>
+<line x1="462.000" y1="76.500" x2="462.000" y2="79.500" stroke="#1b4f9c" stroke-width="0.35"/>
+<text x="427.000" y="76.800" font-size="2.2" fill="#1b4f9c" text-anchor="middle" font-weight="normal" letter-spacing="0.0">1400</text>
+<line x1="467.000" y1="78.000" x2="567.000" y2="78.000" stroke="#1b4f9c" stroke-width="0.18"/>
+<line x1="467.000" y1="76.500" x2="467.000" y2="79.500" stroke="#1b4f9c" stroke-width="0.35"/>
+<line x1="567.000" y1="76.500" x2="567.000" y2="79.500" stroke="#1b4f9c" stroke-width="0.35"/>
+<text x="517.000" y="76.800" font-size="2.2" fill="#1b4f9c" text-anchor="middle" font-weight="normal" letter-spacing="0.0">2000</text>
+<line x1="572.000" y1="78.000" x2="632.000" y2="78.000" stroke="#1b4f9c" stroke-width="0.18"/>
+<line x1="572.000" y1="76.500" x2="572.000" y2="79.500" stroke="#1b4f9c" stroke-width="0.35"/>
+<line x1="632.000" y1="76.500" x2="632.000" y2="79.500" stroke="#1b4f9c" stroke-width="0.35"/>
+<text x="602.000" y="76.800" font-size="2.2" fill="#1b4f9c" text-anchor="middle" font-weight="normal" letter-spacing="0.0">1200</text>
+<line x1="637.000" y1="78.000" x2="702.000" y2="78.000" stroke="#1b4f9c" stroke-width="0.18"/>
+<line x1="637.000" y1="76.500" x2="637.000" y2="79.500" stroke="#1b4f9c" stroke-width="0.35"/>
+<line x1="702.000" y1="76.500" x2="702.000" y2="79.500" stroke="#1b4f9c" stroke-width="0.35"/>
+<text x="669.500" y="76.800" font-size="2.2" fill="#1b4f9c" text-anchor="middle" font-weight="normal" letter-spacing="0.0">1300</text>
+<line x1="104.500" y1="69.000" x2="164.500" y2="69.000" stroke="#1b4f9c" stroke-width="0.18"/>
+<line x1="104.500" y1="67.500" x2="104.500" y2="70.500" stroke="#1b4f9c" stroke-width="0.35"/>
+<line x1="164.500" y1="67.500" x2="164.500" y2="70.500" stroke="#1b4f9c" stroke-width="0.35"/>
+<text x="134.500" y="67.800" font-size="2.4" fill="#1b4f9c" text-anchor="middle" font-weight="normal" letter-spacing="0.0">1200</text>
+<line x1="731.000" y1="512.000" x2="731.000" y2="242.000" stroke="#1b4f9c" stroke-width="0.18"/>
+<line x1="729.500" y1="512.000" x2="732.500" y2="512.000" stroke="#1b4f9c" stroke-width="0.35"/>
+<line x1="729.500" y1="242.000" x2="732.500" y2="242.000" stroke="#1b4f9c" stroke-width="0.35"/>
+<text x="729.800" y="377.000" font-size="2.4" fill="#1b4f9c" text-anchor="middle" font-weight="normal" letter-spacing="0.0" transform="rotate(-90 729.800 377.000)">5400</text>
+<line x1="731.000" y1="237.000" x2="731.000" y2="112.000" stroke="#1b4f9c" stroke-width="0.18"/>
+<line x1="729.500" y1="237.000" x2="732.500" y2="237.000" stroke="#1b4f9c" stroke-width="0.35"/>
+<line x1="729.500" y1="112.000" x2="732.500" y2="112.000" stroke="#1b4f9c" stroke-width="0.35"/>
+<text x="729.800" y="174.500" font-size="2.4" fill="#1b4f9c" text-anchor="middle" font-weight="normal" letter-spacing="0.0" transform="rotate(-90 729.800 174.500)">2500</text>
+<line x1="740.000" y1="512.000" x2="740.000" y2="112.000" stroke="#1b4f9c" stroke-width="0.18"/>
+<line x1="738.500" y1="512.000" x2="741.500" y2="512.000" stroke="#1b4f9c" stroke-width="0.35"/>
+<line x1="738.500" y1="112.000" x2="741.500" y2="112.000" stroke="#1b4f9c" stroke-width="0.35"/>
+<text x="738.800" y="312.000" font-size="2.4" fill="#1b4f9c" text-anchor="middle" font-weight="normal" letter-spacing="0.0" transform="rotate(-90 738.800 312.000)">8000  INTERNAL CLEAR</text>
+<line x1="73.000" y1="512.000" x2="73.000" y2="429.500" stroke="#1b4f9c" stroke-width="0.18"/>
+<line x1="71.500" y1="512.000" x2="74.500" y2="512.000" stroke="#1b4f9c" stroke-width="0.35"/>
+<line x1="71.500" y1="429.500" x2="74.500" y2="429.500" stroke="#1b4f9c" stroke-width="0.35"/>
+<text x="71.800" y="470.750" font-size="2.4" fill="#1b4f9c" text-anchor="middle" font-weight="normal" letter-spacing="0.0" transform="rotate(-90 71.800 470.750)">1650</text>
+<line x1="73.000" y1="429.500" x2="73.000" y2="369.500" stroke="#1b4f9c" stroke-width="0.18"/>
+<line x1="71.500" y1="429.500" x2="74.500" y2="429.500" stroke="#1b4f9c" stroke-width="0.35"/>
+<line x1="71.500" y1="369.500" x2="74.500" y2="369.500" stroke="#1b4f9c" stroke-width="0.35"/>
+<text x="71.800" y="399.500" font-size="2.4" fill="#1b4f9c" text-anchor="middle" font-weight="normal" letter-spacing="0.0" transform="rotate(-90 71.800 399.500)">1200</text>
+<line x1="73.000" y1="339.500" x2="73.000" y2="309.500" stroke="#1b4f9c" stroke-width="0.18"/>
+<line x1="71.500" y1="339.500" x2="74.500" y2="339.500" stroke="#1b4f9c" stroke-width="0.35"/>
+<line x1="71.500" y1="309.500" x2="74.500" y2="309.500" stroke="#1b4f9c" stroke-width="0.35"/>
+<text x="71.800" y="324.500" font-size="2.4" fill="#1b4f9c" text-anchor="middle" font-weight="normal" letter-spacing="0.0" transform="rotate(-90 71.800 324.500)">600</text>
+<line x1="73.000" y1="309.500" x2="73.000" y2="259.500" stroke="#1b4f9c" stroke-width="0.18"/>
+<line x1="71.500" y1="309.500" x2="74.500" y2="309.500" stroke="#1b4f9c" stroke-width="0.35"/>
+<line x1="71.500" y1="259.500" x2="74.500" y2="259.500" stroke="#1b4f9c" stroke-width="0.35"/>
+<text x="71.800" y="284.500" font-size="2.4" fill="#1b4f9c" text-anchor="middle" font-weight="normal" letter-spacing="0.0" transform="rotate(-90 71.800 284.500)">1000</text>
+<line x1="73.000" y1="259.500" x2="73.000" y2="242.000" stroke="#1b4f9c" stroke-width="0.18"/>
+<line x1="71.500" y1="259.500" x2="74.500" y2="259.500" stroke="#1b4f9c" stroke-width="0.35"/>
+<line x1="71.500" y1="242.000" x2="74.500" y2="242.000" stroke="#1b4f9c" stroke-width="0.35"/>
+<text x="71.800" y="250.750" font-size="2.4" fill="#1b4f9c" text-anchor="middle" font-weight="normal" letter-spacing="0.0" transform="rotate(-90 71.800 250.750)">350</text>
+<line x1="64.000" y1="522.000" x2="64.000" y2="102.000" stroke="#1b4f9c" stroke-width="0.18"/>
+<line x1="62.500" y1="522.000" x2="65.500" y2="522.000" stroke="#1b4f9c" stroke-width="0.35"/>
+<line x1="62.500" y1="102.000" x2="65.500" y2="102.000" stroke="#1b4f9c" stroke-width="0.35"/>
+<text x="62.800" y="312.000" font-size="2.4" fill="#1b4f9c" text-anchor="middle" font-weight="normal" letter-spacing="0.0" transform="rotate(-90 62.800 312.000)">8400  OVERALL</text>
+<line x1="102.000" y1="404.500" x2="172.000" y2="404.500" stroke="#1b4f9c" stroke-width="0.18"/>
+<line x1="102.000" y1="403.000" x2="102.000" y2="406.000" stroke="#1b4f9c" stroke-width="0.35"/>
+<line x1="172.000" y1="403.000" x2="172.000" y2="406.000" stroke="#1b4f9c" stroke-width="0.35"/>
+<text x="137.000" y="403.300" font-size="2.2" fill="#1b4f9c" text-anchor="middle" font-weight="normal" letter-spacing="0.0" stroke="#ffffff" stroke-width="0.92" paint-order="stroke" stroke-linejoin="round">1400 CLEAR</text>
+<line x1="102.000" y1="222.000" x2="167.000" y2="222.000" stroke="#1b4f9c" stroke-width="0.18"/>
+<line x1="102.000" y1="220.500" x2="102.000" y2="223.500" stroke="#1b4f9c" stroke-width="0.35"/>
+<line x1="167.000" y1="220.500" x2="167.000" y2="223.500" stroke="#1b4f9c" stroke-width="0.35"/>
+<text x="134.500" y="220.800" font-size="2.2" fill="#1b4f9c" text-anchor="middle" font-weight="normal" letter-spacing="0.0" stroke="#ffffff" stroke-width="0.92" paint-order="stroke" stroke-linejoin="round">1300 CLEAR</text>
+<line x1="527.000" y1="329.500" x2="587.000" y2="329.500" stroke="#1b4f9c" stroke-width="0.18"/>
+<line x1="527.000" y1="328.000" x2="527.000" y2="331.000" stroke="#1b4f9c" stroke-width="0.35"/>
+<line x1="587.000" y1="328.000" x2="587.000" y2="331.000" stroke="#1b4f9c" stroke-width="0.35"/>
+<text x="557.000" y="328.300" font-size="2.2" fill="#1b4f9c" text-anchor="middle" font-weight="normal" letter-spacing="0.0" stroke="#ffffff" stroke-width="0.92" paint-order="stroke" stroke-linejoin="round">1200</text>
+<line x1="509.500" y1="429.500" x2="509.500" y2="369.500" stroke="#1b4f9c" stroke-width="0.18"/>
+<line x1="508.000" y1="429.500" x2="511.000" y2="429.500" stroke="#1b4f9c" stroke-width="0.35"/>
+<line x1="508.000" y1="369.500" x2="511.000" y2="369.500" stroke="#1b4f9c" stroke-width="0.35"/>
+<text x="508.300" y="399.500" font-size="2.2" fill="#1b4f9c" text-anchor="middle" font-weight="normal" letter-spacing="0.0" transform="rotate(-90 508.300 399.500)" stroke="#ffffff" stroke-width="0.92" paint-order="stroke" stroke-linejoin="round">1200 CLEAR</text>
+<line x1="687.000" y1="312.000" x2="687.000" y2="242.000" stroke="#1b4f9c" stroke-width="0.18"/>
+<line x1="685.500" y1="312.000" x2="688.500" y2="312.000" stroke="#1b4f9c" stroke-width="0.35"/>
+<line x1="685.500" y1="242.000" x2="688.500" y2="242.000" stroke="#1b4f9c" stroke-width="0.35"/>
+<text x="685.800" y="277.000" font-size="2.2" fill="#1b4f9c" text-anchor="middle" font-weight="normal" letter-spacing="0.0" transform="rotate(-90 685.800 277.000)" stroke="#ffffff" stroke-width="0.92" paint-order="stroke" stroke-linejoin="round">1400</text>
+<line x1="339.500" y1="309.500" x2="339.500" y2="259.500" stroke="#1b4f9c" stroke-width="0.18"/>
+<line x1="338.000" y1="309.500" x2="341.000" y2="309.500" stroke="#1b4f9c" stroke-width="0.35"/>
+<line x1="338.000" y1="259.500" x2="341.000" y2="259.500" stroke="#1b4f9c" stroke-width="0.35"/>
+<text x="338.300" y="284.500" font-size="2.2" fill="#1b4f9c" text-anchor="middle" font-weight="normal" letter-spacing="0.0" transform="rotate(-90 338.300 284.500)" stroke="#ffffff" stroke-width="0.92" paint-order="stroke" stroke-linejoin="round">1000 CLEAR</text>
+<line x1="517.000" y1="477.000" x2="607.000" y2="477.000" stroke="#1b4f9c" stroke-width="0.18"/>
+<line x1="517.000" y1="475.500" x2="517.000" y2="478.500" stroke="#1b4f9c" stroke-width="0.35"/>
+<line x1="607.000" y1="475.500" x2="607.000" y2="478.500" stroke="#1b4f9c" stroke-width="0.35"/>
+<text x="562.000" y="475.800" font-size="2.2" fill="#1b4f9c" text-anchor="middle" font-weight="normal" letter-spacing="0.0" stroke="#ffffff" stroke-width="0.92" paint-order="stroke" stroke-linejoin="round">1800 (1700 CLEAR)</text>
+</g>
+<g id="licence">
+<path d="M 102.0 512.0 L 702.0 512.0 L 702.0 312.0 L 467.0 312.0 L 467.0 242.0 L 397.0 242.0 L 397.0 309.5 L 172.0 309.5 L 172.0 242.0 L 102.0 242.0 Z" fill="none" stroke="#8e2f9c" stroke-width="1.0" stroke-dasharray="8,2.4,1.8,2.4"/>
+<text x="252.000" y="389.500" font-size="3.3" fill="#8e2f9c" text-anchor="middle" font-weight="bold" letter-spacing="0.5" stroke="#ffffff" stroke-width="1.39" paint-order="stroke" stroke-linejoin="round">DESIGNATED LIQUOR-CONSUMPTION AREA</text>
+<text x="252.000" y="408.000" font-size="2.7" fill="#8e2f9c" text-anchor="middle" font-weight="normal" letter-spacing="0.0" stroke="#ffffff" stroke-width="1.13" paint-order="stroke" stroke-linejoin="round">53.0 m²   ·   33 seats + 12 standing</text>
+<rect x="92.000" y="102.000" width="620.000" height="420.000" fill="none" stroke="#8e2f9c" stroke-width="0.55" stroke-dasharray="5,1.8,1.2,1.8" opacity="0.6"/>
+</g>
+<rect x="22.000" y="584.400" width="232.000" height="7.200" fill="#1f1f1f" stroke="none"/>
+<text x="24.600" y="590.000" font-size="3.4" fill="#fff" text-anchor="start" font-weight="bold" letter-spacing="0.5">OCCUPANT CAPACITY  —  CoP FIRE SAFETY IN BUILDINGS 2011, TABLE B1 METHOD</text>
+<text x="23.600" y="599.000" font-size="2.55" fill="#333" text-anchor="start" font-weight="bold" letter-spacing="0.0">Accommodation</text>
+<text x="186.400" y="599.000" font-size="2.55" fill="#333" text-anchor="end" font-weight="bold" letter-spacing="0.0">Area m²</text>
+<text x="214.400" y="599.000" font-size="2.55" fill="#333" text-anchor="end" font-weight="bold" letter-spacing="0.0">m²/p</text>
+<text x="252.400" y="599.000" font-size="2.55" fill="#333" text-anchor="end" font-weight="bold" letter-spacing="0.0">Persons</text>
+<line x1="22.000" y1="600.800" x2="254.000" y2="600.800" stroke="#999" stroke-width="0.3"/>
+<text x="23.600" y="604.600" font-size="2.75" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Public drinking / seating area (net)</text>
+<text x="186.400" y="604.600" font-size="2.75" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">49.45</text>
+<text x="214.400" y="604.600" font-size="2.75" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">1</text>
+<text x="252.400" y="604.600" font-size="2.75" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">50</text>
+<text x="23.600" y="609.600" font-size="2.75" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Bar servery</text>
+<text x="186.400" y="609.600" font-size="2.75" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">8.78</text>
+<text x="214.400" y="609.600" font-size="2.75" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">7</text>
+<text x="252.400" y="609.600" font-size="2.75" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">2</text>
+<text x="23.600" y="614.600" font-size="2.75" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Glasswash / servery</text>
+<text x="186.400" y="614.600" font-size="2.75" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">5.00</text>
+<text x="214.400" y="614.600" font-size="2.75" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">7</text>
+<text x="252.400" y="614.600" font-size="2.75" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">1</text>
+<text x="23.600" y="619.600" font-size="2.75" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Cellar / liquor store</text>
+<text x="186.400" y="619.600" font-size="2.75" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">5.50</text>
+<text x="214.400" y="619.600" font-size="2.75" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">30</text>
+<text x="252.400" y="619.600" font-size="2.75" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">1</text>
+<text x="23.600" y="624.600" font-size="2.75" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Staff room / BOH lobby</text>
+<text x="186.400" y="624.600" font-size="2.75" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">3.50</text>
+<text x="214.400" y="624.600" font-size="2.75" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">9</text>
+<text x="252.400" y="624.600" font-size="2.75" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">1</text>
+<line x1="22.000" y1="626.300" x2="254.000" y2="626.300" stroke="#999" stroke-width="0.3"/>
+<text x="23.600" y="629.600" font-size="2.75" fill="#111" text-anchor="start" font-weight="bold" letter-spacing="0.0">TOTAL CALCULATED OCCUPANT CAPACITY</text>
+<text x="252.400" y="629.600" font-size="2.75" fill="#111" text-anchor="end" font-weight="bold" letter-spacing="0.0">55</text>
+<text x="23.600" y="634.600" font-size="2.75" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Exit provision designed for</text>
+<text x="252.400" y="634.600" font-size="2.75" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">60</text>
+<text x="23.600" y="640.800" font-size="2.4" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Toilets, the escape corridor and the toilet lobby are not counted as separate</text>
+<text x="23.600" y="644.200" font-size="2.4" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">accommodation.</text>
+<rect x="22.000" y="653.000" width="232.000" height="7.200" fill="#1f1f1f" stroke="none"/>
+<text x="24.600" y="658.600" font-size="3.4" fill="#fff" text-anchor="start" font-weight="bold" letter-spacing="0.5">SEATING AND STANDING SCHEDULE</text>
+<text x="23.600" y="667.600" font-size="2.75" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Bar stools at counter (7 run + 2 return)</text>
+<text x="252.400" y="667.600" font-size="2.75" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">9</text>
+<text x="23.600" y="672.600" font-size="2.75" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Table seating — 4 banquette bays × 4</text>
+<text x="252.400" y="672.600" font-size="2.75" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">16</text>
+<text x="23.600" y="677.600" font-size="2.75" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Lounge seating — 2 clusters</text>
+<text x="252.400" y="677.600" font-size="2.75" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">8</text>
+<line x1="22.000" y1="679.300" x2="254.000" y2="679.300" stroke="#999" stroke-width="0.3"/>
+<text x="23.600" y="682.600" font-size="2.75" fill="#111" text-anchor="start" font-weight="bold" letter-spacing="0.0">TOTAL SEATS</text>
+<text x="252.400" y="682.600" font-size="2.75" fill="#111" text-anchor="end" font-weight="bold" letter-spacing="0.0">33</text>
+<text x="23.600" y="687.600" font-size="2.75" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Standing area 6.1 m² net @ 0.5 m²/person</text>
+<text x="252.400" y="687.600" font-size="2.75" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">12</text>
+<line x1="22.000" y1="689.300" x2="254.000" y2="689.300" stroke="#999" stroke-width="0.3"/>
+<text x="23.600" y="692.600" font-size="2.75" fill="#111" text-anchor="start" font-weight="bold" letter-spacing="0.0">TOTAL GUESTS (seated + standing)</text>
+<text x="252.400" y="692.600" font-size="2.75" fill="#111" text-anchor="end" font-weight="bold" letter-spacing="0.0">45</text>
+<text x="23.600" y="697.600" font-size="2.75" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Staff on duty (assumed)</text>
+<text x="252.400" y="697.600" font-size="2.75" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">5</text>
+<line x1="22.000" y1="699.300" x2="254.000" y2="699.300" stroke="#999" stroke-width="0.3"/>
+<text x="23.600" y="702.600" font-size="2.75" fill="#111" text-anchor="start" font-weight="bold" letter-spacing="0.0">TOTAL DESIGN POPULATION</text>
+<text x="252.400" y="702.600" font-size="2.75" fill="#111" text-anchor="end" font-weight="bold" letter-spacing="0.0">50</text>
+<text x="23.600" y="708.800" font-size="2.4" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Designated liquor-consumption area = 53.0 m² (hatched magenta). Licensed</text>
+<text x="23.600" y="712.200" font-size="2.4" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">premises = the whole tenancy, 96.0 m² internal.</text>
+<rect x="22.000" y="721.000" width="232.000" height="7.200" fill="#1f1f1f" stroke="none"/>
+<text x="24.600" y="726.600" font-size="3.4" fill="#fff" text-anchor="start" font-weight="bold" letter-spacing="0.5">KEY CLEAR DIMENSIONS</text>
+<text x="23.600" y="735.600" font-size="2.75" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Bartender working zone</text>
+<text x="192.400" y="735.600" font-size="2.75" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">1000</text>
+<text x="252.400" y="735.600" font-size="2.75" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">900 min</text>
+<text x="23.600" y="740.600" font-size="2.75" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Protected escape corridor</text>
+<text x="192.400" y="740.600" font-size="2.75" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">1300</text>
+<text x="252.400" y="740.600" font-size="2.75" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">1050 min</text>
+<text x="23.600" y="745.600" font-size="2.75" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Circulation spine A and C</text>
+<text x="192.400" y="745.600" font-size="2.75" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">1200</text>
+<text x="252.400" y="745.600" font-size="2.75" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">1050 min</text>
+<text x="23.600" y="750.600" font-size="2.75" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">West escape route to EXIT 2</text>
+<text x="192.400" y="750.600" font-size="2.75" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">1400</text>
+<text x="252.400" y="750.600" font-size="2.75" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">1050 min</text>
+<text x="23.600" y="755.600" font-size="2.75" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Toilet lobby</text>
+<text x="192.400" y="755.600" font-size="2.75" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">1400</text>
+<text x="252.400" y="755.600" font-size="2.75" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">1050 min</text>
+<text x="23.600" y="760.600" font-size="2.75" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">EXIT 1 clear door opening</text>
+<text x="192.400" y="760.600" font-size="2.75" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">1700</text>
+<text x="252.400" y="760.600" font-size="2.75" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">750 min</text>
+<text x="23.600" y="765.600" font-size="2.75" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">EXIT 2 clear door opening</text>
+<text x="192.400" y="765.600" font-size="2.75" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">1130</text>
+<text x="252.400" y="765.600" font-size="2.75" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">750 min</text>
+<text x="23.600" y="770.600" font-size="2.75" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Accessible WC turning circle</text>
+<text x="192.400" y="770.600" font-size="2.75" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">Ø1500</text>
+<text x="252.400" y="770.600" font-size="2.75" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">DM:BFA 2008</text>
+<text x="23.600" y="775.600" font-size="2.75" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Clear headroom to escape routes</text>
+<text x="192.400" y="775.600" font-size="2.75" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">2600</text>
+<text x="252.400" y="775.600" font-size="2.75" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">2000 min</text>
+<rect x="270.000" y="584.400" width="232.000" height="7.200" fill="#1f1f1f" stroke="none"/>
+<text x="272.600" y="590.000" font-size="3.4" fill="#fff" text-anchor="start" font-weight="bold" letter-spacing="0.5">MEANS OF ESCAPE — COMPLIANCE CHECK</text>
+<text x="271.600" y="599.000" font-size="2.5" fill="#333" text-anchor="start" font-weight="bold" letter-spacing="0.0">Item</text>
+<text x="402.400" y="599.000" font-size="2.5" fill="#333" text-anchor="end" font-weight="bold" letter-spacing="0.0">Required</text>
+<text x="454.400" y="599.000" font-size="2.5" fill="#333" text-anchor="end" font-weight="bold" letter-spacing="0.0">Provided</text>
+<text x="500.400" y="599.000" font-size="2.5" fill="#333" text-anchor="end" font-weight="bold" letter-spacing="0.0"></text>
+<line x1="270.000" y1="600.800" x2="502.000" y2="600.800" stroke="#999" stroke-width="0.3"/>
+<text x="271.600" y="604.300" font-size="2.7" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Number of exits</text>
+<text x="402.400" y="604.300" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">2</text>
+<text x="454.400" y="604.300" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">2</text>
+<text x="500.400" y="604.300" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">OK</text>
+<text x="271.600" y="609.000" font-size="2.7" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Separation of exits</text>
+<text x="402.400" y="609.000" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">remote</text>
+<text x="454.400" y="609.000" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">12.0 m</text>
+<text x="500.400" y="609.000" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">OK</text>
+<text x="271.600" y="613.700" font-size="2.7" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">  — against ½ diagonal of unit</text>
+<text x="402.400" y="613.700" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">7.5 m</text>
+<text x="454.400" y="613.700" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">12.0 m</text>
+<text x="500.400" y="613.700" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">OK</text>
+<text x="271.600" y="618.400" font-size="2.7" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Exit route clear width</text>
+<text x="402.400" y="618.400" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">1050</text>
+<text x="454.400" y="618.400" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">1200 – 1400</text>
+<text x="500.400" y="618.400" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">OK</text>
+<text x="271.600" y="623.100" font-size="2.7" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">EXIT 1 clear door width</text>
+<text x="402.400" y="623.100" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">750</text>
+<text x="454.400" y="623.100" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">1700</text>
+<text x="500.400" y="623.100" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">OK</text>
+<text x="271.600" y="627.800" font-size="2.7" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">EXIT 2 clear door width</text>
+<text x="402.400" y="627.800" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">750</text>
+<text x="454.400" y="627.800" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">1130</text>
+<text x="500.400" y="627.800" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">OK</text>
+<text x="271.600" y="632.500" font-size="2.7" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Aggregate clear exit width</text>
+<text x="402.400" y="632.500" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">1050</text>
+<text x="454.400" y="632.500" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">2830</text>
+<text x="500.400" y="632.500" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">OK</text>
+<text x="271.600" y="637.200" font-size="2.7" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Widest exit discounted</text>
+<text x="402.400" y="637.200" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">1050</text>
+<text x="454.400" y="637.200" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">1130</text>
+<text x="500.400" y="637.200" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">OK</text>
+<text x="271.600" y="641.900" font-size="2.7" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Longest travel distance</text>
+<text x="402.400" y="641.900" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">24 m</text>
+<text x="454.400" y="641.900" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">8.6 m</text>
+<text x="500.400" y="641.900" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">OK</text>
+<text x="271.600" y="646.600" font-size="2.7" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Longest single-direction travel</text>
+<text x="402.400" y="646.600" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">18 m</text>
+<text x="454.400" y="646.600" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">5.0 m</text>
+<text x="500.400" y="646.600" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">OK</text>
+<text x="271.600" y="651.300" font-size="2.7" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Headroom on escape routes</text>
+<text x="402.400" y="651.300" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">2000</text>
+<text x="454.400" y="651.300" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">2600</text>
+<text x="500.400" y="651.300" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">OK</text>
+<text x="271.600" y="656.000" font-size="2.7" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Doors open in escape direction</text>
+<text x="402.400" y="656.000" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">required</text>
+<text x="454.400" y="656.000" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">both exits</text>
+<text x="500.400" y="656.000" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">OK</text>
+<text x="271.600" y="660.700" font-size="2.7" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Openable from inside, no key</text>
+<text x="402.400" y="660.700" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">required</text>
+<text x="454.400" y="660.700" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">panic / lever</text>
+<text x="500.400" y="660.700" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">OK</text>
+<text x="271.600" y="665.400" font-size="2.7" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Escape routes free of furniture</text>
+<text x="402.400" y="665.400" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">required</text>
+<text x="454.400" y="665.400" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">hatched green</text>
+<text x="500.400" y="665.400" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">OK</text>
+<text x="271.600" y="671.300" font-size="2.4" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">"Required" figures are the design targets set in the brief together with the</text>
+<text x="271.600" y="674.700" font-size="2.4" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">values normally applied to this use class. The governing table and the</text>
+<text x="271.600" y="678.100" font-size="2.4" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">sprinklered / unsprinklered basis must be confirmed by the Authorized Person</text>
+<text x="271.600" y="681.500" font-size="2.4" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">before submission.</text>
+<rect x="270.000" y="690.300" width="232.000" height="7.200" fill="#1f1f1f" stroke="none"/>
+<text x="272.600" y="695.900" font-size="3.4" fill="#fff" text-anchor="start" font-weight="bold" letter-spacing="0.5">FIRE SERVICE INSTALLATIONS — SCHEDULE</text>
+<text x="271.600" y="704.900" font-size="2.7" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Illuminated exit signs (incl. directional)</text>
+<text x="500.400" y="704.900" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">8</text>
+<text x="271.600" y="709.600" font-size="2.7" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Emergency light fittings, 2 hour duration</text>
+<text x="500.400" y="709.600" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">17</text>
+<text x="271.600" y="714.300" font-size="2.7" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Portable extinguisher — water 9 L</text>
+<text x="500.400" y="714.300" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">2</text>
+<text x="271.600" y="719.000" font-size="2.7" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Portable extinguisher — CO₂ 2 kg</text>
+<text x="500.400" y="719.000" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">2</text>
+<text x="271.600" y="723.700" font-size="2.7" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Fire blanket — glasswash</text>
+<text x="500.400" y="723.700" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">1</text>
+<text x="271.600" y="728.400" font-size="2.7" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Manual call point — one at each exit</text>
+<text x="500.400" y="728.400" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">2</text>
+<text x="271.600" y="733.100" font-size="2.7" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Alarm sounder</text>
+<text x="500.400" y="733.100" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">2</text>
+<text x="271.600" y="737.800" font-size="2.7" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Smoke detector</text>
+<text x="500.400" y="737.800" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">10</text>
+<text x="271.600" y="742.500" font-size="2.7" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Heat detector — glasswash, back bar</text>
+<text x="500.400" y="742.500" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">2</text>
+<text x="271.600" y="747.200" font-size="2.7" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Sprinkler head (indicative, OH Group 1)</text>
+<text x="500.400" y="747.200" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">12</text>
+<text x="271.600" y="751.900" font-size="2.7" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Hose reel — existing, common corridor</text>
+<text x="500.400" y="751.900" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">by others</text>
+<text x="271.600" y="757.800" font-size="2.4" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Maximum travel distance to a portable extinguisher on any part of the premises</text>
+<text x="271.600" y="761.200" font-size="2.4" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">is 10.5 m.</text>
+<rect x="518.000" y="584.400" width="228.000" height="7.200" fill="#1f1f1f" stroke="none"/>
+<text x="520.600" y="590.000" font-size="3.4" fill="#fff" text-anchor="start" font-weight="bold" letter-spacing="0.5">EXIT AND ESCAPE ROUTE SCHEDULE</text>
+<text x="519.600" y="599.000" font-size="2.5" fill="#333" text-anchor="start" font-weight="bold" letter-spacing="0.0">Exit / route</text>
+<text x="678.400" y="599.000" font-size="2.5" fill="#333" text-anchor="end" font-weight="bold" letter-spacing="0.0">Clear</text>
+<text x="744.400" y="599.000" font-size="2.5" fill="#333" text-anchor="end" font-weight="bold" letter-spacing="0.0">Discharges to</text>
+<line x1="518.000" y1="600.800" x2="746.000" y2="600.800" stroke="#999" stroke-width="0.3"/>
+<text x="519.600" y="604.400" font-size="2.7" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">EXIT 1 — main entrance</text>
+<text x="678.400" y="604.400" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">1700</text>
+<text x="744.400" y="604.400" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">Public street</text>
+<text x="519.600" y="609.200" font-size="2.7" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">   via spine A + spine C</text>
+<text x="678.400" y="609.200" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">1200</text>
+<text x="519.600" y="614.000" font-size="2.7" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">EXIT 2 — rear final exit</text>
+<text x="678.400" y="614.000" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">1130</text>
+<text x="744.400" y="614.000" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">Rear common corridor</text>
+<text x="519.600" y="618.800" font-size="2.7" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">   via spine B + protected corridor</text>
+<text x="678.400" y="618.800" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">1300</text>
+<line x1="518.000" y1="620.500" x2="746.000" y2="620.500" stroke="#999" stroke-width="0.3"/>
+<text x="519.600" y="623.600" font-size="2.7" fill="#111" text-anchor="start" font-weight="bold" letter-spacing="0.0">Aggregate clear exit width</text>
+<text x="678.400" y="623.600" font-size="2.7" fill="#111" text-anchor="end" font-weight="bold" letter-spacing="0.0">2830</text>
+<line x1="518.000" y1="625.300" x2="746.000" y2="625.300" stroke="#999" stroke-width="0.3"/>
+<text x="519.600" y="628.400" font-size="2.7" fill="#111" text-anchor="start" font-weight="bold" letter-spacing="0.0">Least favourable (widest discounted)</text>
+<text x="678.400" y="628.400" font-size="2.7" fill="#111" text-anchor="end" font-weight="bold" letter-spacing="0.0">1130</text>
+<text x="519.600" y="633.200" font-size="2.7" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Required for 60 persons</text>
+<text x="678.400" y="633.200" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">1050</text>
+<rect x="518.000" y="643.400" width="228.000" height="7.200" fill="#1f1f1f" stroke="none"/>
+<text x="520.600" y="649.000" font-size="3.4" fill="#fff" text-anchor="start" font-weight="bold" letter-spacing="0.5">FIRE RESISTING CONSTRUCTION AND FINISHES</text>
+<text x="519.600" y="658.000" font-size="2.7" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Escape corridor enclosure</text>
+<text x="744.400" y="658.000" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">FRR −/60/60</text>
+<text x="519.600" y="662.800" font-size="2.7" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Doors onto escape corridor</text>
+<text x="744.400" y="662.800" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">FRD −/60/30, self-closing</text>
+<text x="519.600" y="667.600" font-size="2.7" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Cellar / liquor store enclosure</text>
+<text x="744.400" y="667.600" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">FRR −/60/60</text>
+<text x="519.600" y="672.400" font-size="2.7" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Cellar door</text>
+<text x="744.400" y="672.400" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">FRD −/60/30, self-closing</text>
+<text x="519.600" y="677.200" font-size="2.7" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Tenancy separation to common areas</text>
+<text x="744.400" y="677.200" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">as building, min. −/60/60</text>
+<text x="519.600" y="682.000" font-size="2.7" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Surface finishes on escape routes</text>
+<text x="744.400" y="682.000" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">Class 1 spread of flame</text>
+<text x="519.600" y="686.800" font-size="2.7" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Fixed seating and upholstery</text>
+<text x="744.400" y="686.800" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">low flammability, FSD approved</text>
+<rect x="270.000" y="770.000" width="232.000" height="7.200" fill="#1f1f1f" stroke="none"/>
+<text x="272.600" y="775.600" font-size="3.4" fill="#fff" text-anchor="start" font-weight="bold" letter-spacing="0.5">TRAVEL DISTANCE SCHEDULE</text>
+<text x="271.600" y="784.600" font-size="2.5" fill="#333" text-anchor="start" font-weight="bold" letter-spacing="0.0">Ref · from · route</text>
+<text x="454.400" y="784.600" font-size="2.5" fill="#333" text-anchor="end" font-weight="bold" letter-spacing="0.0">To</text>
+<text x="500.400" y="784.600" font-size="2.5" fill="#333" text-anchor="end" font-weight="bold" letter-spacing="0.0">Distance</text>
+<line x1="270.000" y1="786.400" x2="502.000" y2="786.400" stroke="#999" stroke-width="0.3"/>
+<text x="271.600" y="789.900" font-size="2.7" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">TD-1   Standing area NW corner → spine A → spine C</text>
+<text x="454.400" y="789.900" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">EXIT 1</text>
+<text x="500.400" y="789.900" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">8.6 m</text>
+<text x="271.600" y="794.600" font-size="2.7" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">TD-2   Public room SW corner → spine B → corridor</text>
+<text x="454.400" y="794.600" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">EXIT 2</text>
+<text x="500.400" y="794.600" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">7.9 m</text>
+<text x="271.600" y="799.300" font-size="2.7" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">TD-3   Toilet lobby east end → spine C</text>
+<text x="454.400" y="799.300" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">EXIT 1</text>
+<text x="500.400" y="799.300" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">7.5 m</text>
+<line x1="270.000" y1="801.000" x2="502.000" y2="801.000" stroke="#999" stroke-width="0.3"/>
+<text x="271.600" y="804.000" font-size="2.7" fill="#111" text-anchor="start" font-weight="bold" letter-spacing="0.0">Longest single-direction (dead-end) travel</text>
+<text x="500.400" y="804.000" font-size="2.7" fill="#111" text-anchor="end" font-weight="bold" letter-spacing="0.0">5.0 m</text>
+<rect x="518.000" y="697.000" width="228.000" height="7.200" fill="#1f1f1f" stroke="none"/>
+<text x="520.600" y="702.600" font-size="3.4" fill="#fff" text-anchor="start" font-weight="bold" letter-spacing="0.5">SANITARY FITMENT SCHEDULE</text>
+<text x="519.600" y="711.600" font-size="2.7" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">WC — female</text>
+<text x="744.400" y="711.600" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">1</text>
+<text x="519.600" y="716.200" font-size="2.7" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">WC — male</text>
+<text x="744.400" y="716.200" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">1</text>
+<text x="519.600" y="720.800" font-size="2.7" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Urinal — male</text>
+<text x="744.400" y="720.800" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">1</text>
+<text x="519.600" y="725.400" font-size="2.7" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Accessible unisex WC — counts for both sexes</text>
+<text x="744.400" y="725.400" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">1</text>
+<text x="519.600" y="730.000" font-size="2.7" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Wash hand basin — public</text>
+<text x="744.400" y="730.000" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">3</text>
+<text x="519.600" y="734.600" font-size="2.7" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Wash hand basin — staff, glasswash</text>
+<text x="744.400" y="734.600" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">1</text>
+<text x="519.600" y="739.200" font-size="2.7" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Cleaner's sink — to be confirmed</text>
+<text x="744.400" y="739.200" font-size="2.7" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">—</text>
+<text x="519.600" y="745.000" font-size="2.4" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Fitment numbers to be verified against Cap. 123I for the assessed occupant</text>
+<text x="519.600" y="748.400" font-size="2.4" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">capacity.</text>
+<rect x="518.000" y="757.200" width="228.000" height="7.200" fill="#1f1f1f" stroke="none"/>
+<text x="520.600" y="762.800" font-size="3.4" fill="#fff" text-anchor="start" font-weight="bold" letter-spacing="0.5">ASSUMPTIONS AND EXCLUSIONS</text>
+<text x="519.600" y="770.800" font-size="2.55" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">•  Rectangular ground-floor tenancy, 12.0 × 8.0 m internal, single storey,</text>
+<text x="519.600" y="774.500" font-size="2.55" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">no basement or mezzanine.</text>
+<text x="519.600" y="779.200" font-size="2.55" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">•  Street frontage to the south; a common rear corridor leading to a</text>
+<text x="519.600" y="782.900" font-size="2.55" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">protected staircase to the north. Both are places of safety.</text>
+<text x="519.600" y="787.600" font-size="2.55" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">•  Building assumed sprinkler protected. Structural grid, services risers</text>
+<text x="519.600" y="791.300" font-size="2.55" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">and any existing columns are not shown.</text>
+<text x="519.600" y="796.000" font-size="2.55" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">•  No cooking. Drinks only, with cold pre-packed food if any. A kitchen</text>
+<text x="519.600" y="799.700" font-size="2.55" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">would change both the licence and the FSI requirements.</text>
+<text x="519.600" y="804.400" font-size="2.55" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">•  No live entertainment, dancing or amplified performance.</text>
+<circle cx="796.000" cy="66.000" r="27.000" fill="#fff" stroke="#111" stroke-width="0.45"/>
+<circle cx="796.000" cy="66.000" r="23.500" fill="none" stroke="#111" stroke-width="0.15"/>
+<path d="M 796.00 43.00 L 803.50 77.00 L 796.00 70.50 Z" fill="#111" stroke="none"/>
+<path d="M 796.00 43.00 L 788.50 77.00 L 796.00 70.50 Z" fill="#fff" stroke="#111" stroke-width="0.4"/>
+<text x="796.000" y="87.500" font-size="7.0" fill="#111" text-anchor="middle" font-weight="bold" letter-spacing="0.0">N</text>
+<text x="796.000" y="102.000" font-size="2.8" fill="#555" text-anchor="middle" font-weight="normal" letter-spacing="0.8">NORTH</text>
+<text x="856.000" y="45.000" font-size="3.4" fill="#111" text-anchor="start" font-weight="bold" letter-spacing="0.0">SCALE  1:20  at A0 (1189 × 841 mm)</text>
+<rect x="856.000" y="52.000" width="50.000" height="5.500" fill="#111" stroke="#111" stroke-width="0.3"/>
+<rect x="906.000" y="52.000" width="50.000" height="5.500" fill="#fff" stroke="#111" stroke-width="0.3"/>
+<rect x="956.000" y="52.000" width="50.000" height="5.500" fill="#111" stroke="#111" stroke-width="0.3"/>
+<rect x="1006.000" y="52.000" width="50.000" height="5.500" fill="#fff" stroke="#111" stroke-width="0.3"/>
+<rect x="1056.000" y="52.000" width="50.000" height="5.500" fill="#111" stroke="#111" stroke-width="0.3"/>
+<text x="856.000" y="63.000" font-size="2.9" fill="#111" text-anchor="middle" font-weight="normal" letter-spacing="0.0">0</text>
+<text x="906.000" y="63.000" font-size="2.9" fill="#111" text-anchor="middle" font-weight="normal" letter-spacing="0.0">1</text>
+<text x="956.000" y="63.000" font-size="2.9" fill="#111" text-anchor="middle" font-weight="normal" letter-spacing="0.0">2</text>
+<text x="1006.000" y="63.000" font-size="2.9" fill="#111" text-anchor="middle" font-weight="normal" letter-spacing="0.0">3</text>
+<text x="1056.000" y="63.000" font-size="2.9" fill="#111" text-anchor="middle" font-weight="normal" letter-spacing="0.0">4</text>
+<text x="1106.000" y="63.000" font-size="2.9" fill="#111" text-anchor="middle" font-weight="normal" letter-spacing="0.0">5</text>
+<text x="1111.000" y="63.000" font-size="2.9" fill="#111" text-anchor="start" font-weight="normal" letter-spacing="0.0">metres</text>
+<rect x="856.000" y="70.000" width="25.000" height="3.600" fill="#111" stroke="#111" stroke-width="0.25"/>
+<rect x="881.000" y="70.000" width="25.000" height="3.600" fill="#fff" stroke="#111" stroke-width="0.25"/>
+<text x="910.000" y="73.000" font-size="2.5" fill="#555" text-anchor="start" font-weight="normal" letter-spacing="0.0">500 mm divisions</text>
+<text x="856.000" y="82.000" font-size="2.5" fill="#777" text-anchor="start" font-weight="normal" letter-spacing="0.0">Drawn to scale. Verify all dimensions on site before any work.</text>
+<line x1="760.000" y1="108.000" x2="1173.000" y2="108.000" stroke="#111" stroke-width="0.3"/>
+<rect x="760.000" y="116.400" width="413.000" height="7.200" fill="#1f1f1f" stroke="none"/>
+<text x="762.600" y="122.000" font-size="3.4" fill="#fff" text-anchor="start" font-weight="bold" letter-spacing="0.5">LEGEND</text>
+<rect x="763.000" y="128.500" width="9.500" height="4.600" fill="url(#hatchWall)" stroke="#111" stroke-width="0.3"/>
+<text x="777.000" y="132.000" font-size="2.9" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Wall / partition</text>
+<rect x="763.000" y="135.100" width="9.500" height="4.600" fill="#e5dccc" stroke="#111" stroke-width="0.4"/>
+<text x="777.000" y="138.600" font-size="2.9" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Bar counter and joinery</text>
+<rect x="763.000" y="141.700" width="9.500" height="4.600" fill="#f7f2e5" stroke="#999" stroke-width="0.3"/>
+<text x="777.000" y="145.200" font-size="2.9" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Bar servery — staff only</text>
+<rect x="763.000" y="148.300" width="9.500" height="4.600" fill="#eee6d8" stroke="#444" stroke-width="0.3"/>
+<text x="777.000" y="151.800" font-size="2.9" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Fixed / soft seating</text>
+<rect x="763.000" y="154.900" width="9.500" height="4.600" fill="url(#hatchEsc)" stroke="#83c9a0" stroke-width="0.3"/>
+<text x="777.000" y="158.400" font-size="2.9" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Means of escape route — kept clear</text>
+<line x1="763.000" y1="163.700" x2="771.500" y2="163.700" stroke="#00843d" stroke-width="0.6" marker-end="url(#arw)"/>
+<text x="777.000" y="165.000" font-size="2.9" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Direction of escape</text>
+<line x1="763.000" y1="170.300" x2="772.500" y2="170.300" stroke="#c8102e" stroke-width="0.55" stroke-dasharray="3.4,2.0"/>
+<text x="777.000" y="171.600" font-size="2.9" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Travel distance to the nearest exit</text>
+<line x1="763.000" y1="176.900" x2="772.500" y2="176.900" stroke="#1b4f9c" stroke-width="0.4" stroke-dasharray="4,2.5"/>
+<text x="777.000" y="178.200" font-size="2.9" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Exit remoteness check</text>
+<rect x="763.000" y="181.300" width="9.500" height="4.600" fill="#faf1fb" stroke="none"/>
+<rect x="763.000" y="181.300" width="9.500" height="4.600" fill="url(#hatchLic)" stroke="#8e2f9c" stroke-width="0.5"/>
+<text x="777.000" y="184.800" font-size="2.9" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Designated liquor-consumption area</text>
+<line x1="763.000" y1="190.100" x2="772.500" y2="190.100" stroke="#1b4f9c" stroke-width="0.18"/>
+<line x1="763.000" y1="188.700" x2="763.000" y2="191.500" stroke="#1b4f9c" stroke-width="0.35"/>
+<line x1="772.500" y1="188.700" x2="772.500" y2="191.500" stroke="#1b4f9c" stroke-width="0.35"/>
+<text x="777.000" y="191.400" font-size="2.9" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Dimension line (millimetres)</text>
+<rect x="972.000" y="129.750" width="5.000" height="2.500" fill="#00843d" stroke="#04502a" stroke-width="0.15"/>
+<text x="974.900" y="131.500" font-size="1.5" fill="#fff" text-anchor="middle" font-weight="bold" letter-spacing="0.0">EXIT</text>
+<circle cx="972.800" cy="130.700" r="0.275" fill="#fff" stroke="none"/>
+<path d="M 972.50 131.05 l 0.50 0.50 l 0.35 -0.15" fill="none" stroke="#fff" stroke-width="0.28"/>
+<text x="983.500" y="132.000" font-size="2.9" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Illuminated exit sign</text>
+<rect x="972.000" y="136.350" width="5.000" height="2.500" fill="#00843d" stroke="#04502a" stroke-width="0.15"/>
+<text x="974.900" y="138.100" font-size="1.5" fill="#fff" text-anchor="middle" font-weight="bold" letter-spacing="0.0">EXIT</text>
+<circle cx="972.800" cy="137.300" r="0.275" fill="#fff" stroke="none"/>
+<path d="M 972.50 137.65 l 0.50 0.50 l 0.35 -0.15" fill="none" stroke="#fff" stroke-width="0.28"/>
+<line x1="977.250" y1="137.600" x2="979.650" y2="137.600" stroke="#00843d" stroke-width="0.5"/>
+<line x1="979.650" y1="137.600" x2="978.524" y2="138.250" stroke="#00843d" stroke-width="0.5"/>
+<line x1="979.650" y1="137.600" x2="978.524" y2="136.950" stroke="#00843d" stroke-width="0.5"/>
+<text x="983.500" y="138.600" font-size="2.9" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Illuminated directional exit sign</text>
+<circle cx="974.500" cy="144.200" r="1.600" fill="#fff" stroke="#00843d" stroke-width="0.35"/>
+<line x1="972.900" y1="144.200" x2="976.100" y2="144.200" stroke="#00843d" stroke-width="0.35"/>
+<line x1="974.500" y1="142.600" x2="974.500" y2="145.800" stroke="#00843d" stroke-width="0.35"/>
+<text x="983.500" y="145.200" font-size="2.9" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Emergency light fitting, 2 h</text>
+<circle cx="974.500" cy="150.800" r="2.000" fill="#fff" stroke="#c8102e" stroke-width="0.4"/>
+<text x="974.500" y="151.700" font-size="2.0" fill="#c8102e" text-anchor="middle" font-weight="bold" letter-spacing="0.0">H₂O</text>
+<text x="983.500" y="151.800" font-size="2.9" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Portable extinguisher — water 9 L</text>
+<circle cx="974.500" cy="157.400" r="2.000" fill="#fff" stroke="#c8102e" stroke-width="0.4"/>
+<text x="974.500" y="158.300" font-size="2.0" fill="#c8102e" text-anchor="middle" font-weight="bold" letter-spacing="0.0">CO₂</text>
+<text x="983.500" y="158.400" font-size="2.9" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Portable extinguisher — CO₂ 2 kg</text>
+<rect x="972.300" y="162.400" width="4.400" height="3.200" fill="#fff" stroke="#c8102e" stroke-width="0.4"/>
+<text x="974.500" y="164.756" font-size="2.1" fill="#c8102e" text-anchor="middle" font-weight="bold" letter-spacing="0.0">F.B.</text>
+<text x="983.500" y="165.000" font-size="2.9" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Fire blanket</text>
+<rect x="972.100" y="168.900" width="4.800" height="3.400" fill="#fff" stroke="#c8102e" stroke-width="0.4"/>
+<text x="974.500" y="171.356" font-size="2.1" fill="#c8102e" text-anchor="middle" font-weight="bold" letter-spacing="0.0">MCP</text>
+<text x="983.500" y="171.600" font-size="2.9" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Manual call point</text>
+<path d="M 972.700 178.100 A 1.800 1.800 0 0 1 976.300 178.100 Z" fill="#fff" stroke="#c8102e" stroke-width="0.4"/>
+<line x1="972.160" y1="178.100" x2="976.840" y2="178.100" stroke="#c8102e" stroke-width="0.4"/>
+<text x="983.500" y="178.200" font-size="2.9" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Alarm sounder</text>
+<circle cx="974.500" cy="183.800" r="1.800" fill="#fff" stroke="#c8102e" stroke-width="0.35"/>
+<text x="974.500" y="184.580" font-size="2.2" fill="#c8102e" text-anchor="middle" font-weight="bold" letter-spacing="0.0">S</text>
+<text x="983.500" y="184.800" font-size="2.9" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Smoke detector</text>
+<circle cx="974.500" cy="190.400" r="1.800" fill="#fff" stroke="#c8102e" stroke-width="0.35"/>
+<text x="974.500" y="191.180" font-size="2.2" fill="#c8102e" text-anchor="middle" font-weight="bold" letter-spacing="0.0">H</text>
+<text x="983.500" y="191.400" font-size="2.9" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Heat detector</text>
+<circle cx="974.500" cy="197.000" r="1.250" fill="#fff" stroke="#1b4f9c" stroke-width="0.28"/>
+<line x1="973.600" y1="196.100" x2="975.400" y2="197.900" stroke="#1b4f9c" stroke-width="0.28"/>
+<line x1="973.600" y1="197.900" x2="975.400" y2="196.100" stroke="#1b4f9c" stroke-width="0.28"/>
+<text x="983.500" y="198.000" font-size="2.9" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Sprinkler head (indicative)</text>
+<rect x="972.300" y="202.000" width="4.400" height="3.200" fill="#fff" stroke="#c8102e" stroke-width="0.4"/>
+<text x="974.500" y="204.356" font-size="2.1" fill="#c8102e" text-anchor="middle" font-weight="bold" letter-spacing="0.0">HR</text>
+<text x="983.500" y="204.600" font-size="2.9" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Hose reel — existing, by others</text>
+<line x1="760.000" y1="212.200" x2="1173.000" y2="212.200" stroke="#111" stroke-width="0.3"/>
+<rect x="760.000" y="219.600" width="413.000" height="7.200" fill="#1f1f1f" stroke="none"/>
+<text x="762.600" y="225.200" font-size="3.4" fill="#fff" text-anchor="start" font-weight="bold" letter-spacing="0.5">KEY FIGURES</text>
+<rect x="760.000" y="230.200" width="100.250" height="26.000" fill="#f4f4f1" stroke="#bbb" stroke-width="0.3"/>
+<text x="810.125" y="243.700" font-size="9.0" fill="#111" text-anchor="middle" font-weight="bold" letter-spacing="0.0">55</text>
+<text x="810.125" y="251.200" font-size="2.5" fill="#555" text-anchor="middle" font-weight="normal" letter-spacing="0.3">OCCUPANT CAPACITY (PERSONS)</text>
+<rect x="864.250" y="230.200" width="100.250" height="26.000" fill="#f4f4f1" stroke="#bbb" stroke-width="0.3"/>
+<text x="914.375" y="243.700" font-size="9.0" fill="#111" text-anchor="middle" font-weight="bold" letter-spacing="0.0">33 + 12</text>
+<text x="914.375" y="251.200" font-size="2.5" fill="#555" text-anchor="middle" font-weight="normal" letter-spacing="0.3">SEATS + STANDING</text>
+<rect x="968.500" y="230.200" width="100.250" height="26.000" fill="#f4f4f1" stroke="#bbb" stroke-width="0.3"/>
+<text x="1018.625" y="243.700" font-size="9.0" fill="#111" text-anchor="middle" font-weight="bold" letter-spacing="0.0">8.6 m</text>
+<text x="1018.625" y="251.200" font-size="2.5" fill="#555" text-anchor="middle" font-weight="normal" letter-spacing="0.3">LONGEST TRAVEL DISTANCE</text>
+<rect x="1072.750" y="230.200" width="100.250" height="26.000" fill="#f4f4f1" stroke="#bbb" stroke-width="0.3"/>
+<text x="1122.875" y="243.700" font-size="9.0" fill="#111" text-anchor="middle" font-weight="bold" letter-spacing="0.0">53.0 m²</text>
+<text x="1122.875" y="251.200" font-size="2.5" fill="#555" text-anchor="middle" font-weight="normal" letter-spacing="0.3">LICENSED DRINKING AREA</text>
+<rect x="760.000" y="263.600" width="413.000" height="7.200" fill="#1f1f1f" stroke="none"/>
+<text x="762.600" y="269.200" font-size="3.4" fill="#fff" text-anchor="start" font-weight="bold" letter-spacing="0.5">SECTION A–A THROUGH THE ESCAPE ROUTE  —  SCALE 1:25</text>
+<rect x="804.000" y="425.200" width="336.000" height="7.000" fill="url(#hatchWall)" stroke="#111" stroke-width="0.3"/>
+<rect x="804.000" y="282.200" width="336.000" height="7.000" fill="url(#hatchWall)" stroke="#111" stroke-width="0.3"/>
+<rect x="804.000" y="289.200" width="8.000" height="52.000" fill="url(#hatchWall)" stroke="#111" stroke-width="0.3"/>
+<rect x="1132.000" y="289.200" width="8.000" height="136.000" fill="url(#hatchWall)" stroke="#111" stroke-width="0.3"/>
+<rect x="1028.000" y="289.200" width="4.000" height="136.000" fill="url(#hatchWall)" stroke="#111" stroke-width="0.3"/>
+<rect x="812.000" y="317.200" width="216.000" height="28.000" fill="#f2f5f8" stroke="none"/>
+<line x1="812.000" y1="317.200" x2="1028.000" y2="317.200" stroke="#111" stroke-width="0.45"/>
+<rect x="1032.000" y="329.200" width="100.000" height="40.000" fill="#f2f5f8" stroke="none"/>
+<line x1="1032.000" y1="329.200" x2="1132.000" y2="329.200" stroke="#111" stroke-width="0.45"/>
+<rect x="972.000" y="329.200" width="56.000" height="12.000" fill="#e6ebf1" stroke="#111" stroke-width="0.35"/>
+<text x="1000.000" y="333.200" font-size="2.1" fill="#555" text-anchor="middle" font-weight="normal" letter-spacing="0.0">BULKHEAD / DUCT</text>
+<text x="956.000" y="313.700" font-size="2.3" fill="#666" text-anchor="middle" font-weight="normal" letter-spacing="0.0">SERVICES ZONE  700</text>
+<rect x="804.000" y="341.200" width="8.000" height="84.000" fill="#fff" stroke="#111" stroke-width="0.4"/>
+<text x="808.000" y="353.200" font-size="2.2" fill="#111" text-anchor="middle" font-weight="bold" letter-spacing="0.0" transform="rotate(-90 808.000 353.200)">EXIT 1</text>
+<rect x="812.000" y="422.600" width="320.000" height="2.600" fill="url(#hatchEsc)" stroke="none" opacity="0.85"/>
+<line x1="804.000" y1="425.200" x2="1140.000" y2="425.200" stroke="#111" stroke-width="0.6"/>
+<text x="824.000" y="420.200" font-size="2.4" fill="#666" text-anchor="start" font-weight="normal" letter-spacing="0.0">FFL ±0</text>
+<line x1="796.000" y1="425.200" x2="796.000" y2="317.200" stroke="#1b4f9c" stroke-width="0.18"/>
+<line x1="794.600" y1="425.200" x2="797.400" y2="425.200" stroke="#1b4f9c" stroke-width="0.35"/>
+<line x1="794.600" y1="317.200" x2="797.400" y2="317.200" stroke="#1b4f9c" stroke-width="0.35"/>
+<text x="794.800" y="371.200" font-size="2.4" fill="#1b4f9c" text-anchor="middle" font-weight="normal" letter-spacing="0.0" transform="rotate(-90 794.800 371.200)">2700 CLEAR</text>
+<line x1="787.000" y1="425.200" x2="787.000" y2="289.200" stroke="#1b4f9c" stroke-width="0.18"/>
+<line x1="785.600" y1="425.200" x2="788.400" y2="425.200" stroke="#1b4f9c" stroke-width="0.35"/>
+<line x1="785.600" y1="289.200" x2="788.400" y2="289.200" stroke="#1b4f9c" stroke-width="0.35"/>
+<text x="785.800" y="357.200" font-size="2.4" fill="#1b4f9c" text-anchor="middle" font-weight="normal" letter-spacing="0.0" transform="rotate(-90 785.800 357.200)">3400 SOFFIT</text>
+<line x1="1149.000" y1="425.200" x2="1149.000" y2="329.200" stroke="#1b4f9c" stroke-width="0.18"/>
+<line x1="1147.600" y1="425.200" x2="1150.400" y2="425.200" stroke="#1b4f9c" stroke-width="0.35"/>
+<line x1="1147.600" y1="329.200" x2="1150.400" y2="329.200" stroke="#1b4f9c" stroke-width="0.35"/>
+<text x="1147.800" y="377.200" font-size="2.4" fill="#1b4f9c" text-anchor="middle" font-weight="normal" letter-spacing="0.0" transform="rotate(-90 1147.800 377.200)">2400</text>
+<text x="1000.000" y="337.700" font-size="2.3" fill="#1b4f9c" text-anchor="middle" font-weight="normal" letter-spacing="0.0">2400 CLEAR UNDER BULKHEAD  (2000 min.)</text>
+<text x="892.000" y="322.700" font-size="2.4" fill="#444" text-anchor="start" font-weight="normal" letter-spacing="0.0">SUSPENDED CEILING  2700 AFFL</text>
+<text x="892.000" y="301.700" font-size="2.4" fill="#444" text-anchor="start" font-weight="normal" letter-spacing="0.0">STRUCTURAL SOFFIT  3400 AFFL</text>
+<text x="828.000" y="339.000" font-size="2.3" fill="#1b4f9c" text-anchor="start" font-weight="normal" letter-spacing="0.0">DOOR HEAD 2100</text>
+<line x1="812.000" y1="341.200" x2="868.000" y2="341.200" stroke="#1b4f9c" stroke-width="0.18" stroke-dasharray="2,1.5"/>
+<text x="808.000" y="435.200" font-size="2.3" fill="#555" text-anchor="middle" font-weight="normal" letter-spacing="0.0">EXIT 1</text>
+<line x1="804.000" y1="426.700" x2="804.000" y2="429.200" stroke="#999" stroke-width="0.25"/>
+<line x1="812.000" y1="426.700" x2="812.000" y2="429.200" stroke="#999" stroke-width="0.25"/>
+<text x="845.000" y="435.200" font-size="2.3" fill="#555" text-anchor="middle" font-weight="normal" letter-spacing="0.0">ENTRANCE</text>
+<line x1="812.000" y1="426.700" x2="812.000" y2="429.200" stroke="#999" stroke-width="0.25"/>
+<line x1="878.000" y1="426.700" x2="878.000" y2="429.200" stroke="#999" stroke-width="0.25"/>
+<text x="925.000" y="435.200" font-size="2.3" fill="#555" text-anchor="middle" font-weight="normal" letter-spacing="0.0">SPINE C</text>
+<line x1="878.000" y1="426.700" x2="878.000" y2="429.200" stroke="#999" stroke-width="0.25"/>
+<line x1="972.000" y1="426.700" x2="972.000" y2="429.200" stroke="#999" stroke-width="0.25"/>
+<text x="1000.000" y="435.200" font-size="2.3" fill="#555" text-anchor="middle" font-weight="normal" letter-spacing="0.0">WC LOBBY</text>
+<line x1="972.000" y1="426.700" x2="972.000" y2="429.200" stroke="#999" stroke-width="0.25"/>
+<line x1="1028.000" y1="426.700" x2="1028.000" y2="429.200" stroke="#999" stroke-width="0.25"/>
+<text x="1082.000" y="435.200" font-size="2.3" fill="#555" text-anchor="middle" font-weight="normal" letter-spacing="0.0">ACCESSIBLE WC</text>
+<line x1="1032.000" y1="426.700" x2="1032.000" y2="429.200" stroke="#999" stroke-width="0.25"/>
+<line x1="1132.000" y1="426.700" x2="1132.000" y2="429.200" stroke="#999" stroke-width="0.25"/>
+<text x="972.000" y="442.200" font-size="2.4" fill="#666" text-anchor="middle" font-weight="normal" letter-spacing="0.0">Clear headroom on every escape route exceeds the 2000 mm minimum. Section taken on line A–A, looking west.</text>
+<rect x="760.000" y="454.600" width="413.000" height="7.200" fill="#1f1f1f" stroke="none"/>
+<text x="762.600" y="460.200" font-size="3.4" fill="#fff" text-anchor="start" font-weight="bold" letter-spacing="0.5">GENERAL, STATUTORY AND OPERATIONAL NOTES</text>
+<text x="761.600" y="468.200" font-size="2.9" fill="#111" text-anchor="start" font-weight="bold" letter-spacing="0.0">1.</text>
+<text x="769.500" y="468.200" font-size="2.9" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">This drawing is a design study prepared to scale for compliance review. It is not a submission drawing. Plans for building works, means of escape and fire service</text>
+<text x="769.500" y="472.400" font-size="2.9" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">installations must be prepared and certified by an Authorized Person / Registered Structural Engineer and a Registered Fire Service Installation Contractor and submitted to</text>
+<text x="769.500" y="476.600" font-size="2.9" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">the Buildings Department and the Fire Services Department for approval before any work is carried out or any licence is granted.</text>
+<text x="761.600" y="482.400" font-size="2.9" fill="#111" text-anchor="start" font-weight="bold" letter-spacing="0.0">2.</text>
+<text x="769.500" y="482.400" font-size="2.9" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Means of escape designed to the Code of Practice for Fire Safety in Buildings 2011, Part B. Two exits are provided, remote from one another, each leading by a clear and</text>
+<text x="769.500" y="486.600" font-size="2.9" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">direct route to a place of safety in the open air at ground level. Escape routes are shown hatched green and are to be kept permanently free of furniture, stock and</text>
+<text x="769.500" y="490.800" font-size="2.9" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">obstruction.</text>
+<text x="761.600" y="496.600" font-size="2.9" fill="#111" text-anchor="start" font-weight="bold" letter-spacing="0.0">3.</text>
+<text x="769.500" y="496.600" font-size="2.9" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Alternative directions of escape: where two routes subtend an angle of less than 45° at the point of origin, that part of the floor is treated as single-direction escape.</text>
+<text x="769.500" y="500.800" font-size="2.9" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">The longest such travel on this layout is 5.0 m, from the east end of the toilet lobby to the point of divergence at spine A.</text>
+<text x="761.600" y="506.600" font-size="2.9" fill="#111" text-anchor="start" font-weight="bold" letter-spacing="0.0">4.</text>
+<text x="769.500" y="506.600" font-size="2.9" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Ground / street level premises are assumed. Premises on upper floors or in a basement attract more onerous requirements — discharge through a protected staircase, shorter</text>
+<text x="769.500" y="510.800" font-size="2.9" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">permitted travel distances and a lower permitted occupant capacity assessed by the Fire Services Department.</text>
+<text x="761.600" y="516.600" font-size="2.9" fill="#111" text-anchor="start" font-weight="bold" letter-spacing="0.0">5.</text>
+<text x="769.500" y="516.600" font-size="2.9" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Sprinklers: the building is assumed to be sprinkler protected and heads are shown indicatively at approximately 3.0 × 2.7 m centres, Ordinary Hazard Group 1. If the</text>
+<text x="769.500" y="520.800" font-size="2.9" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">building is NOT sprinklered, travel distances and the permitted occupant capacity must be re-assessed, as the escape-time assumptions and the margins applied by the Fire</text>
+<text x="769.500" y="525.000" font-size="2.9" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Services Department are more restrictive for unsprinklered premises.</text>
+<text x="761.600" y="530.800" font-size="2.9" fill="#111" text-anchor="start" font-weight="bold" letter-spacing="0.0">6.</text>
+<text x="769.500" y="530.800" font-size="2.9" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Emergency lighting to all escape routes, exits, toilets and back of house, 2 hour duration, maintained. Illuminated directional exit signs sited so that at least one sign</text>
+<text x="769.500" y="535.000" font-size="2.9" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">is visible from every part of the premises to which the public has access.</text>
+<text x="761.600" y="540.800" font-size="2.9" fill="#111" text-anchor="start" font-weight="bold" letter-spacing="0.0">7.</text>
+<text x="769.500" y="540.800" font-size="2.9" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Liquor licence: this layout plan is intended to accompany an application to the Liquor Licensing Board through the Food and Environmental Hygiene Department. The designated</text>
+<text x="769.500" y="545.000" font-size="2.9" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">liquor-consumption area is demarcated by the chain-dashed magenta boundary. The maximum number of persons permitted on the premises is set by the Fire Services Department</text>
+<text x="769.500" y="549.200" font-size="2.9" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">and must be displayed on the premises together with the licence.</text>
+<text x="761.600" y="555.000" font-size="2.9" fill="#111" text-anchor="start" font-weight="bold" letter-spacing="0.0">8.</text>
+<text x="769.500" y="555.000" font-size="2.9" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Live entertainment, dancing or amplified performance would require a Places of Public Entertainment licence under Cap. 172, which brings further Buildings Department and</text>
+<text x="769.500" y="559.200" font-size="2.9" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Fire Services Department requirements. Any cooking would require a food business licence and additional provisions including a wet chemical extinguisher, a fire blanket,</text>
+<text x="769.500" y="563.400" font-size="2.9" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">kitchen extract fire protection and a separate hand-wash basin.</text>
+<text x="761.600" y="569.200" font-size="2.9" fill="#111" text-anchor="start" font-weight="bold" letter-spacing="0.0">9.</text>
+<text x="769.500" y="569.200" font-size="2.9" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Sanitary fitments shown are indicative. Numbers are to be confirmed against the Building (Standards of Sanitary Fitments, Plumbing, Drainage Works and Latrines) Regulations</text>
+<text x="769.500" y="573.400" font-size="2.9" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">for the assessed occupant capacity. The accessible unisex WC follows the Design Manual: Barrier Free Access 2008, with a 1500 mm diameter clear turning circle and an</text>
+<text x="769.500" y="577.600" font-size="2.9" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">outward-opening or sliding door.</text>
+<text x="761.600" y="583.400" font-size="2.9" fill="#111" text-anchor="start" font-weight="bold" letter-spacing="0.0">10.</text>
+<text x="769.500" y="583.400" font-size="2.9" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">No-smoking signage is required throughout under the Smoking (Public Health) Ordinance, Cap. 371. Notices prohibiting the sale of liquor to persons under 18 are to be</text>
+<text x="769.500" y="587.600" font-size="2.9" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">displayed at the bar counter.</text>
+<text x="761.600" y="593.400" font-size="2.9" fill="#111" text-anchor="start" font-weight="bold" letter-spacing="0.0">11.</text>
+<text x="769.500" y="593.400" font-size="2.9" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">Operational: exits and escape routes are to be kept unlocked and unobstructed whenever the premises are occupied; the capacity notice is to be displayed and observed; fire</text>
+<text x="769.500" y="597.600" font-size="2.9" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">service installations are to be inspected and certified annually on Form FS 251 by a registered contractor.</text>
+<rect x="760.000" y="605.800" width="413.000" height="7.200" fill="#1f1f1f" stroke="none"/>
+<text x="762.600" y="611.400" font-size="3.4" fill="#fff" text-anchor="start" font-weight="bold" letter-spacing="0.5">REFERENCES</text>
+<text x="761.600" y="619.400" font-size="2.8" fill="#333" text-anchor="start" font-weight="normal" letter-spacing="0.0">— Code of Practice for Fire Safety in Buildings 2011 — Buildings Department (Part B: Means of Escape; Part C: Fire Resisting Construction)</text>
+<text x="761.600" y="624.000" font-size="2.8" fill="#333" text-anchor="start" font-weight="normal" letter-spacing="0.0">— Codes of Practice for Minimum Fire Service Installations and Equipment — Fire Services Department</text>
+<text x="761.600" y="628.600" font-size="2.8" fill="#333" text-anchor="start" font-weight="normal" letter-spacing="0.0">— Design Manual: Barrier Free Access 2008 — Buildings Department</text>
+<text x="761.600" y="633.200" font-size="2.8" fill="#333" text-anchor="start" font-weight="normal" letter-spacing="0.0">— Dutiable Commodities (Liquor) Regulations, Cap. 109B — liquor licence and the "bar" endorsement</text>
+<text x="761.600" y="637.800" font-size="2.8" fill="#333" text-anchor="start" font-weight="normal" letter-spacing="0.0">— Building (Standards of Sanitary Fitments, Plumbing, Drainage Works and Latrines) Regulations, Cap. 123I</text>
+<text x="761.600" y="642.400" font-size="2.8" fill="#333" text-anchor="start" font-weight="normal" letter-spacing="0.0">— Places of Public Entertainment Ordinance, Cap. 172 · Smoking (Public Health) Ordinance, Cap. 371</text>
+<rect x="760.000" y="650.400" width="413.000" height="7.200" fill="#1f1f1f" stroke="none"/>
+<text x="762.600" y="656.000" font-size="3.4" fill="#fff" text-anchor="start" font-weight="bold" letter-spacing="0.5">REVISIONS</text>
+<text x="761.600" y="664.000" font-size="2.5999999999999996" fill="#333" text-anchor="start" font-weight="bold" letter-spacing="0.0">Rev</text>
+<text x="824.400" y="664.000" font-size="2.5999999999999996" fill="#333" text-anchor="end" font-weight="bold" letter-spacing="0.0">Date</text>
+<text x="1129.400" y="664.000" font-size="2.5999999999999996" fill="#333" text-anchor="end" font-weight="bold" letter-spacing="0.0">Description</text>
+<text x="1171.400" y="664.000" font-size="2.5999999999999996" fill="#333" text-anchor="end" font-weight="bold" letter-spacing="0.0">By</text>
+<line x1="760.000" y1="665.800" x2="1173.000" y2="665.800" stroke="#999" stroke-width="0.3"/>
+<text x="761.600" y="669.600" font-size="2.8" fill="#222" text-anchor="start" font-weight="normal" letter-spacing="0.0">P1</text>
+<text x="824.400" y="669.600" font-size="2.8" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">2026-07-30</text>
+<text x="1129.400" y="669.600" font-size="2.8" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">First issue — preliminary, for compliance review</text>
+<text x="1171.400" y="669.600" font-size="2.8" fill="#222" text-anchor="end" font-weight="normal" letter-spacing="0.0">—</text>
+<rect x="756.000" y="704.000" width="419.000" height="123.000" fill="#fff" stroke="#111" stroke-width="0.5"/>
+<line x1="756.000" y1="730.000" x2="1175.000" y2="730.000" stroke="#111" stroke-width="0.3"/>
+<line x1="756.000" y1="760.000" x2="1175.000" y2="760.000" stroke="#111" stroke-width="0.3"/>
+<line x1="756.000" y1="792.000" x2="1175.000" y2="792.000" stroke="#111" stroke-width="0.3"/>
+<line x1="1007.400" y1="792.000" x2="1007.400" y2="827.000" stroke="#111" stroke-width="0.3"/>
+<text x="760.000" y="714.500" font-size="2.5" fill="#777" text-anchor="start" font-weight="normal" letter-spacing="0.6">PROJECT</text>
+<text x="760.000" y="725.000" font-size="5.4" fill="#111" text-anchor="start" font-weight="bold" letter-spacing="0.0">BAR VENUE — GROUND FLOOR TENANCY, HONG KONG</text>
+<text x="760.000" y="739.000" font-size="2.5" fill="#777" text-anchor="start" font-weight="normal" letter-spacing="0.6">DRAWING</text>
+<text x="760.000" y="751.000" font-size="4.4" fill="#111" text-anchor="start" font-weight="bold" letter-spacing="0.0">GENERAL ARRANGEMENT · MEANS OF ESCAPE · FSI LAYOUT</text>
+<text x="760.000" y="770.000" font-size="2.5" fill="#777" text-anchor="start" font-weight="normal" letter-spacing="0.6">STATUS</text>
+<text x="760.000" y="782.000" font-size="3.7" fill="#c8102e" text-anchor="start" font-weight="bold" letter-spacing="0.0">PRELIMINARY — FOR COMPLIANCE REVIEW, NOT FOR SUBMISSION</text>
+<text x="760.000" y="803.000" font-size="2.4" fill="#777" text-anchor="start" font-weight="normal" letter-spacing="0.5">SCALE</text>
+<text x="794.000" y="803.000" font-size="2.9" fill="#111" text-anchor="start" font-weight="normal" letter-spacing="0.0">1:20 at A0 (1189 × 841 mm)</text>
+<text x="760.000" y="810.400" font-size="2.4" fill="#777" text-anchor="start" font-weight="normal" letter-spacing="0.5">SPACE</text>
+<text x="794.000" y="810.400" font-size="2.9" fill="#111" text-anchor="start" font-weight="normal" letter-spacing="0.0">12.0 m × 8.0 m internal = 96.0 m²</text>
+<text x="760.000" y="817.800" font-size="2.4" fill="#777" text-anchor="start" font-weight="normal" letter-spacing="0.5">LEVEL</text>
+<text x="794.000" y="817.800" font-size="2.9" fill="#111" text-anchor="start" font-weight="normal" letter-spacing="0.0">Ground / street level</text>
+<text x="760.000" y="825.200" font-size="2.4" fill="#777" text-anchor="start" font-weight="normal" letter-spacing="0.5">CAPACITY</text>
+<text x="794.000" y="825.200" font-size="2.9" fill="#111" text-anchor="start" font-weight="normal" letter-spacing="0.0">55 persons calculated · 60 designed</text>
+<text x="760.000" y="832.600" font-size="2.4" fill="#777" text-anchor="start" font-weight="normal" letter-spacing="0.5">UNITS</text>
+<text x="794.000" y="832.600" font-size="2.9" fill="#111" text-anchor="start" font-weight="normal" letter-spacing="0.0">Millimetres unless noted otherwise</text>
+<text x="1011.400" y="803.000" font-size="2.4" fill="#777" text-anchor="start" font-weight="normal" letter-spacing="0.5">DRAWING No.</text>
+<text x="1171.000" y="803.000" font-size="2.9" fill="#111" text-anchor="end" font-weight="bold" letter-spacing="0.0">BAR-GA-001</text>
+<text x="1011.400" y="810.400" font-size="2.4" fill="#777" text-anchor="start" font-weight="normal" letter-spacing="0.5">REVISION</text>
+<text x="1171.000" y="810.400" font-size="2.9" fill="#111" text-anchor="end" font-weight="bold" letter-spacing="0.0">P1</text>
+<text x="1011.400" y="817.800" font-size="2.4" fill="#777" text-anchor="start" font-weight="normal" letter-spacing="0.5">DATE</text>
+<text x="1171.000" y="817.800" font-size="2.9" fill="#111" text-anchor="end" font-weight="bold" letter-spacing="0.0">2026-07-30</text>
+<text x="1011.400" y="825.200" font-size="2.4" fill="#777" text-anchor="start" font-weight="normal" letter-spacing="0.5">DRAWN</text>
+<text x="1171.000" y="825.200" font-size="2.9" fill="#111" text-anchor="end" font-weight="bold" letter-spacing="0.0">—</text>
+<text x="1011.400" y="832.600" font-size="2.4" fill="#777" text-anchor="start" font-weight="normal" letter-spacing="0.5">SHEET</text>
+<text x="1171.000" y="832.600" font-size="2.9" fill="#111" text-anchor="end" font-weight="bold" letter-spacing="0.0">1 of 1</text>
+</svg>
